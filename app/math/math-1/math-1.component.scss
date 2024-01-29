@@ -1,0 +1,279 @@
+.total {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: blue;
+    cursor: default;
+}
+
+.title1 {
+    font-size: 3em;
+    line-height: 0.2;
+}
+
+.travel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title2 {
+    font-size: 1.5em;
+    line-height: 0.2;
+}
+
+.number1 {
+    height: 80px;
+}
+
+.text {
+    line-height: 0.7;
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.stitched {
+    position: relative;
+    padding: 10px;
+    margin: 120px auto;
+    width: 310px;
+    background: #ff0030;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.3em;
+    border: 2px dashed #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+    text-shadow: -1px -1px #aa3030;
+    font-weight: normal;
+    cursor: grab;
+    text-decoration: none;
+}
+
+#div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10, #div11, #div12, #div13, #div14 {
+    display: none;
+    text-align: center;
+}
+
+.print {
+    height: 300px;
+    z-index: 1;
+}
+
+.letter {
+    height: 200px;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    width: 150px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid rgb(235, 77, 77);
+    font-family: 'Krona One', sans-serif;
+    font-size: 2em;
+    color: rgb(235, 77, 77);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 300ms;
+}
+
+.yellow {
+    background: #f0e54a;
+    box-shadow: 0px 5px #aba232, 0px 10px 10px rgba(0,0,0,0.25);
+}
+
+.blue{
+    background: blue;
+    box-shadow: 0px 5px #3026c7, 0px 10px 10px rgba(0,0,0,0.25);
+}
+
+button:hover {
+    transform: translateY(5px);
+    box-shadow: 0px 0px transparent, 0px 5px 10px rgba(0,0,0,0.25);
+}
+
+button:focus {
+    outline: none;
+}
+
+.cloudo {
+    height: 250px;
+}
+
+.textInDiv {
+    text-align: center;
+    color: black;
+    border-bottom: 1px solid black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.inDivConsVow {
+    width: 180px;
+    height: 50px;
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid black;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.imgSyllable {
+    width: 210px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.imgSyllable:hover {
+    transform: translateY(5px);
+    box-shadow: 0px 0px transparent, 0px 5px 10px rgba(0,0,0,0.25);
+}
+
+.inDivConsVow:hover {
+    transform: translateY(5px);
+    box-shadow: 0px 0px transparent, 0px 5px 10px rgba(0,0,0,0.25);
+}
+
+.figure {
+    height: 150px;
+    z-index: 5;
+}
+
+.bigFigure {
+    height: 230px;
+    z-index: 5;
+}
+
+.divForNumber {
+    cursor: pointer;
+    height: 147px;
+    background-color: white;
+    border: 3px solid black;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.countRockets {
+    height: 150px;
+    width: 220px;
+    border: 1px solid black;
+    background-color: #fff;
+    margin-right: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.countRockets:hover {
+    transform: translateY(5px);
+    box-shadow: 0px 0px transparent, 0px 5px 10px rgba(0,0,0,0.25);
+}
+
+.number {
+    cursor: pointer;
+    height: 142px;
+    margin-right: 20px;
+}
+
+.number:hover {
+    transform: translateY(5px);
+    box-shadow: 0px 0px transparent, 0px 5px 10px rgba(0,0,0,0.25);
+}
+
+.gif {
+    height: 220px;
+    z-index: 5;
+}
+
+.forRiddle {
+    height: 100px;
+}
+
+.forNumber {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    height: 77px;
+    width: 125px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 100px;
+}
+
+.forNumber:hover {
+    transform: translateY(5px);
+    box-shadow: 0px 0px transparent, 0px 5px 10px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 768px) {
+    .title1 {
+        font-size: 2em;
+    };
+
+    .total {
+        font-size: 1.5em;
+    };
+
+    
+    .title2 {
+        font-size: 1em;
+        line-height: 0.1;
+    };
+
+    .number1 {
+        height: 60px;
+    };
+
+    .text {
+        line-height: 0.5;
+        text-align: center;
+    };
+}
+
+@media (max-width: 320px) {
+    .title1 {
+        font-size: 1em;
+    };
+
+    .total {
+        font-size: 1em;
+    };
+
+    
+    .title2 {
+        font-size: 0.5em;
+        line-height: 0.1;
+    };
+
+    .number1 {
+        height: 40px;
+    };
+
+    .text {
+        line-height: 0.5;
+        text-align: center;
+    };
+}

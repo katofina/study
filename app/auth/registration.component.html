@@ -1,0 +1,48 @@
+
+
+    <!-- <div class="registr"> !!! сделать кнопки в js
+            <div>
+                <p>Уже зарегистрированы?</p>
+            </div>
+
+            <div class="button-row">
+                <nav>
+                    <a routerLink="/login" routerLinkActive="active" class="action-button">Войти</a>
+                </nav>
+            </div>
+        </div>
+    </div> -->
+
+
+<div class="block-login">
+    <div class="text-enter">
+        <p class="text-enter">Регистрация</p>
+    </div>
+
+    <div class="login-auth">
+        <div class="auth-block">
+            <label class="login-text">E-mail:</label>
+            <input class="login-input" required email>
+            <div class="login-error">
+                Некорректный e-mail
+            </div>
+        </div>
+
+        <div class="auth-block">
+            <label class="login-text">Пароль:</label>
+            <input type="password" id="pass1" value="" class="login-input" required pattern="(?=^.{8,15}$)(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?!.*\s).*$">
+            <div class="login-error">
+                Пароль должен содержать не менее 8 символов, одно число и одну букву верхнего и нижнего регистра
+            </div>
+        </div>
+
+        <div class="auth-block">
+            <label class="login-text">Повторите пароль:</label>
+            <input type="password" id="pass2" class="login-input" value="" required>
+        </div>
+    </div>
+
+    <div>
+        <button class="tesuen_z" (click)="CheckPassword()">Зарегистрироваться</button>
+    </div>
+</div>

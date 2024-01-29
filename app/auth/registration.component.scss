@@ -1,0 +1,188 @@
+.registr { //для комментария в html(сделать кнопку в js)
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.button-row { //для комментария в html(сделать кнопку в js)
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .action-button {
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        color: hsl(88, 70%, 30%);
+        text-shadow: rgba(255,255,255,.5) 0 -1px 0, rgba(0,0,0,.2) 0 .18em .15em;
+        text-decoration: none;
+        user-select: none;
+        margin: .5em;
+        padding: .5em .6em .4em .6em;
+        border-radius: 8px;
+        border: 0;
+        outline: none;
+        background: #b2f169 radial-gradient(rgba(255,255,255,0), rgba(168, 166, 166, 0.5));
+        box-shadow:
+        inset rgba(255,255,255,.6) 0 .3em .3em,
+        inset rgba(0,0,0,.2) 0 -.1em .3em,
+        rgb(169, 204, 143) 0 7px 1px,
+        rgba(0,0,0,.2) 0 .5em 5px;
+        transition: background .2s ease-in-out;
+        &:hover {
+            background-color: hsl(119, 73%, 80%);
+        }
+        &:active {
+            top: .2em;
+            color: rgba(195, 241, 198, 0.9);
+            text-shadow: rgba(0,0,0,.2) 0 1px 2px;
+            box-shadow:
+            inset rgba(255,255,255,.6) 0 .3em .3em,
+            inset rgba(0,0,0,.2) 0 -.1em .3em,
+            rgba(0,0,0,.4) 0 .1em 1px,
+            rgba(0,0,0,.3) 0 .2em 6px;
+        }
+
+        &:active:after {
+            opacity: .6;
+        }
+    }
+    
+}
+
+.block-login {
+    background-image: url(../../assets/img/bcg-auth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 20px 6px rgb(128,161,103);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+}
+
+p.text-enter {
+    font-size: 3em;
+}
+
+div.text-enter {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.auth-block{
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+    width: 300px;
+}
+
+.login-text {
+    font-size: 1.5em;
+}
+
+.login-input {
+    height: 2.3em;
+}
+
+.login-error {
+    color: red;
+}
+
+input.ng-touched.ng-invalid {
+    border: 2px solid red;
+}
+
+input.ng-touched.ng-valid {
+    border: 2px solid green; 
+}
+
+.tesuen_z {
+    padding: 6px 20px;
+    position: relative;
+    text-decoration: none;
+    color: rgb(247, 239, 239);
+    text-shadow: 0 1px 1px #555;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tesuen_z {
+    background-color: #709e0e;
+    background-image: linear-gradient(to top, #88c72a 0%, #709e0e 100%);
+    background-image: -o-linear-gradient(to top, #88c72a 0%, #709e0e 100%);
+    background-image: -moz-linear-gradient(to top, #88c72a 0%, #709e0e 100%);
+    background-image: -webkit-linear-gradient(to top, #88c72a 0%, #709e0e 100%);
+    background-image: -ms-linear-gradient(to top, #88c72a 0%, #709e0e 100%);
+    background-image: -webkit-gradient( linear, center bottom, center top, color-stop(0, #88c72a), color-stop(1, #709e0e));
+    -webkit-box-shadow: 0 6px 0 #3a7900;
+    -moz-box-shadow: 0 6px 0 #3a7900;
+    -o-box-shadow: 0 6px 0 #3a7900;
+    box-shadow: 0 6px 0 #3a7900;
+}
+
+.tesuen_z::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -2px;
+    right: -2px;
+    top: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 4px;
+    z-index: -1;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 0 #fff;
+    -moz-box-shadow: 0 1px 0 #fff;
+    -o-box-shadow: 0 1px 0 #fff;
+    box-shadow: 0 1px 0 #fff;
+}
+
+.tesuen_z::before {
+    background-color:#0c3a00;
+}
+
+.tesuen_z:active {
+    background-color: #67910b;
+    background-image: linear-gradient(to bottom, #67910b 0%, #7fb52f 100%);
+    background-image: -o-linear-gradient(to bottom, #67910b 0%, #7fb52f 100%);
+    background-image: -moz-linear-gradient(to bottom, #67910b 0%, #7fb52f 100%);
+    background-image: -webkit-linear-gradient(to bootom, #67910b 0%, #7fb52f 100%);
+    background-image: -ms-linear-gradient(to bottom, #67910b 0%, #7fb52f 100%);
+    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #67910b), color-stop(1, #7fb52f));
+    -webkit-box-shadow: 0 1px 0 #b2f154 inset, 0 -1px 0 #1f4d03 inset;
+    -moz-box-shadow: 0 1px 0 #b2f154 inset, 0 -1px 0 #1f4d03 inset;
+    -o-box-shadow: 0 1px 0 #b2f154 inset, 0 -1px 0 #1f4d03 inset;
+    box-shadow: 0 1px 0 #b2f154 inset, 0 -1px 0 #1f4d03 inset;
+    top: 7px;
+}
+
+.tesuen_z:active::before {
+    top:-2px;
+}
+
+.tesuen_z:active, .tesuen_z:hover, .tesuen_z:focus {
+    color: rgb(231, 224, 224);
+    text-shadow: 0 1px 2px #333;
+}

@@ -1,0 +1,381 @@
+<div class="total">
+    <app-gif></app-gif>
+    <div id="div1">
+        <div>
+            <p class="title1">Страна Математика</p>
+        </div>
+
+        <div class="travel">
+            <p class="title2">Путешествие</p>
+            <img class="number1" src="../../../assets/img/1M.png" alt="1">
+        </div>
+
+        <div class="text">
+            <p>В стране Математика очень важно быстро считать.</p>
+            <p>Тренируемся быстро считать.</p>
+            <p style="color:red">Внимание!</p>
+            <p>Начинаем!</p>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv2()">Вперед!</a>
+        </div>
+    </div>
+
+    <div id="div2">
+        <div>
+            <p>Посчитай сколько предметов.</p>
+        </div>
+
+        <div style="display: flex; justify-content: space-around; margin-bottom: 20px;">
+            <div class="inDivConsVow" id="1count" (click)="click1Count()">1</div>
+            <div class="inDivConsVow" id="2count" (click)="click2Count()">2</div>
+            <div class="inDivConsVow" id="3count" (click)="click3Count()">3</div>
+            <div class="inDivConsVow" id="4count" (click)="click4Count()">4</div>
+            <div class="inDivConsVow" id="5count" (click)="click5Count()">5</div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between;">
+            <img src="../../../assets/img/5rocket.png" id="img5Rockets" alt="ракета" class="imgSyllable" (click)="clickImg5Rockets()">
+            <img src="../../../assets/img/2rocket.png" id="img2Rockets" alt="ракета" class="imgSyllable" (click)="clickImg2Rockets()">
+            <img src="../../../assets/img/1rocket.png" id="img1Rockets" alt="ракета" class="imgSyllable" (click)="clickImg1Rockets()">
+            <img src="../../../assets/img/4rocket.png" id="img4Rockets" alt="ракета" class="imgSyllable" (click)="clickImg4Rockets()">
+            <img src="../../../assets/img/3rocket.png" id="img3Rockets" alt="ракета" class="imgSyllable" (click)="clickImg3Rockets()">
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv3()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div3">
+        <div>
+            <p>Посчитай сколько предметов.</p>
+        </div>
+
+        <div style="display: flex; justify-content: space-around; margin-bottom: 20px;">
+            <div class="inDivConsVow" id="6count" (click)="click6Count()">6</div>
+            <div class="inDivConsVow" id="7count" (click)="click7Count()">7</div>
+            <div class="inDivConsVow" id="8count" (click)="click8Count()">8</div>
+            <div class="inDivConsVow" id="9count" (click)="click9Count()">9</div>
+            <div class="inDivConsVow" id="10count" (click)="click10Count()">10</div>
+        </div>
+
+        <div>
+            <div style="display: flex; justify-content: space-between;">
+                <img src="../../../assets/img/8rocket.png" id="img8Rockets" alt="ракета" class="imgSyllable" (click)="clickImg3Rockets()">
+                <img src="../../../assets/img/7rocket.png" id="img7Rockets" alt="ракета" class="imgSyllable" (click)="clickImg2Rockets()">
+                <img src="../../../assets/img/6rocket.png" id="img6Rockets" alt="ракета" class="imgSyllable" (click)="clickImg1Rockets()">
+                <img src="../../../assets/img/9rocket.png" id="img9Rockets" alt="ракета" class="imgSyllable" (click)="clickImg4Rockets()">
+                <img src="../../../assets/img/10rocket.png" id="img10Rockets" alt="ракета" class="imgSyllable" (click)="clickImg5Rockets()">
+            </div>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv4()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div4">
+        <div style="line-height: 0,2;">
+            <p style="color: red;">Запомни!</p>
+            <p style="margin:0;">Чтобы быстро считать,</p>
+            <p style="margin:0;">Нужно уметь складывать до 10.</p>
+            <p style="color:red;">Посчитай и соедини с ответом:</p>
+        </div>
+
+        <div style="display: flex; justify-content: space-around; margin-bottom: 20px;">
+            <div class="inDivConsVow" id="6countSum" (click)="click6CountSum()">6</div>
+            <div class="inDivConsVow" id="3countSum" (click)="click3CountSum()">3</div>
+            <div class="inDivConsVow" id="5countSum" (click)="click5CountSum()">5</div>
+            <div class="inDivConsVow" id="4countSum" (click)="click4CountSum()">4</div>
+            <div class="inDivConsVow" id="2countSum" (click)="click2CountSum()">2</div>
+        </div>
+
+        <div>
+            <div style="display: flex; justify-content: space-between;">
+                <img src="../../../assets/img/2+2rocket.png" class="countRockets" id="img4CountRockets" alt="ракета" (click)="clickImg3Rockets()">
+                <img src="../../../assets/img/1+1rocket.png" class="countRockets" id="img2CountRockets" alt="ракета" (click)="clickImg1Rockets()">
+                <img src="../../../assets/img/2+1rocket.png" class="countRockets" id="img3CountRockets" alt="ракета" (click)="clickImg2Rockets()">
+                <img src="../../../assets/img/3+3rocket.png" class="countRockets" id="img6CountRockets" alt="ракета" (click)="clickImg5Rockets()">
+                <img src="../../../assets/img/2+3rocket.png" class="countRockets" id="img5CountRockets" alt="ракета" (click)="clickImg4Rockets()">
+            </div>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv5()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div5">
+        <div>
+            <p>Посчитай и соедини с ответом.</p>
+        </div>
+
+        <div style="display: flex; justify-content: space-around; margin-bottom: 20px;">
+            <div class="inDivConsVow" id="7countSum" (click)="click7CountSum()">7</div>
+            <div class="inDivConsVow" id="9countSum" (click)="click9CountSum()">9</div>
+            <div class="inDivConsVow" id="8countSum" (click)="click8CountSum()">8</div>
+            <div class="inDivConsVow" id="10countSum" (click)="click10CountSum()">10</div>
+        </div>
+
+        <div>
+            <div style="display: flex; justify-content: space-between;">
+                <img src="../../../assets/img/3+4rocket.png" class="countRockets" id="img7CountRockets" alt="ракета" (click)="clickImg7CountRockets()">
+                <img src="../../../assets/img/4+4rocket.png" class="countRockets" id="img8CountRockets" alt="ракета" (click)="clickImg8CountRockets()">
+                <img src="../../../assets/img/4+5rocket.png" class="countRockets" id="img9CountRockets" alt="ракета" (click)="clickImg9CountRockets()">
+                <img src="../../../assets/img/4+6rocket.png" class="countRockets" id="img10CountRockets" alt="ракета" (click)="clickImg10CountRockets()">
+            </div>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv6()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div6">
+        <div>
+            <p style="color:red;">Вспомни!</p>
+            <p>Назови фигуры по форме и цвету.</p>
+        </div>
+
+        <div style="display: flex; flex-direction:row;">
+            <div style="display: flex; align-items: flex-end;">
+                <img class="gif" src="../../../assets/img/jumpHare.gif" alt="заяц">
+            </div>
+
+            <div style="display: flex; flex-direction:column;">
+                <div>
+                    <img src="../../../assets/img/bluebrightCircle.png" class="figure" alt="круг">
+                    <img src="../../../assets/img/yellowRectangle.png" class="figure" alt="прямоугольник">
+                    <img src="../../../assets/img/greenTriangle.png" class="figure" alt="треугольник">
+                    <img src="../../../assets/img/orangeTriangle.png" class="figure" alt="треугольник">
+                </div>
+
+                <div>
+                    <img src="../../../assets/img/orangesquare.png" class="figure" alt="квадрат">
+                    <img src="../../../assets/img/blueOval.png" class="figure" alt="овал">
+                    <img src="../../../assets/img/redRectangle.png" class="figure" alt="прямоугольник">
+                </div>
+            </div>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv7()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div7">
+        <div>
+            <p>Посчитай большие фигуры.</p>
+        </div>
+
+        <div style="display: flex; flex-direction:row;">
+            <div style="display: flex; align-items: flex-end;">
+                <img class="gif" src="../../../assets/img/DonaldDuck.gif" alt="утка">
+            </div>
+
+            <div style="display: flex; flex-direction:column;">
+                <div>
+                    <img src="../../../assets/img/greenSquare.png" class="figure" alt="квадрат">
+                    <img src="../../../assets/img/greenCircle.png" class="bigFigure" alt="круг">
+                    <img src="../../../assets/img/yellowOval.png" class="bigFigure" alt="овал">
+                    <img src="../../../assets/img/redTriangle.png" class="bigFigure" alt="треугольник">
+                </div>
+
+                <div>
+                    <img src="../../../assets/img/BluebrightRectangle.png" class="figure" alt="прямоугольник">
+                    <img src="../../../assets/img/orangesquare.png" class="bigFigure" alt="квадрат">
+                    <img src="../../../assets/img/blueRectangle.png" class="figure" alt="прямоугольник">
+                    <img src="../../../assets/img/bluebrightSqare.png" class="figure" alt="квадрат">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button class="blue noselect">1</button>
+            <button class="blue noselect">2</button>
+            <button class="blue noselect">3</button>
+            <button class="blue noselect" (click)="viewDiv8()">4</button>
+            <button class="blue noselect">5</button>
+            <button class="blue noselect">6</button>
+        </div>
+    </div>
+
+    <div id="div8">
+        <div>
+            <p>Посчитай маленькие фигуры.</p>
+        </div>
+
+        <div style="display: flex; flex-direction:row;">
+            <div style="display: flex; align-items: flex-end;">
+                <img class="gif" src="../../../assets/img/winkedHare.gif" alt="заяц">
+            </div>
+
+            <div style="display: flex; flex-direction:column;">
+                <div>
+                    <img src="../../../assets/img/greenCircle.png" class="figure" alt="круг">
+                    <img src="../../../assets/img/orangesquare.png" class="bigFigure" alt="квадрат">
+                    <img src="../../../assets/img/blueRectangle.png" class="bigFigure" alt="прямоугольник">
+                    <img src="../../../assets/img/greenTriangle.png" class="figure" alt="треугольник">
+                    <img src="../../../assets/img/redTriangle.png" class="bigFigure" alt="треугольник">
+                </div>
+
+                <div>
+                    <img src="../../../assets/img/blueOval.png" class="figure" alt="овал">
+                    <img src="../../../assets/img/BluebrightRectangle.png" class="figure" alt="прямоугольник">
+                    <img src="../../../assets/img/greenSquare.png" class="bigFigure" alt="квадрат">
+                    <img src="../../../assets/img/yellowOval.png" class="bigFigure" alt="овал">
+                    <img src="../../../assets/img/bluebrightSqare.png" class="figure" alt="квадрат">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button class="blue noselect">1</button>
+            <button class="blue noselect">2</button>
+            <button class="blue noselect">3</button>
+            <button class="blue noselect">4</button>
+            <button class="blue noselect" (click)="viewDiv9()">5</button>
+            <button class="blue noselect">6</button>
+        </div>
+    </div>
+
+    <div id="div9">
+        <div>
+            <p style="margin:0;">На столе лежит 6 конфет.</p>
+            <p style="margin:0;">2 конфеты съели.</p>
+            <p style="margin:0;">Сколько конфет осталось?</p>
+        </div>
+
+        <div style="display: flex; flex-direction:row;">
+            <div style="display: flex; align-items: flex-end;">
+                <img class="gif" src="../../../assets/img/hareWatch.gif" alt="заяц">
+            </div>
+
+            <div style="display: flex; flex-direction:column; position:relative;">
+                <div style="display: flex; flex-direction:row;">
+                    <img src="../../../assets/img/candy1.png" class="forRiddle" alt="конфета">
+                    <img src="../../../assets/img/candy1.png" class="forRiddle" alt="конфета">
+                    <img src="../../../assets/img/candy1.png" class="forRiddle" alt="конфета">
+                </div>
+
+                <div style="display: flex; flex-direction:row;">
+                    <img src="../../../assets/img/candy1.png" class="forRiddle" alt="конфета">
+                    <img src="../../../assets/img/candy1.png" class="forRiddle" alt="конфета">
+                    <img src="../../../assets/img/candy1.png" class="forRiddle" alt="конфета">
+                </div>
+
+                <div style="position: absolute;">
+                    <img src="../../../assets/img/candyZach.png" class="forRiddle" alt="зачёркнуто">
+                    <img src="../../../assets/img/candyZach.png" class="forRiddle" alt="зачёркнуто">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button class="blue noselect">6</button>
+            <button class="blue noselect">8</button>
+            <button class="blue noselect">3</button>
+            <button class="blue noselect" (click)="viewDiv10()">4</button>
+        </div>
+    </div>
+
+    <div id="div10">
+        <div>
+            <p>Молодец!</p>
+            <p style="color: red;">Наше путешествие прошло успешно!</p>
+            <p style="color: green; cursor: pointer;  text-decoration: underline green;" (click)="viewDiv11()">Домашнее задание.</p>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/pyatochok.gif" sty alt="Пятачок">
+            <img src="../../../assets/img/hareGo.gif" class="gif" alt="Заяц">
+            <img src="../../../assets/img/krolik.gif" class="gif" alt="Заяц">
+        </div>
+
+        <div>
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+        </div>
+    </div>
+
+    <div id="div11">
+        <div>
+            <p>Задание № 1.</p>
+            <p>Расположи числа по порядку.</p>
+        </div>
+
+        <div>
+            <div style="display:flex; flex-direction:row; margin-bottom:20px;">
+                <div class="divForNumber" id="divFor1" (click)="clickDivFor1()"></div>
+
+                <div class="divForNumber" id="divFor2" (click)="clickDivFor2()"></div>
+
+                <div class="divForNumber" id="divFor3" (click)="clickDivFor3()"></div>
+
+                <div class="divForNumber" id="divFor4" (click)="clickDivFor4()"></div>
+
+                <div class="divForNumber" id="divFor5" (click)="clickDivFor5()"></div>
+
+                <div class="divForNumber" id="divFor6" (click)="clickDivFor6()"></div>
+
+                <div class="divForNumber" id="divFor7" (click)="clickDivFor7()"></div>
+
+                <div class="divForNumber" id="divFor8" (click)="clickDivFor8()"></div>
+
+                <div class="divForNumber" id="divFor9" (click)="clickDivFor9()"></div>
+
+                <div class="divForNumber" id="divFor10" (click)="clickDivFor10()"></div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between;">
+                <img src="../../../assets/img/9.gif" id="img9" alt="9" class="number" (click)="clickImg9()">
+                <img src="../../../assets/img/3.gif" id="img3" alt="3" class="number" (click)="clickImg3()">
+                <img src="../../../assets/img/2.gif" id="img2" alt="2" class="number" (click)="clickImg2()">
+                <img src="../../../assets/img/7.gif" id="img7" alt="7" class="number" (click)="clickImg7()">
+                <img src="../../../assets/img/1.gif" id="img1" alt="1" class="number" (click)="clickImg1()">
+                <img src="../../../assets/img/4.gif" id="img4" alt="4" class="number" (click)="clickImg4()">
+                <img src="../../../assets/img/10.gif" style="width: 148px;" id="img10" alt="10" class="number" (click)="clickImg10()">
+                <img src="../../../assets/img/6.gif" id="img6" alt="6" class="number" (click)="clickImg6()">
+                <img src="../../../assets/img/8.gif" id="img8" alt="8" class="number" (click)="clickImg8()">
+                <img src="../../../assets/img/5.gif" id="img5" alt="5" class="number" (click)="clickImg5()">
+            </div>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv12()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div12">
+        <div>
+            <p>Задание № 2.</p>
+            <p>Расположи числа по порядку.</p>
+        </div>
+
+        <div>
+            <div style="display:flex; flex-direction:row; margin-bottom:20px;">
+                <div class="divForNumber" id="divFor26" (click)="clickDivFor26()"></div>
+
+                <div class="divForNumber" id="divFor27" (click)="clickDivFor27()"></div>
+
+                <div class="divForNumber" id="divFor28" (click)="clickDivFor28()"></div>
+
+                <div class="divForNumber" id="divFor29" (click)="clickDivFor29()"></div>
+
+                <div class="divForNumber" id="divFor210" (click)="clickDivFor210()"></div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between;">
+                <img src="../../../assets/img/6.gif" id="img26" alt="6" class="number" (click)="clickImg1Rockets()">
+                <img src="../../../assets/img/8.gif" id="img28" alt="8" class="number" (click)="clickImg3Rockets()">
+                <img src="../../../assets/img/9.gif" id="img29" alt="9" class="number" (click)="clickImg4Rockets()">
+                <img src="../../../assets/img/10.gif" style="width: 148px;" id="img210" alt="10" class="number" (click)="clickImg5Rockets()">
+                <img src="../../../assets/img/7.gif" id="img27" alt="7" class="number" (click)="clickImg2Rockets()">
+            </div>
+        </div>
+    </div>
+</div>

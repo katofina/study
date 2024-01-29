@@ -1,0 +1,388 @@
+<div class="total">
+    <app-gif></app-gif>
+    <div id="div1">
+        <div>
+            <p class="title1">Страна Математика</p>
+        </div>
+
+        <div class="travel">
+            <p class="title2">Путешествие</p>
+            <img class="number1" src="../../../assets/img/3.gif" alt="3">
+            <img class="number1" src="../../../assets/img/1.gif" alt="1">
+        </div>
+
+        <div class="text">
+            <p>В стране Математика очень важно решать задачи.</p>
+            <p>Внимание!</p>
+            <p>Начинаем!</p>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv2()">Вперед!</a>
+        </div>
+    </div>
+
+    <div id="div2">
+        <div>
+            <p style="color:green;">1 задача</p>
+            <p style="margin-top:0;">Что не равно семи?</p>
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <img style="height:149px;" src="../../../assets/img/7.gif" alt="семь">
+            <img style="height:181px;" src="../../../assets/img/notEqual.png" alt="неравно">
+            <img style="height:144px;" src="../../../assets/img/redQuestion.png" alt="вопрос">
+        </div>
+
+        <div style="display:flex; flex-direction:column; justify-content:center;">
+            <button style="width:750px;" class="blue noselect">число дней в неделе</button>
+            <button style="width:750px;" class="blue noselect">последняя цифра в числе 27</button>
+            <button style="width:750px;" class="blue noselect" (click)="viewDiv3()">полдюжины</button>
+            <button style="width:750px;" class="blue noselect">число букв в слове "кенгуру"</button>
+            <button style="width:750px;" class="blue noselect">число цветов в радуге</button>
+        </div>
+    </div>
+
+    <div id="div3">
+        <div>
+            <p style="margin: 0;">Замечательно!</p>
+            <p style="color:green;">2 задача</p>
+            <p style="margin-top:0;">Какое время показывают часы, если сейчас утро?</p>
+        </div>
+
+        <img style="height:307px;" src="../../../assets/img/watch6.png" alt="часы">
+
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <button style="width:310px;" class="blue noselect">12 ч. 00 мин.</button>
+            <button style="width:310px;" class="blue noselect">18 ч. 00 мин.</button>
+            <button style="width:310px;" class="blue noselect" (click)="viewDiv4()">6 ч. 00 мин.</button>
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <button style="width:310px;" class="blue noselect">12 ч. 30 мин.</button>
+            <button style="width:310px;" class="blue noselect">11 ч. 30 мин.</button>
+        </div>
+    </div>
+
+    <div  id="div4">
+        <div>
+            <p style="margin: 0;">Замечательно!</p>
+            <p style="margin-top:0;">Какое время показывают часы, если сейчас вечер?</p>
+        </div>
+
+        <img style="height:307px;" src="../../../assets/img/watch6.png" alt="часы">
+
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <button style="width:310px;" class="blue noselect">6 ч. 00 мин.</button>
+            <button style="width:310px;" class="blue noselect">12 ч. 30 мин.</button>
+            <button style="width:310px;" class="blue noselect">11 ч. 30 мин.</button>
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <button style="width:310px;" class="blue noselect">12 ч. 00 мин.</button>
+            <button style="width:310px;" class="blue noselect" (click)="viewDiv5()">18 ч. 00 мин.</button>
+        </div>
+    </div>
+
+    <div id="div5">
+        <div>
+            <p style="color:green;">3 задача</p>
+            <p style="margin-top:0;">Найди закономерность и найди ещё 2 числа.</p>
+        </div>
+
+        <div style="display:flex; flex-direction:row; margin-bottom:50px;">
+            <button class="green noselect">7</button>
+            <button class="green noselect">10</button>
+            <button class="green noselect">15</button>
+            <button class="green noselect">18</button>
+            <button class="green noselect">23</button>
+            <button class="green noselect">26</button>
+            <button class="green noselect">?</button>
+            <button class="green noselect">?</button>
+        </div>
+
+        <div style="display:flex; flex-direction:row;">
+            <button style="width:200px; height:72px;" class="blue noselect">29, 34</button>
+            <button style="width:200px; height:72px;" class="blue noselect" (click)="viewDiv6()">31, 34</button>
+            <button style="width:200px; height:72px;" class="blue noselect">29, 32</button>
+            <button style="width:200px; height:72px;" class="blue noselect">31, 36</button>
+        </div>
+    </div>
+
+    <div id="div6">
+        <div>
+            <p style="margin: 0;">Замечательно!</p>
+            <p style="color:green;">4 задача</p>
+            <p style="margin-top:0;">Какое время показывают часы, если сейчас около полудня?</p>
+        </div>
+
+        <img style="height:307px;" src="../../../assets/img/watch1230.png" alt="часы">
+
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <button style="width:310px;" class="blue noselect">13 ч. 30 мин.</button>
+            <button style="width:310px;" class="blue noselect">6 ч. 00 мин.</button>
+            <button style="width:310px;" class="blue noselect" (click)="viewDiv7()">12 ч. 30 мин.</button>
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <button style="width:310px;" class="blue noselect">18 ч. 00 мин.</button>
+            <button style="width:310px;" class="blue noselect">24 ч. 30 мин.</button>
+        </div>
+    </div>
+
+    <div id="div7">
+        <div>
+            <p>Замечательно!</p>
+            <p>Какое время показывают часы, если сейчас около полуночи?</p>
+        </div>
+
+        <img style="height:307px;" src="../../../assets/img/watch1230.png" alt="часы">
+
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <button style="width:310px;" class="blue noselect">18 ч. 00 мин.</button>
+            <button style="width:310px;" class="blue noselect" (click)="viewDiv8()">00 ч. 30 мин.</button>
+            <button style="width:310px;" class="blue noselect">12 ч. 30 мин.</button>
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <button style="width:310px;" class="blue noselect">6 ч. 00 мин.</button>
+            <button style="width:310px;" class="blue noselect">1 ч. 30 мин.</button>
+        </div>
+    </div>
+
+    <div id="div8">
+        <div>
+            <p style="margin:0;">Замечательно!</p>
+            <p style="color:green;">5 задача</p>
+            <p style="margin-top:0;">Сколько всего прямоугольников?</p>
+        </div>
+
+        <div style="position:relative; width:900px;">
+            <img src="../../../assets/img/rectangle.png" style="height:400px;" alt="прямоугольник">
+            <img src="../../../assets/img/MikkiOk.gif" style="height:224px; position:absolute; bottom:0; right:0;" alt="мышь">
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content: center;">
+            <button class="blue noselect">3</button>
+            <button class="blue noselect">4</button>
+            <button class="blue noselect" (click)="viewDiv9()">5</button>
+            <button class="blue noselect">6</button>
+        </div>
+    </div>
+
+    <div id="div9">
+        <div>
+            <p style="margin: 0;">Замечательно!</p>
+            <p style="color:green;">6 задача</p>
+            <p style="margin-top:0;">Какое время показывают часы, если сейчас утро?</p>
+        </div>
+
+        <img style="height:307px;" src="../../../assets/img/watch7.png" alt="часы">
+
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <button style="width:310px;" class="blue noselect">00 ч. 35 мин.</button>
+            <button style="width:310px;" class="blue noselect" (click)="viewDiv10()">7 ч. 00 мин.</button>
+            <button style="width:310px;" class="blue noselect">11 ч. 35 мин.</button>
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <button style="width:310px;" class="blue noselect">19 ч. 00 мин.</button>
+            <button style="width:310px;" class="blue noselect">12 ч. 35 мин.</button>
+        </div>
+    </div>
+
+    <div id="div10">
+        <div>
+            <p>Замечательно!</p>
+            <p>Какое время показывают часы, если сейчас вечер?</p>
+        </div>
+
+        <img style="height:307px;" src="../../../assets/img/watch7.png" alt="часы">
+
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <button style="width:310px;" class="blue noselect">12 ч. 35 мин.</button>
+            <button style="width:310px;" class="blue noselect">23 ч. 35 мин.</button>
+            <button style="width:310px;" class="blue noselect">7 ч. 00 мин.</button>
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <button style="width:310px;" class="blue noselect" (click)="viewDiv11()">19 ч. 00 мин.</button>
+            <button style="width:310px;" class="blue noselect">00 ч. 35 мин.</button>
+        </div>
+    </div>
+
+    <div id="div11">
+        <div>
+            <p style="margin:0;">Замечательно!</p>
+            <p style="color:green;">7 задача</p>
+            <p style="margin-top:0;">Определи массу одной сливы.</p>
+        </div>
+
+        <div>
+            <div style="display:flex; flex-direction:row; justify-content:space-between; width:740px; height:305px; position:relative;">
+                <div>
+                    <img src="../../../assets/img/apple.png" style="height:91px;" alt="яблоко">
+                    <img src="../../../assets/img/apple.png" style="height:91px;" alt="яблоко">
+                    <img src="../../../assets/img/plum1.png" style="height:91px;" alt="слива">
+                    <img src="../../../assets/img/plum1.png" style="height:91px;" alt="слива">
+                    <img src="../../../assets/img/plum1.png" style="height:91px;" alt="слива">
+                </div>
+    
+                <div>
+                    <img src="../../../assets/img/kettle150.png" style="height:114px;" alt="гиря">
+                    <img src="../../../assets/img/apple.png" style="height:91px;" alt="яблоко">
+                    <img src="../../../assets/img/apple.png" style="height:91px;" alt="яблоко">
+                </div>
+
+                <img src="../../../assets/img/scale.png" style="height:190px; position:absolute; top:20%; left:0; transform:rotate(2deg);" alt="весы">
+            </div>
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content:center; align-items:center;">
+            <button style="width:125px;" class="blue noselect">150</button>
+            <button style="width:125px;" class="blue noselect">100</button>
+            <button style="width:125px;" class="blue noselect" (click)="viewDiv12()">50</button>
+            <button style="width:125px;" class="blue noselect">30</button>
+            <button style="width:125px;" class="blue noselect">90</button>
+            <button style="width:125px;" class="blue noselect">200</button>
+        </div>
+    </div>
+
+    <div id="div12">
+        <div>
+            <p style="margin: 0;">Замечательно!</p>
+            <p style="color:green;">8 задача</p>
+            <p style="margin-top:0;">Какое время показывают часы, если сейчас день?</p>
+        </div>
+
+        <img style="height:307px;" src="../../../assets/img/watch4.png" alt="часы">
+
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <button style="width:310px;" class="blue noselect">12 ч. 20 мин.</button>
+            <button style="width:310px;" class="blue noselect" (click)="viewDiv13()">16 ч. 00 мин.</button>
+            <button style="width:310px;" class="blue noselect">00 ч. 20 мин.</button>
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <button style="width:310px;" class="blue noselect">4 ч. 00 мин.</button>
+            <button style="width:310px;" class="blue noselect">11 ч. 20 мин.</button>
+        </div>
+    </div>
+
+    <div id="div13">
+        <div>
+            <p>Замечательно!</p>
+            <p>Какое время показывают часы, если сейчас ночь?</p>
+        </div>
+
+        <img style="height:307px;" src="../../../assets/img/watch6.png" alt="часы">
+
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <button style="width:310px;" class="blue noselect">16 ч. 00 мин.</button>
+            <button style="width:310px;" class="blue noselect">23 ч. 20 мин.</button>
+            <button style="width:310px;" class="blue noselect">12 ч. 20 мин.</button>
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <button style="width:310px;" class="blue noselect">00 ч. 20 мин.</button>
+            <button style="width:310px;" class="blue noselect" (click)="viewDiv14()">4 ч. 00 мин.</button>
+        </div>
+    </div>
+
+    <div id="div14">
+        <div style="position:relative; width:1000px;">
+            <p style="color:red;">Вспомни!</p>
+            <p>1 см = 10 мм</p>
+            <p>10 мм = 1 см</p>
+            <p>12 мм = 1 см 2 мм</p>
+            <p>18 мм = 1 см 8 мм</p>
+            <p>1 см 9 мм = 19 мм</p>
+            <p>2 см = 20 мм</p>
+            <img src="../../../assets/img/tigerVinni.gif" style="position:absolute; bottom:0; right:0; height:205px;" alt="тигр и медведь">
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv15(); addEvent2();">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div15">
+        <div>
+            <p>Составь равенства.</p>
+        </div>
+
+        <div style="margin-bottom:50px; display:flex; flex-direction:row;" id="sum">
+            <div class="inDivConsVow">4 см 7 мм</div>
+            <div class="inDivCons">15 мм</div>
+            <div class="inDivCons">2 см</div>
+            <div class="inDivCons">23 мм</div>
+            <div class="inDivCons">30 мм</div>
+            <div class="inDivCons">60 мм</div>
+            <div class="inDivConsVow">4 см 5 мм</div>
+        </div>
+
+        <div style="display:flex; flex-direction:row;" id="example">
+            <div class="inDivCons">47 мм</div>
+            <div class="inDivConsVow">2 см 3 мм</div>
+            <div class="inDivConsVow">1 см 5 мм</div>
+            <div class="inDivCons">6 см</div>
+            <div class="inDivCons">20 мм</div>
+            <div class="inDivConsVow">45 мм</div>
+            <div class="inDivConsVow">3 см</div>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv16()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div16">
+        <p style="margin:0;">Замечательно!</p>
+        <button style="width:370px; font-size:1em; margin-bottom:20px;" class="blue noselect" (click)="viewDiv17(); addEvent3();">Домашнее задание</button>
+
+        <div>
+            <img src="../../../assets/img/MikkiHands.gif" style="height:195px;" alt="мышь">
+            <img src="../../../assets/img/DonaldRest.gif" style="height:223px;" alt="утка">
+            <img src="../../../assets/img/MashaDance.gif" style="height:189px;" alt="маша">
+        </div>
+
+        <div style="margin-bottom: 100px;">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+        </div>
+    </div>
+
+    <div id="div17">
+        <div>
+            <p>Найди равенства.</p>
+        </div>
+
+        <div style="margin-bottom:50px; display:flex; flex-direction:row;">
+            <div style="display:flex; flex-direction:row;" id="clocks">
+                <img src="../../../assets/img/watch1230.png" style="height:150px; border-radius:90px;" alt="часы1230">
+                <img src="../../../assets/img/watch6.png" style="height:150px; border-radius:90px;" alt="часы6">
+                <img src="../../../assets/img/watch4.png" style="height:150px; border-radius:90px;" alt="часы4">
+                <img src="../../../assets/img/watch7.png" style="height:150px; border-radius:90px;" alt="часы7">
+            </div>
+
+            <div style="display:flex; flex-direction:row; align-items:center;" id="val">
+                <div class="inDivCons">2 см</div>
+                <div class="inDivCons">50 мм</div>
+                <div class="inDivCons">6 см</div>
+            </div>
+        </div>
+
+        <div id="values">
+            <div style="display:flex; flex-direction:row;">
+                <div class="inDivConsVow">4 ч. 00 мин.</div>
+                <div class="inDivConsVow" style="width:200px;">18 ч. 00 мин.</div>
+                <div class="inDivCons">5 см</div>
+                <div class="inDivCons">60 мм</div>
+                <div class="inDivCons">20 мм</div>
+                <div class="inDivConsVow" style="width:200px;">12 ч. 30 мин.</div>
+                <div class="inDivConsVow">7 ч. 00 мин.</div>
+            </div>
+        </div>
+    </div>
+</div>

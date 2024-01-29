@@ -1,0 +1,758 @@
+<div class="total">
+    <app-gif></app-gif>
+    <div id="div1">
+        <div>
+            <p class="title1">Страна Математика</p>
+        </div>
+
+        <div class="travel">
+            <p class="title2">Путешествие</p>
+            <img class="number1" src="../../../assets/img/1.gif" alt="1">
+            <img class="number1" src="../../../assets/img/2.gif" alt="2">
+        </div>
+
+        <div class="text">
+            <p>Любое путешествие начинается с подготовки.</p>
+            <p>В стране Математика очень важно быстро считать.</p>
+            <p>Внимание!</p>
+            <p>Начинаем!</p>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv2(); addEvent1();">Вперед!</a>
+        </div>
+    </div>
+
+    <div id="div2">
+        <p>Подбери примеры к соответствующим ответам.</p>
+
+        <div style="display:flex; flex-direction:row; margin-bottom:0; justify-content:center;">
+            <span class="buttGrey">25</span>
+            <span class="buttGrey">30</span>
+            <span class="buttGrey">48</span>
+            <span class="buttGrey">42</span>
+        </div>
+        
+        <div class="frameGrey" style="height:460px; width:900px;">
+            <img src="../../../assets/img/PuzzlePrincess.jpg" alt="принцесса" style="height:460px; width:900px;">
+
+            <table style="border:none; height:460px; width:900px; position:absolute; top:0; left:0; border-spacing:0;" id="tableMos">
+                <tr>
+                    <td>48 x 1</td>
+                    <td>1 x 30</td>
+                    <td>6 x 7</td>
+                    <td>7 x 6</td>
+                    <td>30 x 1</td>
+                    <td>13 + 12</td>
+                </tr>
+                <tr>
+                    <td>5 x 5</td>
+                    <td>2 x 15</td>
+                    <td>40 + 2</td>
+                    <td>15 + 15</td>
+                    <td>40 + 8</td>
+                    <td>40 - 10</td>
+                </tr>
+                <tr>
+                    <td>30 - 5</td>
+                    <td>21 + 21</td>
+                    <td>1 x 25</td>
+                    <td>8 x 6</td>
+                    <td>50 - 8</td>
+                    <td>6 x 8</td>
+                </tr>
+                <tr>
+                    <td>12 + 13</td>
+                    <td>50 - 2</td>
+                    <td>21 x 2</td>
+                    <td>25 x 1</td>
+                    <td>15 x 2</td>
+                    <td>1 x 48</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv3()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div3">
+        <div style="position:relative; width:1000px;">
+            <p style="color:red; margin:0;">Вспомни!</p>
+            <p>Компоненты действия сложения:</p>
+            <p style="font-size:4em; margin:0;">8 + 3</p>
+            <div style="display:flex; flex-direction:row; margin:0; justify-content:center;">
+                <p style="color:red; margin:0; margin-right: 50px;">первое</p>
+                <p style="color:red; margin:0;">второе</p>
+            </div>
+            <div style="display:flex; flex-direction:row; margin:0; justify-content:center;">
+                <p style="color:red; margin:0; margin-right: 50px;">СЛАГАЕМОЕ</p>
+                <p style="color:red; margin:0;">СЛАГАЕМОЕ</p>
+            </div>
+            <p>Результат действия сложения:</p>
+            <p style="font-size:4em; margin:0;">8 + 3 = 11</p>
+            <p style="color:red; margin:0; margin-left:40%;">СУММА</p>
+            <img src="../../../assets/img/garfild.gif" style="position:absolute; bottom:0; left:0; height:170px;" alt="тигр">
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv4()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div4">
+        <div style="position:relative; width:1000px;">
+            <p style="color:red; margin:0;">Запомни!</p>
+            <p style="margin:0;">Чтобы найти неизвестное слагаемое,</p>
+            <p style="font-size:3em; margin:0;">x + 3 = 11
+            <div style="display:flex; flex-direction:row; margin:0; justify-content:center; margin-right:80px;">
+                <p style="color:red; margin:0; margin-right: 50px;">неизвестное</p>
+                <p style="color:red; margin:0; margin-right: 40px;">известное</p>
+                <p style="color:red; margin:0;">СУММА</p>
+            </div>
+            <div style="display:flex; flex-direction:row; margin:0; justify-content:center; margin-right:200px;">
+                <p style="color:red; margin:0; margin-right: 50px;">СЛАГАЕМОЕ</p>
+                <p style="color:red; margin:0;">СЛАГАЕМОЕ</p>
+            </div>
+            <p style="margin:0;">нужно от суммы отнять известное слагаемое.</p>
+            <p style="font-size:3em; margin:0;">11 - 3 = 8
+            <div style="display:flex; flex-direction:row; margin:0; justify-content:center; margin-left:50px;">
+                <p style="color:red; margin:0; margin-right: 20px;">СУММА</p>
+                <p style="color:red; margin:0; margin-right: 10px;">неизвестное</p>
+                <p style="color:red; margin:0;">известное</p>
+            </div>
+            <div style="display:flex; flex-direction:row; margin:0; justify-content:center;margin-left:220px;">
+                <p style="color:red; margin:0; margin-right: 10px;">СЛАГАЕМОЕ</p>
+                <p style="color:red; margin:0;">СЛАГАЕМОЕ</p>
+            </div>
+            <p style="font-size:3em; margin:0;">x = 8</p>
+            <p style="color:red; margin:0;">неизвестное</p>
+            <p style="color:red; margin:0;">СЛАГАЕМОЕ</p>
+            <img src="../../../assets/img/pyatochok.gif" style="position:absolute; bottom:0; left:0; height:236px;" alt="утка">
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv5()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div5">
+        <div>
+            <p style="margin:0;">Молодец!</p>
+            <p style="margin:0; color:red;">ВНИМАНИЕ</p>
+            <p style="margin-top:0;">Найди неизвестное слагаемое.</p>
+        </div>
+
+        <div style="display: flex; flex-direction: row; margin-bottom: 20px;">
+            <div class="spanAndInput">
+                <span class="spanInDiv">x+6 = 12</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">x+10 = 30</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">x+3 = 10</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">x+5 = 20</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">x+4 = 14</span>
+                <input type="text" class="inputInDiv">
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction: row; margin-bottom: 20px;">
+            <div class="spanAndInput">
+                <span class="spanInDiv">x+8 = 18</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">x+15 = 30</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">x+20 = 29</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">3+x = 13</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">10+x = 40</span>
+                <input type="text" class="inputInDiv">
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction: row; margin-bottom: 20px;">
+            <div class="spanAndInput">
+                <span class="spanInDiv">20+x = 21</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">14+x = 24</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">40+x = 50</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">50+x = 52</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">35+x = 45</span>
+                <input type="text" class="inputInDiv">
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction: row; margin-bottom: 40px;">
+            <div class="spanAndInput">
+                <span class="spanInDiv">100+x = 110</span>
+                <input type="text" class="inputInDiv">
+            </div>
+        </div>
+
+        <div>
+            <a class="stitched" (click)="checkInput1()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div6">
+        <div style="position:relative; width:1000px;">
+            <p style="color:red; margin:0;">Запомни!</p>
+            <p>Сегодня знакомимся с разрядами единиц и десятков.</p>
+            <div style="display:flex; flex-direction:row; margin:0; justify-content:center; align-items:center;">
+                <p style="color:red; margin:0;">ДЕСЯТОК</p>
+                <p style="font-size:4em; margin:0;">13</p>
+                <p style="color:red; margin:0;">ЕДИНИЦЫ</p>
+            </div>
+            <p style="margin:0;">В числе 13 один десяток и три единицы.</p>
+            <div style="display:flex; flex-direction:row; margin:0; justify-content:center; align-items:center;">
+                <p style="color:red; margin:0;">ДЕСЯТОК</p>
+                <p style="font-size:4em; margin:0;">21</p>
+                <p style="color:red; margin:0;">ЕДИНИЦЫ</p>
+            </div>
+            <p style="margin:0;">В числе 21 два десятка и одна единица.</p>
+            <div style="display:flex; flex-direction:row; margin:0; justify-content:center; align-items:center;">
+                <p style="color:red; margin:0;">ДЕСЯТОК</p>
+                <p style="font-size:4em; margin:0;">36</p>
+                <p style="color:red; margin:0;">ЕДИНИЦЫ</p>
+            </div>
+            <p style="margin:0;">В числе 36 три десятка и шесть единиц.</p>
+            <img src="../../../assets/img/hareGo.gif" style="position:absolute; bottom:0; left:0; height:175px;" alt="тигр">
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv7(); addEvent2();">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div7">
+        <div>
+            <p style="margin:0;">Молодец!</p>
+            <p style="margin:0; color:red;">ВНИМАНИЕ</p>
+            <p style="margin-top:0;">Определи в числах количество десятков и единиц.</p>
+        </div>
+        
+        <div id="head">
+            <div style="line-height: 0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display: flex; align-items: center;">
+                    В числе 18 1
+                    <div style="display: inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                        <ul id="ul1" class="ulClass" style="display:none;">
+                            <li>
+                                <a class="aUl">десятка</a>
+                            </li>
+                            <li>
+                                <a class="aUl">десятков</a>
+                            </li>
+                            <li>
+                                <a class="aUl">десяток</a>
+                            </li>
+                            <li>
+                                <a class="aUl">единиц</a>
+                            </li>
+                            <li>
+                                <a class="aUl">единицы</a>
+                            </li>
+                        </ul>
+                    </div> и 8
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div>.
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    В числе 28 2
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> и 8
+                    <div style="display:inline-block; position: relative;">
+                        <button class="buttonUl"></button>
+                    </div>.
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    В числе 30 3
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> и 0
+                    <div style="display:inline-block; position: relative;">
+                        <button class="buttonUl"></button>
+                    </div>.
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items: enter;">
+                    В числе 52 5
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> и 2
+                    <div style="display:inline-block; position: relative;">
+                        <button class="buttonUl"></button>
+                    </div>.
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    В числе 7 0
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> и 7
+                    <div style="display:inline-block; position: relative;">
+                        <button class="buttonUl"></button>
+                    </div>.
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    В числе 95 9
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> и 5
+                    <div style="display:inline-block; position: relative;">
+                        <button class="buttonUl"></button>
+                    </div>.
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    В числе 43 4
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> и 3
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div>.
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    В числе 67 6
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> и 7
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div>.
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    В числе 32 2
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> и 3
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div>.
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    В числе 49 9
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> и 4
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div>.
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    В числе 39 9
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> и 3
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div>.
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    В числе 58 8
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> и 5
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div>.
+                </span>
+            </div>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="check1()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div8">
+        <div>
+            <p style="color:green;">1 задача</p>
+            <p style="margin:0;">Как с помощью 2-уx литровой и 5-ти литровой банок</p>
+            <p style="margin-top:0;">налить в кувшин 1 литр воды?</p>
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content:center; align-items:center;">
+            <img src="../../../assets/img/jar.png" style="height:246px; margin-right:50px;" alt="куб">
+            <img src="../../../assets/img/jar.png" style="height:159px; margin-right:50px;" alt="куб">
+            <img src="../../../assets/img/jug.png" style="height:186px;" alt="кувшин">
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content:center; align-items:center;">
+            <button style="width:570px; height:83px; word-break: break-word; font-size:1em;" class="blue noselect">Налить в 5 литровую, отлить в 2 литровую и вылить в кувшин.</button>
+            <button style="width:570px; height:195px; word-break: break-word; font-size:1em;" class="blue noselect" (click)="viewDiv9()">Налить в 2 литровую, перелить в 5 литровую, ещё налить и перелить, ещё раз налить и перелить. Оставшийся 1 литр перелить в кувшин, добавить 1 литр.</button>
+        </div>
+    </div>
+
+    <div id="div9">
+        <div>
+            <p style="margin:0;">Замечательно!</p>
+            <p style="color:green;">2 задача</p>
+            <p style="margin:0;">У мальчика и девочки одинаковое количество орехов.</p>
+            <p style="margin:0;">Мальчик отдал девочке 3 ореха.</p>
+            <p style="margin-top:0;">На сколько орехов теперь у девочки больше?</p>
+        </div>
+
+        <div>
+            <div style="display:flex; flex-direction:column; justify-content:space-between; width:1000px; height:350px;">
+                <div style="display:flex; flex-direction:row; justify-content:space-around;">
+                    <div style="position:relative; height:150px; width:150px;">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:0; left:5%;" alt="жёлудь">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:10%; left:10;" alt="жёлудь">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:20%; left:0%;" alt="жёлудь">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:20%; left:30%;" alt="жёлудь">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:30%; left:10%" alt="жёлудь">
+                    </div>
+
+                    <div style="position:relative; height:150px; width:150px;">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:0; left:5%;" alt="жёлудь">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:10%; left:10;" alt="жёлудь">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:20%; left:0%;" alt="жёлудь">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:20%; left:30%;" alt="жёлудь">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:30%; left:10%" alt="жёлудь">
+                    </div>
+                </div>
+
+                <div style="display:flex; flex-direction:row; justify-content:space-around;">
+                    <div style="position:relative; height:150px; width:150px;">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:0; left:5%;" alt="жёлудь">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:10%; left:10;" alt="жёлудь">
+                    </div>
+
+                    <div style="position:relative; height:150px; width:150px;">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:0; left:5%;" alt="жёлудь">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:10%; left:10;" alt="жёлудь">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:20%; left:0%;" alt="жёлудь">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:20%; left:30%;" alt="жёлудь">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:30%; left:30%" alt="жёлудь">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:30%; left:0%;" alt="жёлудь">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:30%; left:60%;" alt="жёлудь">
+                        <img src="../../../assets/img/acorn.png" style="height:72px; position:absolute; top:40%; left:20%" alt="жёлудь">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content:center; align-items:center;">
+            <button class="blue noselect">3</button>
+            <button class="blue noselect" (click)="viewDiv10()">6</button>
+            <button class="blue noselect">9</button>
+        </div>
+    </div>
+
+    <div id="div10">
+        <div>
+            <p>Замечательно!</p>
+            <p style="color:green;">3 задача</p>
+            <p style="margin-bottom:0;">Гриша спросил Марину:</p>
+            <p style="margin:0;">- В какой день недели у тебя День рождения?</p>
+            <p style="margin:0;">- Этот день не стоит между четвергом и субботой,</p>
+            <p style="margin:0;">не является первым днём недели,</p>
+            <p style="margin:0;">перед ним не пятница,</p>
+            <p style="margin:0;">он не идёт после субботы,</p>
+            <p style="margin:0;">после него не среда,</p>
+            <p style="margin-top:0;">он не стоит перед пятницей.</p>
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content:center; align-items:center;">
+            <button style="width:325px; height:65px;" class="blue noselect">понедельник</button>
+            <button style="width:325px; height:65px;" class="blue noselect">вторник</button>
+            <button style="width:325px; height:65px;" class="blue noselect" (click)="viewDiv11()">среда</button>
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content:center; align-items:center;">
+            <button style="width:325px; height:65px" class="blue noselect">четверг</button>
+            <button style="width:325px; height:65px" class="blue noselect">пятница</button>
+            <button style="width:325px; height:65px" class="blue noselect">суббота</button>
+        </div>
+
+        <button style="width:325px; height:65px" class="blue noselect">воскресенье</button>
+    </div>
+
+    <div id="div11">
+        <p style="margin:0;">Молодец!</p>
+        <p style="margin:0; color:red;">Наше путешествие прошло успешно!</p>
+        <button style="width:370px; font-size:1em; margin-bottom:20px;" class="blue noselect" (click)="viewDiv12(); addEvent3();">Домашнее задание</button>
+
+        <div>
+            <img src="../../../assets/img/tigerJump.gif" style="height:201px;" alt="тигр">
+            <img src="../../../assets/img/hareGo.gif" style="height:131px;" alt="заяц">
+            <img src="../../../assets/img/garfild.gif" style="height:170px;" alt="кот">
+        </div>
+
+        <div style="margin-bottom: 100px;">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+        </div>
+    </div>
+
+    <div id="div12">
+        <div>
+            <p style="margin:0;">Молодец!</p>
+            <p style="margin:0; color:red;">ВНИМАНИЕ</p>
+            <p style="margin-top:0;">Определи компоненты и результат действий сложения и вычитания.</p>
+        </div>
+        
+        <div id="head2">
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    85
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                        <ul id="ul2" class="ulClass" style="display:none;">
+                            <li>
+                                <a class="aUl">второе слагаемое</a>
+                            </li>
+                            <li>
+                                <a class="aUl">вычитаемое</a>
+                            </li>
+                            <li>
+                                <a class="aUl">первое слагаемое</a>
+                            </li>
+                            <li>
+                                <a class="aUl">разность</a>
+                            </li>
+                            <li>
+                                <a class="aUl">сумма</a>
+                            </li>
+                            <li>
+                                <a class="aUl">уменьшаемое</a>
+                            </li>
+                        </ul>
+                    </div> + 15
+                    <div style="display:inline-block; position: relative;">
+                        <button class="buttonUl"></button>
+                    </div> = 100
+                    <div style="display:inline-block; position: relative;">
+                        <button class="buttonUl"></button>
+                    </div>
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    30
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> + 40
+                    <div style="display:inline-block; position: relative;">
+                        <button class="buttonUl"></button>
+                    </div> = 70
+                    <div style="display:inline-block; position: relative;">
+                        <button class="buttonUl"></button>
+                    </div>
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    120
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> - 60
+                    <div style="display:inline-block; position: relative;">
+                        <button class="buttonUl"></button>
+                    </div> = 60
+                    <div style="display:inline-block; position: relative;">
+                        <button class="buttonUl"></button>
+                    </div>
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    110
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> - 20
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> = 90
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div>
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    250
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> + 100
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> = 350
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div>
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    710
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> - 110
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> = 600
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div>
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    135
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> + 15
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> = 150
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div>
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    100
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> - 70
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> = 30
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div>
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    550
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> - 250
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> = 300
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div>
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    13
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> + 17
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> = 30
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div>
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    60
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> - 30
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> = 30
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div>
+                </span>
+            </div>
+            <div style="line-height: 0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display: flex; align-items: center;">
+                    20
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> + 20
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> = 40
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div>
+                </span>
+            </div>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="check2()">Жми!</a>
+        </div>
+    </div>
+</div>

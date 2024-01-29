@@ -1,0 +1,369 @@
+<div class="total">
+    <app-gif></app-gif>
+    <div id="div1">
+        <div>
+            <p class="title1">Страна Математика</p>
+        </div>
+
+        <div class="travel">
+            <p class="title2">Путешествие</p>
+            <img class="number1" src="../../../assets/img/1.gif" alt="1">
+            <img class="number1" src="../../../assets/img/7.gif" alt="7">
+        </div>
+
+        <div class="text">
+            <p>Любое путешествие начинается с подготовки.</p>
+            <p>В стране Математика очень важно быстро считать.</p>
+            <p>Внимание!</p>
+            <p>Начинаем!</p>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv2(); addEvent1();">Вперед!</a>
+        </div>
+    </div>
+
+    <div id="div2">
+        <p>Подбери примеры к соответствующим ответам.</p>
+
+        <div style="display:flex; flex-direction:row; margin-bottom:0; justify-content:center;">
+            <span class="buttGrey">14</span>
+            <span class="buttGrey">18</span>
+            <span class="buttGrey">20</span>
+            <span class="buttGrey">30</span>
+        </div>
+        
+        <div class="frameGrey" style="height:570px; width:1204px;">
+            <img src="../../../assets/img/PuzzleCartoon.jpg" alt="Мультики" style="height:570px; width:1204px;">
+
+            <table style="border:none; height:570px; width:1204px; position:absolute; top:0; left:0; border-spacing:0;" id="tableMos">
+                <tr>
+                    <td>1 x 18</td>
+                    <td>10 + 10</td>
+                    <td>6 x 3</td>
+                    <td>3 x 6</td>
+                    <td>14 + 0</td>
+                    <td>2 x 7</td>
+                    <td>20 - 6</td>
+                    <td>7 + 7</td>
+                </tr>
+                <tr>
+                    <td>0 + 14</td>
+                    <td>2 x 9</td>
+                    <td>2 x 15</td>
+                    <td>20 - 2</td>
+                    <td>6 x 5</td>
+                    <td>10 x 2</td>
+                    <td>30 x 1</td>
+                    <td>18 x 1</td>
+                </tr>
+                <tr>
+                    <td>10 x 3</td>
+                    <td>15 + 15</td>
+                    <td>20 x 1</td>
+                    <td>3 x 10</td>
+                    <td>1 x 14</td>
+                    <td>1 x 30</td>
+                    <td>4 x 5</td>
+                    <td>9 x 2</td>
+                </tr>
+                <tr>
+                    <td>5 x 6</td>
+                    <td>1 x 20</td>
+                    <td>15 x 2</td>
+                    <td>18 + 0</td>
+                    <td>2 x 10</td>
+                    <td>7 x 2</td>
+                    <td>14 x 1</td>
+                    <td>0 + 18</td>
+                </tr>
+                <tr>
+                    <td>9 + 9</td>
+                    <td>20 - 0</td>
+                    <td>5 x 4</td>
+                    <td>7 + 7</td>
+                    <td>0 + 14</td>
+                    <td>14 + 0</td>
+                    <td>2 x 7</td>
+                    <td>10 x 2</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv3(); addEvent2();">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div3">
+        <div>
+            <p style="color:red;">Запомни!</p>
+            <p style="margin-bottom:0;">Чтобы быстро считать,</p>
+            <p style="margin-top:0;">нужно быстро находить разность.</p>
+        </div>
+
+        <div style="margin-bottom:20px; display:flex; flex-direction:row; justify-content:center;" id="number">
+            <button class="blue noselect">10</button>
+            <button class="blue noselect">9</button>
+            <button class="blue noselect">8</button>
+            <button class="blue noselect">7</button>
+            <button class="blue noselect">6</button>
+            <button class="blue noselect">5</button>
+            <button class="blue noselect">4</button>
+            <button class="blue noselect">3</button>
+        </div>
+
+        <div style="display:flex; flex-direction:column;" id="structure">
+            <div style="display:flex; flex-direction:row; margin-bottom:20px;">
+                <div class="inDivCons">12 - 3</div>
+                <div class="inDivCons">10 - 4</div>
+                <div class="inDivCons">11 - 8</div>
+                <div class="inDivCons">12 - 8</div>
+                <div class="inDivCons">10 - 3</div>
+                <div class="inDivCons">10 - 1</div>
+                <div class="inDivCons">12 - 4</div>
+                <div class="inDivCons">11 - 5</div>
+                <div class="inDivCons">10 - 6</div>
+                <div class="inDivCons">12 - 7</div>
+                <div class="inDivCons">11 - 4</div>
+                <div class="inDivCons">13 - 3</div>
+            </div>
+    
+            <div style="display:flex; flex-direction:row; margin-bottom:20px;">
+                <div class="inDivCons">12 - 6</div>
+                <div class="inDivCons">11 - 2</div>
+                <div class="inDivCons">12 - 2</div>
+                <div class="inDivCons">10 - 7</div>
+                <div class="inDivCons">11 - 6</div>
+                <div class="inDivCons">12 - 9</div>
+                <div class="inDivCons">11 - 3</div>
+                <div class="inDivCons">12 - 5</div>
+                <div class="inDivCons">10 - 5</div>
+                <div class="inDivCons">10 - 2</div>
+                <div class="inDivCons">11 - 7</div>
+                <div class="inDivCons">30 - 20</div>
+            </div>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv4()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div4">
+        <div style="position:relative; width:1000px;">
+            <p style="color:red; margin:0;">Вспомни!</p>
+            <p>Название компонентов деления:</p>
+            <p style="font-size:4em; margin:0;">6 : 2</p>
+            <div style="display:flex; flex-direction:row; margin:0; justify-content:center;">
+                <p style="color:red; margin:0; margin-right:80px;">ДЕЛИМОЕ</p>
+                <p style="color:red; margin:0;">ДЕЛИТЕЛЬ</p>
+            </div>
+            <p>Название результата деления:</p>
+            <p style="font-size:4em; margin:0;">6 : 2 = 3</p>
+            <p style="color:red; margin:0; margin-left:40%;">ЧАСТНОЕ</p>
+            <img src="../../../assets/img/rabbit.png" style="position:absolute; bottom:0; left:0; height:336px;" alt="кролик">
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv5()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div5">
+        <div style="position:relative; width:1400px;">
+            <p style="color:red; margin:0;">Запомни!</p>
+            <p style="margin:0;">Чтобы найти делитель,</p>
+            <p style="font-size:3em; margin:0;">6 : Z = 3</p>
+            <div style="display:flex; flex-direction:row; margin:0; justify-content:center; align-items:center;">
+                <p style="color:red; margin:0; margin-right:80px;">ДЕЛИМОЕ</p>
+                <p style="color:red; margin:0; margin-right:80px;">ДЕЛИТЕЛЬ</p>
+                <p style="color:red; margin:0;">ЧАСТНОЕ</p>
+            </div>
+            <p style="margin:0;">нужно делимое разделить на частное.</p>
+            <p style="font-size:3em; margin:0;">Z = 6 : 3</p>
+            <div style="display:flex; flex-direction:row; margin:0; justify-content:center; align-items:center;">
+                <p style="color:red; margin:0; margin-right:80px;">ДЕЛИТЕЛЬ</p>
+                <p style="color:red; margin:0; margin-right:80px;">ДЕЛИМОЕ</p>
+                <p style="color:red; margin:0;">ЧАСТНОЕ</p>
+            </div>
+            <p style="font-size:3em; margin:0;">Z = 2</p>
+            <p style="color:red; margin:0;">ДЕЛИТЕЛЬ</p>
+            <img src="../../../assets/img/DonaldDuck.gif" style="position:absolute; bottom:0; left:0; height:276px;" alt="УТКА">
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv6()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div6">
+        <div>
+            <p>Посчитай, чему равен неизвестный делимое, и впиши ответ.</p>
+        </div>
+
+        <div style="display: flex; flex-direction:row; margin-bottom:20px;">
+            <div class="spanAndInput">
+                <span class="spanInDiv">8 : Z = 4</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">14 : Z = 2</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">15 : Z = 5</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">10 : Z = 2</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">6 : Z = 3</span>
+                <input type="text" class="inputInDiv">
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction: row; margin-bottom: 20px;">
+            <div class="spanAndInput">
+                <span class="spanInDiv">9 : Z = 3</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">12 : Z = 4</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">18 : Z = 6</span>
+                <input type="text" class="inputInDiv">
+            </div>
+        </div>
+
+        <div>
+            <a class="stitched" (click)="checkInput1()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div7">
+        <div>
+            <p style="color:green;">1 задача</p>
+            <p style="margin-top:0;">Найди закономерность и найди ещё 2 числа.</p>
+        </div>
+
+        <div style="display:flex; flex-direction:row; margin-bottom:50px;">
+            <button class="green noselect">5</button>
+            <button class="green noselect">10</button>
+            <button class="green noselect">13</button>
+            <button class="green noselect">18</button>
+            <button class="green noselect">21</button>
+            <button class="green noselect">26</button>
+            <button class="green noselect">?</button>
+            <button class="green noselect">?</button>
+        </div>
+
+        <div style="display:flex; flex-direction:row;">
+            <button style="width:200px; height:72px;" class="blue noselect">31, 36</button>
+            <button style="width:200px; height:72px;" class="blue noselect">31, 33</button>
+            <button style="width:200px; height:72px;" class="blue noselect" (click)="viewDiv8()">29, 34</button>
+            <button style="width:200px; height:72px;" class="blue noselect">29, 32</button>
+        </div>
+    </div>
+
+    <div id="div8">
+        <div>
+            <p style="margin:0;">Замечательно!</p>
+            <p style="color:green;">2 задача</p>
+            <p style="margin-top:0;">Сколько всего треугольников?</p>
+        </div>
+
+        <div style="position:relative; width:900px;">
+            <img src="../../../assets/img/triangles4.png" style="height:400px;" alt="треугольники">
+            <img src="../../../assets/img/Guffi.gif" style="height:224px; position:absolute; top:30%; right:0;" alt="собака">
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content: center;">
+            <button class="blue noselect">4</button>
+            <button class="blue noselect">5</button>
+            <button class="blue noselect">6</button>
+            <button class="blue noselect">7</button>
+            <button class="blue noselect" (click)="viewDiv9()">8</button>
+            <button class="blue noselect">9</button>
+            <button class="blue noselect">10</button>
+        </div>
+    </div>
+
+    <div id="div9">
+        <div>
+            <p style="margin:0;">Замечательно!</p>
+            <p style="color:green;">3 задача</p>
+            <p>У отца было 7 сыновей.</p>
+            <p>У каждого из них было по одной сестре.</p>
+            <p>Сколько детей было в семье?</p>
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content:center; align-items:center;">
+            <button class="blue noselect">14</button>
+            <button class="blue noselect">7</button>
+            <button class="blue noselect" (click)="viewDiv10()">8</button>
+            <button class="blue noselect">9</button>
+            <button class="blue noselect">10</button>
+        </div>
+    </div>
+
+    <div id="div10">
+        <p style="margin:0;">Молодец!</p>
+        <p style="margin:0; color:red;">Наше путешествие прошло успешно!</p>
+        <button style="width:370px; font-size:1em; margin-bottom:20px;" class="blue noselect" (click)="viewDiv11(); addEvent3();">Домашнее задание</button>
+
+        <div>
+            <img src="../../../assets/img/Guffi.gif" style="height:159px;" alt="собака">
+            <img src="../../../assets/img/vinni.gif" style="height:152px;" alt="медведь">
+            <img src="../../../assets/img/BaniRabit.gif" style="height:178px;" alt="кролик">
+        </div>
+
+        <div style="margin-bottom: 100px;">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+        </div>
+    </div>
+
+    <div id="div11">
+        <div>
+            <p>Посчитай и соедини с ответом.</p>
+        </div>
+
+        <div style="margin-bottom:20px; display:flex; flex-direction:row;" id="sum">
+            <div class="inDivCons">100</div>
+            <div class="inDivCons">13</div>
+            <div class="inDivCons">31</div>
+            <div class="inDivCons">7</div>
+            <div class="inDivCons">80</div>
+            <div class="inDivCons">10</div>
+            <div class="inDivCons">5</div>
+            <div class="inDivCons">40</div>
+            <div class="inDivCons">49</div>
+            <div class="inDivCons">60</div>
+        </div>
+
+        <div style="display:flex; flex-direction:row;" id="example">
+            <div class="inDivCons">40 : 8</div>
+            <div class="inDivCons">30 x 2</div>
+            <div class="inDivCons">15 - 5</div>
+            <div class="inDivCons">6 + 7</div>
+            <div class="inDivCons">26 + 5</div>
+            <div class="inDivCons">20 + 20</div>
+            <div class="inDivCons">14 : 2</div>
+            <div class="inDivCons">55 + 45</div>
+            <div class="inDivCons">7 x 7</div>
+            <div class="inDivCons">100 - 20</div>
+        </div>
+    </div>
+</div>

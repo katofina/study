@@ -1,0 +1,46 @@
+<div class="background">
+    <div class="upperline">
+        <div>
+            <p class="p-children-study">ChildrenStudy</p>
+        </div>
+        <div class="divMenu">
+            <button class="menuButton" (click)="clickButton()">Меню</button>
+            <div id="drop" class="drop">
+                <a href="/russian1">Русский 1</a>
+                <a href="/russian2">Русский 2</a>
+                <a href="/russian3">Русский 3</a>
+                <a href="/math1">Математика 1</a>
+                <a href="/math2">Математика 2</a>
+                <a href="/math3">Математика 3</a>
+                <a href="/math1-1">Математика1 1</a>
+                <a href="/math1-2">Математика1 2</a>
+                <a href="/math1-3">Математика1 3</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="roulet">
+        <router-outlet></router-outlet>
+    </div>
+
+    <div class="footer">
+        <p class="footer">&copy; ChildrenStudy</p>
+
+        <div class="contact">
+            <p class="contact">Наши контакты:</p>
+            <div class="contact-ico">
+                <div class="contact-phone">
+                    <img class="contact-phone" src="../../assets/img/ico-phone.png" alt>
+                    <p class="contact-phone">+375-44-519-49-46</p>
+                </div>
+
+                <a href="https://instagram.com/guscharina?utm_medium=copy_link" rel="nofollow" target="_blank">
+                    <picture>
+                        <source type="image/webp" srcset="../../assets/img/ico-inst.png">
+                        <img class="contact" src="../../assets/img/ico-inst.png" alt>
+                    </picture>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

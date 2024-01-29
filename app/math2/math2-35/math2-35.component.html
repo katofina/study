@@ -1,0 +1,571 @@
+<div class="total">
+    <app-gif></app-gif>
+    <div style="display:none;" id="div1">
+        <div>
+            <p class="title1">Страна Математика</p>
+        </div>
+
+        <div class="travel">
+            <p class="title2">Путешествие</p>
+            <img class="number1" src="../../../assets/img/3.gif" alt="3">
+            <img class="number1" src="../../../assets/img/5.gif" alt="5">
+        </div>
+
+        <div class="text">
+            <p>Внимание!</p>
+            <p>Урок надо успеть пройти за 20 минут.</p>
+        </div>
+
+        <div class="button">
+            <a class="stitched" style="width:700px;" (click)="viewDiv2()">Проверочная работа</a>
+        </div>
+    </div>
+
+    <div style="display:block;" id="div2">
+        <div>
+            <p>Определи разряды чисел: сотни, десятки, единицы.</p>
+        </div>
+        
+        <div style="display:flex; flex-direction:row;">
+            <div>
+                <div style="color:black; margin-bottom:20px;">
+                    <span style="margin-right:10px; display:flex; align-items:center;">В числе 208:&#160;
+                        <input type="text" class="inputInDiv2">&#160;сотни,&#160;
+                        <input type="text" class="inputInDiv2">&#160;десятков,&#160;
+                        <input type="text" class="inputInDiv2">&#160;единиц.
+                    </span>
+                </div>
+        
+                <div style="color:black; margin-bottom:20px;">
+                    <span style="margin-right:10px; display:flex; align-items:center;">В числе 365:&#160;
+                        <input type="text" class="inputInDiv2">&#160;сотни,&#160;
+                        <input type="text" class="inputInDiv2">&#160;десятков,&#160;
+                        <input type="text" class="inputInDiv2">&#160;единиц.
+                    </span>
+                </div>
+        
+                <div style="color:black;">
+                    <span style="margin-right:10px; display:flex; align-items:center;">В числе 20:&#160;
+                        <input type="text" class="inputInDiv2">&#160;десятка,&#160;
+                        <input type="text" class="inputInDiv2">&#160;единиц.
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="checkInput1(); addEvent1();">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div3">
+        <div>
+            <p style="margin-top:0;">Определи разряды чисел: сотни, десятки и единицы.</p>
+        </div>
+        
+        <div id="head">
+            <div style="line-height: 0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display: flex; align-items: center;">
+                    В числе 103 1
+                    <div style="display: inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                        <ul id="ul1" class="ulClass" style="display:none; height:270px;">
+                            <li>
+                                <a class="aUl">единица</a>
+                            </li>
+                            <li>
+                                <a class="aUl">сотня</a>
+                            </li>
+                            <li>
+                                <a class="aUl">десяток</a>
+                            </li>
+                            <li>
+                                <a class="aUl">десятков</a>
+                            </li>
+                            <li>
+                                <a class="aUl">единиц</a>
+                            </li>
+                            <li>
+                                <a class="aUl">сотен</a>
+                            </li>
+                            <li>
+                                <a class="aUl">единицы</a>
+                            </li>
+                            <li>
+                                <a class="aUl">сотни</a>
+                            </li>
+                            <li>
+                                <a class="aUl">десятка</a>
+                            </li>
+                        </ul>
+                    </div>, 0
+                    <div style="display: inline-block; position: relative;">
+                        <button class="buttonUl"></button>
+                    </div>, 3
+                    <div style="display: inline-block; position: relative;">
+                        <button class="buttonUl"></button>
+                    </div>.
+                </span>
+            </div>
+            <div style="line-height: 0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display: flex; align-items: center;">
+                    В числе 96 9
+                    <div style="display: inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div>, 6
+                    <div style="display: inline-block; position: relative;">
+                        <button class="buttonUl"></button>
+                    </div>.
+                </span>
+            </div>
+            <div style="line-height: 0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display: flex; align-items: center;">
+                    В числе 590 5
+                    <div style="display: inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div>, 9
+                    <div style="display: inline-block; position: relative;">
+                        <button class="buttonUl"></button>
+                    </div>, 0
+                    <div style="display: inline-block; position: relative;">
+                        <button class="buttonUl"></button>
+                    </div>.
+                </span>
+            </div>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="check1()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div4">
+        <div>
+            <p style="margin-top:0;">Сравни неравенства. Вставь знаки >, <, =.</p>
+        </div>
+        
+        <div id="head2" style="display:flex; align-items:center; flex-direction:column;">
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    9 + 5
+                    <div style="display: inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                        <ul id="ul2" class="ulClass" style="display:none; height:100px;">
+                            <li>
+                                <a class="aUl">&#62;</a>
+                            </li>
+                            <li>
+                                <a class="aUl">=</a>
+                            </li>
+                            <li>
+                                <a class="aUl">&#60;</a>
+                            </li>
+                        </ul>
+                    </div> 10 + 5
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    15 + 5
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> 17 + 2
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    26 + 11
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> 30 + 6
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    16 - 8
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> 4 + 4
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    30 + 20
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> 25 + 25
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    100 - 35
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                    </div> 100 - 30
+                </span>
+            </div>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="check2()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div5">
+        <div>
+            <p>Определи закономерность и впиши недостающие числа.</p>
+        </div>
+        
+        <div style="display: flex; flex-direction:row;">
+            <span style="margin-right: 10px; display: flex; align-items:center;">
+                10, 13, 15, 20, 23, 25, 30, 
+                <input type="text" class="inputInDiv2">, 
+                <input type="text" class="inputInDiv2">, 
+                <input type="text" class="inputInDiv2">.
+            </span>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="checkInput2()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div6">
+        <div>
+            <p>Реши примеры.</p>
+        </div>
+        
+        <div style="display: flex; flex-direction:row;">
+            <div>
+                <div style="color:black;">
+                    <span style="margin-right: 10px; display: flex; align-items: center;">
+                        (20 + 11) - 7 =
+                        <input type="text" class="inputInDiv2">
+                    </span>
+                </div>
+        
+                <div style="color:black;">
+                    <span style="margin-right: 10px; display: flex; align-items: center;">
+                        (100 - 20) : 2 =
+                        <input type="text" class="inputInDiv2">
+                    </span>
+                </div>
+        
+                <div style="color:black;">
+                    <span style="margin-right: 10px; display: flex; align-items: center;">
+                        2 x 4 + 12 =
+                        <input type="text" class="inputInDiv2">
+                    </span>
+                </div>
+
+                <div style="color:black;">
+                    <span style="margin-right: 10px; display: flex; align-items: center;">
+                        36 : 6 + 4 =
+                        <input type="text" class="inputInDiv2">
+                    </span>
+                </div>
+
+                <div style="color:black;">
+                    <span style="margin-right: 10px; display: flex; align-items: center;">
+                        20 - 4 : 1 =
+                        <input type="text" class="inputInDiv2">
+                    </span>
+                </div>
+
+                <div style="color:black;">
+                    <span style="margin-right: 10px; display: flex; align-items: center;">
+                        13 + 7 x 1 =
+                        <input type="text" class="inputInDiv2">
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="checkInput3()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div7">
+        <div>
+            <p style="color: black;">Посчитай количество четырёхугольников.</p>
+        </div>
+
+        <div style="position:relative; width:900px;">
+            <img src="../../../assets/img/quadrilateral3.png" style="height:400px;" alt="четырёхугольник">
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">
+                Впиши количество четырёхугольников: 
+                <input id="inputR" type="text" class="inputInDiv2">
+            </span>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="checkInput4()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div8">
+        <div>
+            <p>Реши задачу.</p>
+            <p>В зоопарке 7 лисиц и 3 льва, а обезьян столько, сколько лисиц и львов вместе.</p>
+            <p>Сколько обезьян в зоопарке?</p>
+        </div>
+        
+        <div id="head3">
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                        <ul class="ulClass" style="display:none; height:150px;">
+                            <li>
+                                <a class="aUl">8</a>
+                            </li>
+                            <li>
+                                <a class="aUl">13</a>
+                            </li>
+                            <li>
+                                <a class="aUl">7</a>
+                            </li>
+                            <li>
+                                <a class="aUl">9</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                        <ul class="ulClass" style="display:none; height:270px;">
+                            <li>
+                                <a class="aUl">-</a>
+                            </li>
+                            <li>
+                                <a class="aUl">+</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                        <ul class="ulClass" style="display:none; height:270px;">
+                            <li>
+                                <a class="aUl">6</a>
+                            </li>
+                            <li>
+                                <a class="aUl">13</a>
+                            </li>
+                            <li>
+                                <a class="aUl">3</a>
+                            </li>
+                            <li>
+                                <a class="aUl">8</a>
+                            </li>
+                        </ul>
+                    </div> = 
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                        <ul class="ulClass" style="display:none; height:270px;">
+                            <li>
+                                <a class="aUl">17</a>
+                            </li>
+                            <li>
+                                <a class="aUl">15</a>
+                            </li>
+                            <li>
+                                <a class="aUl">10</a>
+                            </li>
+                            <li>
+                                <a class="aUl">13</a>
+                            </li>
+                        </ul>
+                    </div>(
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                        <ul class="ulClass" style="display:none; height:270px;">
+                            <li>
+                                <a class="aUl">лис.</a>
+                            </li>
+                            <li>
+                                <a class="aUl">об.</a>
+                            </li>
+                            <li>
+                                <a class="aUl">львов</a>
+                            </li>
+                        </ul>
+                    </div>)
+                </span>
+            </div>
+            <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+                <span style="display:flex; align-items:center;">
+                    Ответ: в зоопарке
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                        <ul class="ulClass" style="display:none; height:270px;">
+                            <li>
+                                <a class="aUl">10</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="display:inline-block; position:relative;">
+                        <button class="buttonUl"></button>
+                        <ul class="ulClass" style="display:none; height:270px;">
+                            <li>
+                                <a class="aUl">обезьян</a>
+                            </li>
+                            <li>
+                                <a class="aUl">львов</a>
+                            </li>
+                            <li>
+                                <a class="aUl">лисиц</a>
+                            </li>
+                        </ul>
+                    </div>.
+                </span>
+            </div>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="check3()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div9">
+        <div>
+            <p style="margin-top:0;">Определи время на часах, если сейчас вечер:</p>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">
+                <input type="text" class="inputInDiv2">ч. 
+                <input type="text" class="inputInDiv2">мин.
+            </span>
+        </div>
+
+        <img style="height:307px;" src="../../../assets/img/watch515.png" alt="часы">
+
+        <div class="button">
+            <a class="stitched" (click)="checkInput5()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div10">
+        <div>
+            <p style="margin-top:0;">Определи время на часах, если сейчас полдень:</p>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">
+                <input type="text" class="inputInDiv2">ч. 
+                <input type="text" class="inputInDiv2">мин.
+            </span>
+        </div>
+
+        <img style="height:307px;" src="../../../assets/img/watch12.png" alt="часы">
+
+        <div class="button">
+            <a class="stitched" (click)="checkInput6()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div11">
+        <div>
+            <p>Сделай равенства верными.</p>
+        </div>
+        
+        <div style="display: flex; flex-direction:row;">
+            <div>
+                <div style="color:black;">
+                    <span style="margin-right: 10px; display: flex; align-items: center;">1 м = 
+                        <input type="text" class="inputInDiv2"> дм
+                    </span>
+                </div>
+        
+                <div style="color:black;">
+                    <span style="margin-right: 10px; display: flex; align-items: center;">2 км = 
+                        <input type="text" class="inputInDiv2"> м
+                    </span>
+                </div>
+        
+                <div style="color:black;">
+                    <span style="margin-right: 10px; display: flex; align-items: center;">3 дм = 
+                        <input type="text" class="inputInDiv2"> см
+                    </span>
+                </div>
+
+                <div style="color:black;">
+                    <span style="margin-right: 10px; display: flex; align-items: center;">10 мм = 
+                        <input type="text" class="inputInDiv2"> см
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="checkInput7();">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div12">
+        <div>
+            <img src="../../../assets/img/resault.png" style="height:200px;">
+
+            <p style="font-size:100px; color:black;">Твой результат: {{checking}} / 10.</p>
+        </div>
+
+        <button style="width:370px; font-size:1em; margin-bottom:20px;" class="blue noselect" (click)="viewDiv13(); addEvent2();">Домашнее задание</button>
+
+        <div>
+            <img src="../../../assets/img/MikkiHands.gif" style="height:195px;" alt="мышь">
+            <img src="../../../assets/img/DonaldRest.gif" style="height:223px;" alt="утка">
+            <img src="../../../assets/img/MashaDance.gif" style="height:189px;" alt="маша">
+        </div>
+
+        <div style="margin-bottom: 100px;">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+        </div>
+    </div>
+
+    <div id="div13">
+        <div>
+            <p>Посчитай и соедини с ответом.</p>
+        </div>
+
+        <div style="margin-bottom:100px; display:flex; flex-direction:row;" id="sum">
+            <div class="inDivCons">80</div>
+            <div class="inDivCons">10</div>
+            <div class="inDivCons">40</div>
+            <div class="inDivCons">15</div>
+            <div class="inDivCons">100</div>
+            <div class="inDivCons">25</div>
+            <div class="inDivCons">60</div>
+            <div class="inDivCons">30</div>
+            <div class="inDivCons">40</div>
+            <div class="inDivCons">42</div>
+            <div class="inDivCons">50</div>
+            <div class="inDivCons">130</div>
+        </div>
+
+        <div id="example">
+            <div style="display:flex; flex-direction:row; margin-bottom:20px;">
+                <div class="inDivCons">2 + 8</div>
+                <div class="inDivCons">170 - 40</div>
+                <div class="inDivCons">5 x 5</div>
+                <div class="inDivCons">85 + 15</div>
+                <div class="inDivCons">35 - 20</div>
+                <div class="inDivCons">3 + 27</div>
+                <div class="inDivCons">100 - 20</div>
+                <div class="inDivCons">17 + 23</div>
+            </div>
+    
+            <div style="display:flex; flex-direction:row;">
+                <div class="inDivCons">5 x 8</div>
+                <div class="inDivCons">6 x 7</div>
+                <div class="inDivCons">25 + 25</div>
+                <div class="inDivCons">36 + 24</div>
+            </div>
+        </div>
+    </div>
+</div>

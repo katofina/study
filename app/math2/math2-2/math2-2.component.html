@@ -1,0 +1,337 @@
+<div class="total">
+    <app-gif></app-gif>
+    <div id="div1">
+        <div>
+            <p class="title1">Страна Математика</p>
+        </div>
+
+        <div class="travel">
+            <p class="title2">Путешествие</p>
+            <img class="number1" src="../../../assets/img/2.gif" alt="2">
+        </div>
+
+        <div class="text">
+            <p>Любое путешествие начинается с подготовки.</p>
+            <p>В стране Математика очень важно быстро считать.</p>
+            <p>Внимание!</p>
+            <p>Начинаем!</p>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv2()">Вперед!</a>
+        </div>
+    </div>
+
+    <div id="div2">
+        <div>
+            <p>Составь равенства.</p>
+        </div>
+
+        <div style="display: flex; flex-direction: row; margin-bottom: 20px;">
+            <div class="inDivConsVow" id="divSum10" (click)="clickDivSum10()">2+2+2+2+2</div>
+            <div class="inDivConsVow" id="divSum20" (click)="clickDivSum20()">5+5+5+5</div>
+            <div class="inDivConsVow" id="divSum20d" (click)="clickDivSum20d()">10 + 10</div>
+            <div class="inDivConsVow" id="divSum11" (click)="clickDivSum11()">6 + 5</div>
+            <div class="inDivConsVow" id="divSum16" (click)="clickDivSum16()">8 + 8</div>
+            <div class="inDivConsVow" id="divSum9" (click)="clickDivSum9()">4 + 5</div>
+            <div class="inDivConsVow" id="divSum27" (click)="clickDivSum27()">20 + 7</div>
+            <div class="inDivConsVow" id="divSum21" (click)="clickDivSum21()">7+7+7</div>
+        </div>
+
+        <div style="display: flex; flex-direction: row;">
+            <div class="inDivConsVow" id="divSum40" (click)="clickDivSum40()">40 - 0</div>
+            <div class="inDivConsVow" id="divSum9d" (click)="clickDivSum9d()">20 - 11</div>
+            <div class="inDivConsVow" id="divSum10d" (click)="clickDivSum10d()">5 + 5</div>
+            <div class="inDivConsVow" id="divSum21d" (click)="clickDivSum21d()">21 + 0</div>
+            <div class="inDivConsVow" id="divSum40d" (click)="clickDivSum40d()">20 + 20</div>
+            <div class="inDivConsVow" id="divSum11d" (click)="clickDivSum11d()">20 - 9</div>
+            <div class="inDivConsVow" id="divSum27d" (click)="clickDivSum27d()">30 - 3</div>
+            <div class="inDivConsVow" id="divSum16d" (click)="clickDivSum16d()">4+4+4+4</div>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv3()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div3">
+        <div>
+            <p>А теперь повторяем таблицу умножения на 4.</p>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">4 x 1 =
+                <input type="text" class="inputInDiv2" id="input1">
+            </span>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">4 x 2 =
+                <input type="text" class="inputInDiv2" id="input2">
+            </span>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">4 x 3 =
+                <input type="text" class="inputInDiv2" id="input3">
+            </span>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">4 x 4 =
+                <input type="text" class="inputInDiv2" id="input4">
+            </span>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">4 x 5 =
+                <input type="text" class="inputInDiv2" id="input5">
+            </span>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">4 x 6 =
+                <input type="text" class="inputInDiv2" id="input6">
+            </span>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">4 x 7 =
+                <input type="text" class="inputInDiv2" id="input7">
+            </span>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">4 x 8 =
+                <input type="text" class="inputInDiv2" id="input8">
+            </span>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">4 x 9 =
+                <input type="text" class="inputInDiv2" id="input9">
+            </span>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">4 x 10 =
+                <input type="text" class="inputInDiv2" id="input10">
+            </span>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="checkInput1()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div4">
+        <p style="margin: 0;">Замечательно!</p>
+        <p style="margin: 0;">А теперь попробуй пересечь долину трёх задач.</p>
+        <p style="color:green; margin: 0;">1 задача</p>
+        <p style="margin: 0;">В вазе было несколько роз.</p>
+        <img style="height:393px; float:left;" src="../../../assets/img/schemaRoseVase.png" alt="Розы в вазе схема">
+        <p style="margin: 0;">Мама поставила в вазу ещё 4 розы.</p>
+        <p style="margin:0;">Всего стало 11 роз.</p>
+        <p style="margin-top:0;">Сколько роз было в вазе сначала?</p>
+
+        <div style="display:flex; flex-direction: row;">
+            <p style="color:green; text-decoration:underline;" (click)="showDecision()">Решение</p>
+            <div style="visibility:hidden;" class="forDecision" id="decision1">11 - 4 = 7 (роз)</div>
+        </div>
+
+        <div style="display: flex; flex-direction: row;">
+            <button class="blue noselect">15</button>
+            <button class="blue noselect" (click)="viewDiv5()">7</button>
+            <button class="blue noselect">8</button>
+        </div>
+    </div>
+
+    <div id="div5">
+        <div>
+            <p style="margin: 0;">Замечательно!</p>
+            <p style="color:green; margin: 0;">2 задача</p>
+            <p style="margin: 0;">У Лёши было 13 машинок.</p>
+            <p style="margin: 0;">Мама купила ему ещё 2 машинки.</p>
+            <p style="margin: 0;">7 машинок Лёша дал поиграть другу Максиму.</p>
+            <p style="margin-top: 0;">Сколько машинок осталось у Лёши?</p>
+        </div>
+
+        <div style="position:relative; height:380px; width:800px;">
+            <img style="height:93px; position: absolute; left:0%; top:20%; z-index:1;" src="../../../assets/img/car1.png" alt="машинка">
+            <img style="height:93px; position: absolute; left:45%; top:20%; z-index:1;" src="../../../assets/img/car2.png" alt="машинка">
+            <img style="height:93px; position: absolute; left:70%; top:20%; z-index:1;" src="../../../assets/img/car1.png" alt="машинка">
+            <img style="height:93px; position: absolute; left:0%; top:40%; z-index:1;" src="../../../assets/img/car3.png" alt="машинка">
+            <img style="height:93px; position: absolute; left:45%; top:40%; z-index:1;" src="../../../assets/img/car4.png" alt="машинка">
+            <img style="height:93px; position: absolute; left:0%; top:60%; z-index:1;" src="../../../assets/img/car5.png" alt="машинка">
+            <img style="height:93px; position: absolute; left:45%; top:60%; z-index:1;" src="../../../assets/img/car2.png" alt="машинка">
+            <img style="height:379px; position: absolute; left:20%; top:0%;" src="../../../assets/img/schemaCars.png" alt="схема задачи">
+            <button style="position:absolute; right:10%; top:45%;" class="blue noselect">15</button>
+            <button style="position:absolute; right:20%; top:60%;" class="blue noselect" (click)="viewDiv6()">8</button>
+            <button style="position:absolute; right:10%; top:80%;" class="blue noselect">6</button>
+        </div>
+
+        <div style="display:flex; flex-direction: row;">
+            <p style="color:green; text-decoration:underline;" (click)="showDecision2()">Решение</p>
+            <div style="visibility:hidden;" class="forDecision" id="decision2">
+                <p style="margin:0;">1)13+2=15(маш.)</p>
+                <p style="margin:0;">2)15-7=8(маш.)</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="div6">
+        <div>
+            <p style="margin: 0;">Замечательно!</p>
+            <p style="color:green; margin: 0;">3 задача</p>
+            <p style="margin: 0;">По небу летели 4 стаи птиц.</p>
+            <p style="margin: 0;">В каждой стаи по 8 птиц.</p>
+            <p style="margin: 0;">6 птиц решили дальше не лететь.</p>
+            <p style="margin-top: 0;">Сколько всего птицп полетело дальше?</p>
+        </div>
+
+        <div style="position:relative; height:460px; width:1140px;">
+            <img style="height:317px; position: absolute; left:0%; bottom:0%;" src="../../../assets/img/meadow3.png" alt="луг">
+            <img style="height:85px; position: absolute; left:0%; top:20%;" src="../../../assets/img/birds.png" alt="птицы">
+            <img style="height:85px; position: absolute; left:25%; top:10%;" src="../../../assets/img/birds.png" alt="птицы">
+            <img style="height:85px; position: absolute; left:50%; top:0%;" src="../../../assets/img/birds.png" alt="птицы">
+            <img style="height:85px; position: absolute; left:75%; top:0%;" src="../../../assets/img/birds.png" alt="птицы">
+            <img style="height:97px; position: absolute; bottom:0%; right:40%;" src="../../../assets/img/swan.png" alt="лебедь">
+            <img style="height:97px; position: absolute; bottom:20%; right:55%;" src="../../../assets/img/swan.png" alt="лебедь">
+            <img style="height:97px; position: absolute; bottom:30%; right:48%;" src="../../../assets/img/swan.png" alt="лебедь">
+            <img style="height:97px; position: absolute; bottom:20%; right:40%;" src="../../../assets/img/swan.png" alt="лебедь">
+            <img style="height:97px; position: absolute; bottom:10%; right:30%;" src="../../../assets/img/swan.png" alt="лебедь">
+            <img style="height:97px; position: absolute; bottom:0%; right:20%;" src="../../../assets/img/swan.png" alt="лебедь">
+            <button style="position:absolute; left:40%; top:20%;" class="blue noselect">32</button>
+            <button style="position:absolute; left:50%; top:25%;" class="blue noselect" (click)="viewDiv7()">26</button>
+            <button style="position:absolute; left:60%; top:20%;" class="blue noselect">12</button>
+        </div>
+    </div>
+
+    <div id="div7">
+        <div>
+            <p style="margin:0;">Молодец!</p>
+            <p style="margin:0; color:red;">ВНИМАНИЕ</p>
+            <p style="margin-top:0;">Сегодня изучаем таблицу умножения на 5.</p>
+        </div>
+
+        <div style="margin-bottom: 20px; display: flex; flex-direction: row;">
+            <div style="width:130px;" class="inDivConsVow" id="5Inc" (click)="click5Inc()">5</div>
+            <div style="width:130px;" class="inDivConsVow" id="25Inc" (click)="click25Inc()">25</div>
+            <div style="width:130px;" class="inDivConsVow" id="10Inc" (click)="click10Inc()">10</div>
+            <div style="width:130px;" class="inDivConsVow" id="40Inc" (click)="click40Inc()">40</div>
+            <div style="width:130px;" class="inDivConsVow" id="30Inc" (click)="click30Inc()">30</div>
+            <div style="width:130px;" class="inDivConsVow" id="45Inc" (click)="click45Inc()">45</div>
+            <div style="width:130px;" class="inDivConsVow" id="20Inc" (click)="click20Inc()">20</div>
+            <div style="width:130px;" class="inDivConsVow" id="35Inc" (click)="click35Inc()">35</div>
+            <div style="width:130px;" class="inDivConsVow" id="15Inc" (click)="click15Inc()">15</div>
+            <div style="width:130px;" class="inDivConsVow" id="50Inc" (click)="click50Inc()">50</div>
+        </div>
+
+        <div style="display: flex; flex-direction: row;">
+            <div style="width:130px;" class="inDivConsVow" id="divInc15" (click)="clickDivInc15()">5x3=</div>
+            <div style="width:130px;" class="inDivConsVow" id="divInc35" (click)="clickDivInc35()">5x7=</div>
+            <div style="width:130px;" class="inDivConsVow" id="divInc20" (click)="clickDivInc20()">5x4=</div>
+            <div style="width:130px;" class="inDivConsVow" id="divInc25" (click)="clickDivInc25()">5x5=</div>
+            <div style="width:130px;" class="inDivConsVow" id="divInc30" (click)="clickDivInc30()">5x6=</div>
+            <div style="width:130px;" class="inDivConsVow" id="divInc50" (click)="clickDivInc50()">5x10=</div>
+            <div style="width:130px;" class="inDivConsVow" id="divInc5" (click)="clickDivInc5()">5x1=</div>
+            <div style="width:130px;" class="inDivConsVow" id="divInc10" (click)="clickDivInc10()">5x2=</div>
+            <div style="width:130px;" class="inDivConsVow" id="divInc40" (click)="clickDivInc40()">5x8=</div>
+            <div style="width:130px;" class="inDivConsVow" id="divInc45" (click)="clickDivInc45()">5x9=</div>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv8()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div8">
+        <p style="margin:0;">Молодец!</p>
+        <p style="margin:0; color:red;">Наше путешествие прошло успешно!</p>
+        <button style="width:370px; font-size:1em; margin-bottom:20px;" class="blue noselect" (click)="viewDiv9()">Домашнее задание</button>
+
+        <div>
+            <img src="../../../assets/img/goosen.png" style="height:184px;" alt="гусь">
+            <img src="../../../assets/img/gooser2.png" style="height:80px;" alt="гусёнок">
+            <img src="../../../assets/img/swollow2.png" style="height:89px;" alt="ласточка">
+            <img src="../../../assets/img/squirreler.png" style="height:137px;" alt="бельчонок">
+            <img src="../../../assets/img/squirrel3.png" style="height:186px;" alt="белка">
+        </div>
+
+        <div style="margin-bottom: 100px;">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+        </div>
+    </div>
+
+    <div id="div9">
+        <div>
+            <p>А теперь повторяем таблицу умножения на 5.</p>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">5 x 1 =
+                <input type="text" class="inputInDiv2" id="input11">
+            </span>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">5 x 2 =
+                <input type="text" class="inputInDiv2" id="input12">
+            </span>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">5 x 3 =
+                <input type="text" class="inputInDiv2" id="input13">
+            </span>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">5 x 4 =
+                <input type="text" class="inputInDiv2" id="input14">
+            </span>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">5 x 5 =
+                <input type="text" class="inputInDiv2" id="input15">
+            </span>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">5 x 6 =
+                <input type="text" class="inputInDiv2" id="input16">
+            </span>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">5 x 7 =
+                <input type="text" class="inputInDiv2" id="input17">
+            </span>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">5 x 8 =
+                <input type="text" class="inputInDiv2" id="input18">
+            </span>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">5 x 9 =
+                <input type="text" class="inputInDiv2" id="input19">
+            </span>
+        </div>
+
+        <div style="color:black;">
+            <span style="margin-right: 10px; display: flex; align-items: center;">5 x 10 =
+                <input type="text" class="inputInDiv2" id="input20">
+            </span>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="checkInput2()">Проверить</a>
+        </div>
+    </div>
+</div>

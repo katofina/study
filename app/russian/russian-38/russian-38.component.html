@@ -1,0 +1,837 @@
+<div class="total">
+    <app-gif></app-gif>
+    <div id="div1">
+        <div>
+            <p class="title1">Страна русского языка</p>
+        </div>
+
+        <div class="travel">
+            <p class="title2">Путешествие</p>
+            <img class="number1" src="../../../assets/img/3.gif" alt="3">
+            <img class="number1" src="../../../assets/img/8.gif" alt="8">
+        </div>
+
+        <div class="text">
+            <p>Встречаемся снова с озорными буковками,</p>
+            <p style="color:red">Внимание!</p>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv2(); addEvent1();">Вперед!</a>
+        </div>
+    </div>
+
+    <div id="div2">
+        <div>
+            <p>Собери гласные по парочкам.</p>
+        </div>
+
+        <div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:20px;" id="divIm1">
+                <img src="../../../assets/img/YO.gif" alt="yo" class="imgInDivMargin">
+                <img src="../../../assets/img/ya.gif" alt="ya" class="imgInDivMargin">
+                <img src="../../../assets/img/e.gif" alt="e" class="imgInDivMargin">
+                <img src="../../../assets/img/i.gif" alt="i" class="imgInDivMargin">
+                <img src="../../../assets/img/yu.gif" alt="yu" class="imgInDivMargin">
+            </div>
+
+            <div style="display:flex; justify-content:space-between;" id="divIm2">
+                <img src="../../../assets/img/u.gif" alt="u" class="imgInDivMargin">
+                <img src="../../../assets/img/Eiy.gif" alt="yi" class="imgInDivMargin">
+                <img src="../../../assets/img/a.gif" alt="a" class="imgInDivMargin">
+                <img src="../../../assets/img/o.gif" alt="o" class="imgInDivMargin">
+                <img src="../../../assets/img/ei.gif" alt="ei" class="imgInDivMargin">
+            </div>
+
+            <div class="button">
+                <a class="stitched" (click)="viewDiv3()">Жми!</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="div3">
+        <p>Изучаем алфавит.</p>
+
+        <iframe width="1000" height="600" src="https://www.youtube.com/embed/6wrSI8YW4dw" frameborder="0" allowfullscreen></iframe>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv4()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div4">
+        <p>Запомни название букв.</p>
+
+        <iframe width="1000" height="600" src="https://www.youtube.com/embed/V4rG2lejrR0" frameborder="0" allowfullscreen></iframe>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv5(); addEvent2();">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div5">
+        <div>
+            <p>Подбери правильное название букв.</p>
+        </div>
+
+        <div>
+            <div style="display:flex; flex-direction:row; margin-bottom:50px;">
+                <div class="inDiv">
+                    <div class="textInDiv">ГЭ</div>
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDiv">
+                    <div class="textInDiv">БЭ</div>
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDiv">
+                    <div class="textInDiv">ВЭ</div>
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDiv">
+                    <div class="textInDiv">ЙО</div>
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDiv">
+                    <div class="textInDiv">ДЭ</div>
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDiv">
+                    <div class="textInDiv">А</div>
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDiv">
+                    <div class="textInDiv">ЙЭ</div>
+                    <div class="divInDiv"></div>
+                </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between;">
+                <img src="../../../assets/img/B.gif" alt="b" class="imgInDiv">
+                <img src="../../../assets/img/Gs.gif" alt="g" class="imgInDiv">
+                <img src="../../../assets/img/e.gif" alt="e" class="imgInDiv">
+                <img src="../../../assets/img/a.gif" alt="a" class="imgInDiv">
+                <img src="../../../assets/img/D.gif" alt="d" class="imgInDiv">
+                <img src="../../../assets/img/YO.gif" alt="yo" class="imgInDiv">
+                <img src="../../../assets/img/Vs.gif" alt="v" class="imgInDiv">
+            </div>
+
+            <div class="button">
+                <a class="stitched" (click)="viewDiv6()">Жми!</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="div6">
+        <p>Запомни название букв.</p>
+
+        <iframe width="1000" height="600" src="https://www.youtube.com/embed/MA8jj6sIcCk" frameborder="0" allowfullscreen></iframe>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv7(); addEvent3();">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div7">
+        <div>
+            <p>Расположи буквы в правильном порядке.</p>
+        </div>
+
+        <div>
+            <div style="display:flex; flex-direction:row; margin-bottom:50px;">
+                <div class="inDiv">
+                    <div class="textInDiv">1</div>
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDiv">
+                    <div class="textInDiv">2</div>
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDiv">
+                    <div class="textInDiv">3</div>
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDiv">
+                    <div class="textInDiv">4</div>
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDiv">
+                    <div class="textInDiv">5</div>
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDiv">
+                    <div class="textInDiv">6</div>
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDiv">
+                    <div class="textInDiv">7</div>
+                    <div class="divInDiv"></div>
+                </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between;">
+                <img src="../../../assets/img/B.gif" alt="b" class="imgInDiv">
+                <img src="../../../assets/img/Gs.gif" alt="g" class="imgInDiv">
+                <img src="../../../assets/img/e.gif" alt="e" class="imgInDiv">
+                <img src="../../../assets/img/a.gif" alt="a" class="imgInDiv">
+                <img src="../../../assets/img/D.gif" alt="d" class="imgInDiv">
+                <img src="../../../assets/img/YO.gif" alt="yo" class="imgInDiv">
+                <img src="../../../assets/img/Vs.gif" alt="v" class="imgInDiv">
+            </div>
+
+            <div class="button">
+                <a class="stitched" (click)="viewDiv8()">Жми!</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="div8">
+        <p>Послушай внимательно.</p>
+
+        <iframe width="1000" height="600" src="https://www.youtube.com/embed/s_GE4ZYPkcA" frameborder="0" allowfullscreen></iframe>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv9(); addEvent4();">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div9">
+        <div>
+            <p>Подбери правильное название букв.</p>
+        </div>
+
+        <div>
+            <div style="display:flex; flex-direction:row; margin-bottom:50px;">
+                <div class="inDiv">
+                    <div class="textInDiv">ЖЭ</div>
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDiv" style="width:180px;">
+                    <div class="textInDiv">И КРАТКОЕ</div>
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDiv">
+                    <div class="textInDiv">И</div>
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDiv">
+                    <div class="textInDiv">ЗЭ</div>
+                    <div class="divInDiv"></div>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between;">
+                <img src="../../../assets/img/Zs.gif" alt="З" class="imgInDiv">
+                <img src="../../../assets/img/J.gif" alt="Ж" class="imgInDiv">
+                <img src="../../../assets/img/y.gif" alt="Й" class="imgInDiv">
+                <img src="../../../assets/img/i.gif" alt="И" class="imgInDiv">
+            </div>
+
+            <div class="button">
+                <a class="stitched" (click)="viewDiv10()">Жми!</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="div10">
+        <p>Послушай внимательно.</p>
+
+        <iframe width="1000" height="600" src="https://www.youtube.com/embed/yJgriHc-oVY" frameborder="0" allowfullscreen></iframe>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv11(); addEvent5();">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div11">
+        <div>
+            <p>Расположи буквы в правильном порядке.</p>
+        </div>
+
+        <div>
+            <div style="display:flex; flex-direction:row; margin-bottom:50px;">
+                <div class="inDiv">
+                    <div class="textInDiv">1</div>
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDiv">
+                    <div class="textInDiv">2</div>
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDiv">
+                    <div class="textInDiv">3</div>
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDiv">
+                    <div class="textInDiv">4</div>
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDiv">
+                    <div class="textInDiv">5</div>
+                    <div class="divInDiv"></div>
+                </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between;">
+                <img src="../../../assets/img/Zs.gif" alt="z" class="imgInDiv">
+                <img src="../../../assets/img/J.gif" alt="j" class="imgInDiv">
+                <img src="../../../assets/img/y.gif" alt="y" class="imgInDiv">
+                <img src="../../../assets/img/i.gif" alt="i" class="imgInDiv">
+                <img src="../../../assets/img/YO.gif" alt="yo" class="imgInDiv">
+            </div>
+
+            <div class="button">
+                <a class="stitched" (click)="viewDiv12()">Жми!</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="div12">
+        <div>
+            <p>Отгадай загадку.</p>
+        </div>
+
+        <div>
+            <p style="font-size: 50px; color:rgb(247, 55, 87);">Э-тот ма-лень-кий зве-рёк</p>
+            <p style="font-size: 50px; color:rgb(247, 55, 87);">Сам пло-ти-ну сде-лать смог.</p>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/penguin.png" class="riddle" alt="пингвин" (click)="clickWrong()">
+            <img src="../../../assets/img/bear.png" class="riddle" alt="медведь" (click)="clickWrong()">
+            <img src="../../../assets/img/monkey.png" class="riddle" alt="обезьяна" (click)="clickWrong()">
+            <img src="../../../assets/img/beaver.png" class="riddle" alt="бобр" (click)="viewDiv13(); addEvent6();">
+        </div>
+    </div>
+
+    <div id="div13">
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <img style="height:100px;" class="print" src="../../../assets/img/beaver.png" alt="БОБЁР">
+            <p style="font-size:1.3em; color:red;">Сложи слово!</p>
+        </div>
+
+        <div>
+            <div style="display:flex; flex-direction:row; margin-bottom:50px;">
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between;">
+                <img src="../../../assets/img/B.gif" alt="bs" class="imgInDiv">
+                <img src="../../../assets/img/YO.gif" alt="yo" class="imgInDiv">
+                <img src="../../../assets/img/Bz.gif" alt="bz" class="imgInDiv">
+                <img src="../../../assets/img/Rs.gif" alt="r" class="imgInDiv">
+                <img src="../../../assets/img/o.gif" alt="o" class="imgInDiv">
+            </div>
+
+            <div class="button">
+                <a class="stitched" (click)="viewDiv14()">Жми!</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="div14">
+        <div>
+            <p>Отгадай загадку.</p>
+        </div>
+
+        <div>
+            <p style="font-size:50px; color:rgb(247, 55, 87);">Весь в и-гол-ках бу-го-рок</p>
+            <p style="font-size:50px; color:rgb(247, 55, 87);">Мыш-ку в нор-ку у-во-лок.</p>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/hedgehog.png" class="riddle" alt="ЁЖ" (click)="viewDiv15(); addEvent7();">
+            <img src="../../../assets/img/bear.png" class="riddle" alt="медведь" (click)="clickWrong()">
+            <img src="../../../assets/img/monkey.png" class="riddle" alt="обезьяна" (click)="clickWrong()">
+            <img src="../../../assets/img/beaver.png" class="riddle" alt="бобр" (click)="clickWrong()">
+        </div>
+    </div>
+
+    <div id="div15">
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <img style="height:100px;" class="print" src="../../../assets/img/hedgehog.png" alt="ЁЖИК">
+            <p style="font-size:1.3em; color:red;">Сложи слово!</p>
+        </div>
+
+        <div>
+            <div style="display:flex; flex-direction:row; margin-bottom:50px;">
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between;">
+                <img src="../../../assets/img/J.gif" alt="j" class="imgInDiv">
+                <img src="../../../assets/img/YO.gif" alt="yo" class="imgInDiv">
+                <img src="../../../assets/img/Ks.gif" alt="k" class="imgInDiv">
+                <img src="../../../assets/img/i.gif" alt="i" class="imgInDiv">
+            </div>
+
+            <div class="button">
+                <a class="stitched" (click)="viewDiv16()">Жми!</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="div16">
+        <div>
+            <p>Отгадай загадку.</p>
+        </div>
+
+        <div>
+            <p style="font-size:50px; color:rgb(247, 55, 87);">Э-тот фрукт на вкус хо-рош</p>
+            <p style="font-size:50px; color:rgb(247, 55, 87);">И на лам-поч-ку по-хож.</p>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/apple2.png" class="riddle" alt="яблоко" (click)="clickWrong()">
+            <img src="../../../assets/img/pear.png" class="riddle" alt="груша" (click)="viewDiv17(); addEvent8();">
+            <img src="../../../assets/img/plum.png" class="riddle" alt="слива" (click)="clickWrong()">
+            <img src="../../../assets/img/lemon.png" class="riddle" alt="лимон" (click)="clickWrong()">
+        </div>
+    </div>
+
+    <div id="div16">
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <img style="height:100px;" class="print" src="../../../assets/img/pear.png" alt="ГРУША">
+            <p style="font-size:1.3em; color:red;">Сложи слово!</p>
+        </div>
+
+        <div>
+            <div style="display:flex; flex-direction:row; margin-bottom:50px;">
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between;">
+                <img src="../../../assets/img/Sh.gif" alt="sh" class="imgInDiv">
+                <img src="../../../assets/img/a.gif" alt="a" class="imgInDiv">
+                <img src="../../../assets/img/Gs.gif" alt="g" class="imgInDiv">
+                <img src="../../../assets/img/Rs.gif" alt="r" class="imgInDiv">
+                <img src="../../../assets/img/u.gif" alt="u" class="imgInDiv">
+            </div>
+
+            <div class="button">
+                <a class="stitched" (click)="viewDiv17()">Жми!</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="div17">
+        <div>
+            <p>Отгадай загадку.</p>
+        </div>
+
+        <div>
+            <p style="font-size:50px; color:rgb(247, 55, 87);">Не хо-дит, не бе-га-ет,</p>
+            <p style="font-size:50px; color:rgb(247, 55, 87);">А толь-ко по коч-кам пры-га-ет.</p>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/hare.png" class="riddle" alt="заяц" (click)="clickWrong()">
+            <img src="../../../assets/img/finch.png" class="riddle" alt="зяблик" (click)="clickWrong()">
+            <img src="../../../assets/img/toad.png" class="riddle" alt="лягушка" (click)="viewDiv18(); addEvent9();">
+            <img src="../../../assets/img/kangaroo.png" class="riddle" alt="кенгуру" (click)="clickWrong()">
+        </div>
+    </div>
+
+    <div id="div18">
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <img style="height:100px;" class="print" src="../../../assets/img/toad.png" alt="ЛЯГУШКА">
+            <p style="font-size:1.3em; color:red;">Сложи слово!</p>
+        </div>
+
+        <div>
+            <div style="display:flex; flex-direction:row; margin-bottom:50px;">
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between;">
+                <img src="../../../assets/img/Gs.gif" alt="g" class="imgInDiv">
+                <img src="../../../assets/img/ya.gif" alt="ya" class="imgInDiv">
+                <img src="../../../assets/img/Sh.gif" alt="sh" class="imgInDiv">
+                <img src="../../../assets/img/Lz.gif" alt="l" class="imgInDiv">
+                <img src="../../../assets/img/Ks.gif" alt="k" class="imgInDiv">
+                <img src="../../../assets/img/u.gif" alt="u" class="imgInDiv">
+                <img src="../../../assets/img/a.gif" alt="a" class="imgInDiv">
+            </div>
+
+            <div class="button">
+                <a class="stitched" (click)="viewDiv19()">Жми!</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="div19">
+        <div>
+            <p>Отгадай загадку.</p>
+        </div>
+
+        <div>
+            <p style="font-size:50px; color:rgb(247, 55, 87);">Хвос-тик крюч-ком,</p>
+            <p style="font-size:50px; color:rgb(247, 55, 87);">Нос пя-тач-ком.</p>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/snall.png" class="riddle" alt="улитка" (click)="clickWrong()">
+            <img src="../../../assets/img/piglet.png" class="riddle" alt="поросёнок" (click)="viewDiv20(); addEvent10();">
+            <img src="../../../assets/img/flamingo.png" class="riddle" alt="фламинго" (click)="clickWrong()">
+            <img src="../../../assets/img/husky.png" class="riddle" alt="хаски" (click)="clickWrong()">
+        </div>
+    </div>
+
+    <div id="div20">
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <img style="height:100px;" class="print" src="../../../assets/img/piglet.png" alt="ПОРОСЁНОК">
+            <p style="font-size:1.3em; color:red;">Сложи слово!</p>
+        </div>
+
+        <div>
+            <div style="display:flex; flex-direction:row; margin-bottom:50px;">
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+
+                <div class="inDivSmall">
+                    <div class="divInDiv"></div>
+                </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between;">
+                <img src="../../../assets/img/Sz.gif" alt="s" class="imgInDiv">
+                <img src="../../../assets/img/Ps.gif" alt="p" class="imgInDiv">
+                <img src="../../../assets/img/o.gif" alt="o" class="imgInDiv">
+                <img src="../../../assets/img/YO.gif" alt="yo" class="imgInDiv">
+                <img src="../../../assets/img/Rs.gif" alt="r" class="imgInDiv">
+                <img src="../../../assets/img/o.gif" alt="o2" class="imgInDiv">
+                <img src="../../../assets/img/o.gif" alt="o3" class="imgInDiv">
+                <img src="../../../assets/img/Ns.gif" alt="n" class="imgInDiv">
+                <img src="../../../assets/img/Ks.gif" alt="k" class="imgInDiv">
+            </div>
+
+            <div class="button">
+                <a class="stitched" (click)="viewDiv21()">Жми!</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="div21">
+        <div>
+            <p>Прочитай и запиши слоги.</p>
+        </div>
+
+        <div style="display:flex; flex-wrap:wrap; margin-bottom:50px;">
+            <div class="spanAndInput">
+                <span class="spanInDiv">КОЛ</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">ГОЛ</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">ВОЛ</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">СОЛЬ</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">ЗОЛА</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">ВОДА</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">СЛОН</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">КУБ</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">ЗУБ</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">БУК</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">БЫК</span>
+                <input type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">БОК</span>
+                <input type="text" class="inputInDiv">
+            </div>
+        </div>
+
+        <div>
+            <a class="stitched" (click)="checkInp1()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div22">
+        <div>
+            <p>Замечательно!</p>
+        </div>
+
+        <div>
+            <img class="letter1" src="../../../assets/img/D.gif" alt="Д">
+            <img class="letter1" src="../../../assets/img/Dz.gif" alt="Д">
+            <img class="letter1" src="../../../assets/img/i.gif" alt="И">
+            <img class="letter1" src="../../../assets/img/J.gif" alt="Ж">
+            <img class="letter1" src="../../../assets/img/o.gif" alt="О">
+            <img class="letter1" src="../../../assets/img/Ls.gif" alt="л">
+            <img class="letter1" src="../../../assets/img/Lz.gif" alt="л">
+            <img class="letter1" src="../../../assets/img/u.gif" alt="У">
+            <img class="letter1" src="../../../assets/img/Ns.gif" alt="Н">
+            <img class="letter1" src="../../../assets/img/Nz.gif" alt="Н">
+            <img class="letter1" src="../../../assets/img/ya.gif" alt="Я">
+            <img class="letter1" src="../../../assets/img/Gs.gif" alt="Г">
+            <img class="letter1" src="../../../assets/img/Gz.gif" alt="Г">
+        </div>
+
+        <div>
+            <img class="letter1" src="../../../assets/img/Ms.gif" alt="М">
+            <img class="letter1" src="../../../assets/img/Mz.gif" alt="М">
+            <img class="letter1" src="../../../assets/img/Ks.gif" alt="К">
+            <img class="letter1" src="../../../assets/img/Kz.gif" alt="К">
+            <img class="letter1" src="../../../assets/img/e.gif" alt="Е">
+            <img class="letter1" src="../../../assets/img/Tz.png" alt="Т">
+            <img class="letter1" src="../../../assets/img/Ts.png" alt="Т">
+            <img class="letter1" src="../../../assets/img/YO.gif" alt="Ё">
+            <img class="letter1" src="../../../assets/img/Ps.gif" alt="П">
+            <img class="letter1" src="../../../assets/img/Pz.gif" alt="П">
+            <img class="letter1" src="../../../assets/img/yu.gif" alt="Ю">
+            <img class="letter1" src="../../../assets/img/Ss.gif" alt="С">
+            <img class="letter1" src="../../../assets/img/Sz.gif" alt="С">
+        </div>
+
+        <div>
+            <img class="letter1" src="../../../assets/img/B.gif" alt="Б">
+            <img class="letter1" src="../../../assets/img/Bz.gif" alt="Б">
+            <img class="letter1" src="../../../assets/img/a.gif" alt="А">
+            <img class="letter1" src="../../../assets/img/Zz.gif" alt="З">
+            <img class="letter1" src="../../../assets/img/Zs.gif" alt="З">
+            <img class="letter1" src="../../../assets/img/Rz.gif" alt="Р">
+            <img class="letter1" src="../../../assets/img/Rs.gif" alt="Р">
+            <img class="letter1" src="../../../assets/img/ei.gif" alt="Э">
+            <img class="letter1" src="../../../assets/img/Vs.gif" alt="В">
+            <img class="letter1" src="../../../assets/img/Vz.gif" alt="В">
+            <img class="letter1" src="../../../assets/img/Sh.gif" alt="Ш">
+            <img class="letter1" src="../../../assets/img/ch.gif" alt="Ч">
+            <img class="letter1" src="../../../assets/img/c.gif" alt="Ц">
+        </div>
+
+        <div>
+            <img class="letter1" src="../../../assets/img/fS.gif" alt="Ф">
+            <img class="letter1" src="../../../assets/img/fZ.gif" alt="Ф">
+            <img class="letter1" src="../../../assets/img/iy.gif" alt="Ь">
+            <img class="letter1" src="../../../assets/img/iye.gif" alt="Ъ">
+            <img class="letter1" src="../../../assets/img/Hz.gif" alt="Х">
+            <img class="letter1" src="../../../assets/img/Hs.gif" alt="Х">
+            <img class="letter1" src="../../../assets/img/y.gif" alt="Й">
+            <img class="letter1" src="../../../assets/img/Shy.gif" alt="Щ">
+            <img class="letter1" src="../../../assets/img/Eiy.gif" alt="Ы">
+        </div>
+
+        <div style="margin-bottom:100px;">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+        </div>
+
+        <div>
+            <a class="stitched" (click)="viewDiv23()">Домашнее задание</a>
+        </div>
+    </div>
+
+    <div id="div23">
+        <div>
+            <p>Прочитай и запиши слова.</p>
+        </div>
+
+        <div style="display:flex; justify-content:center; flex-wrap:wrap; margin-bottom:50px;">
+            <div class="imgAndInput">
+                <img src="../../../assets/img/buk.png" class="imgInDiv1" title="БУК" alt="БУК">
+                <input type="text" class="inputInDiv1">
+            </div>
+
+            <div class="imgAndInput">
+                <img src="../../../assets/img/pear.png" class="imgInDiv1" title="ГРУША" alt="ГРУША">
+                <input type="text" class="inputInDiv1">
+            </div>
+
+            <div class="imgAndInput">
+                <img src="../../../assets/img/hedgehog.png" class="imgInDiv1" title="ЁЖИК" alt="ЁЖИК">
+                <input type="text" class="inputInDiv1">
+            </div>
+
+            <div class="imgAndInput">
+                <img src="../../../assets/img/toad.png" class="imgInDiv1" title="ЛЯГУШКА" alt="ЛЯГУШКА">
+                <input type="text" class="inputInDiv1">
+            </div>
+
+            <div class="imgAndInput">
+                <img src="../../../assets/img/piglet.png" class="imgInDiv1" title="ПОРОСЁНОК" alt="ПОРОСЁНОК">
+                <input type="text" class="inputInDiv1">
+            </div>
+
+            <div class="imgAndInput">
+                <img src="../../../assets/img/beaver.png" class="imgInDiv1" title="БОБЁР" alt="БОБЁР">
+                <input type="text" class="inputInDiv1">
+            </div>
+
+            <div class="imgAndInput">
+                <img src="../../../assets/img/bull.png" class="imgInDiv1" title="БЫК" alt="БЫК">
+                <input type="text" class="inputInDiv1">
+            </div>
+
+            <div class="imgAndInput">
+                <img src="../../../assets/img/bison.png" class="imgInDiv1" title="ЗУБР" alt="ЗУБР">
+                <input type="text" class="inputInDiv1">
+            </div>
+        </div>
+
+        <div>
+            <a class="stitched" (click)="checkInp2()">Проверить</a>
+        </div>
+    </div>
+</div>

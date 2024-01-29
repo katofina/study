@@ -1,0 +1,1121 @@
+<div class="total">
+    <app-gif></app-gif>
+    <div id="div1">
+        <div>
+            <p class="title1">Страна русского языка</p>
+        </div>
+
+        <div class="travel">
+            <p class="title2">Путешествие</p>
+            <img class="number1" src="../../../assets/img/5.gif" alt="5">
+            <img class="number1" src="../../../assets/img/3.gif" alt="3">
+        </div>
+
+        <div class="text">
+            <p>Встречаемся снова с озорными буковками,</p>
+            <p style="color:red">Внимание!</p>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv2(); addEvent1();">Вперед!</a>
+        </div>
+    </div>
+
+    <div id="div2">
+        <div>
+            <p>Собери слова из слогов.</p>
+        </div>
+
+        <div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:20px;" id="divIm1">
+                <img src="../../../assets/img/za.png" alt="za" class="imgSyllable">
+                <img src="../../../assets/img/nya.png" alt="nya" class="imgSyllable">
+                <img src="../../../assets/img/lam.png" alt="lam" class="imgSyllable">
+                <img src="../../../assets/img/mya.png" alt="mya" class="imgSyllable">
+                <img src="../../../assets/img/ka.png" alt="ka" class="imgSyllable">
+                <img src="../../../assets/img/kan.png" alt="kan" class="imgSyllable">
+            </div>
+
+            <div style="display:flex; justify-content:space-between;" id="divIm2">
+                <img src="../../../assets/img/pa.png" alt="pa" class="imgSyllable">
+                <img src="../../../assets/img/chik.png" alt="chik" class="imgSyllable">
+                <img src="../../../assets/img/DYI.png" alt="dyi" class="imgSyllable"><!--ды-->
+                <img src="../../../assets/img/sta.png" alt="sta" class="imgSyllable">
+                <img src="../../../assets/img/ro.png" alt="ro" class="imgSyllable">
+                <img src="../../../assets/img/ruch.png" alt="ruch" class="imgSyllable">
+            </div>
+
+            <div class="button">
+                <a class="stitched" (click)="viewDiv3()">Жми!</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="div3">
+        <div>
+            <p>Вставь нужную букву, чтобы получилось слово.</p>
+        </div>
+
+        <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+            <span style="margin-right:10px; display:flex; align-items:center;">Солнце похоже на жёлтый</span>
+            <span style="white-space:nowrap; display:flex; align-items:center;">
+                кру
+                <div style="display:inline-block; position:relative;">
+                    <button class="buttonUl" id="button1" (click)="showUl1()"></button>
+                    <ul id="ul1" class="ulClass">
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer2()">з</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer1()">в</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="rightAnswer1()">г</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer3()">д</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer4()">ж</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer5()">к</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer6()">с</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer7()">т</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer8()">ф</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer9()">ш</a>
+                        </li>
+                    </ul>
+                </div>
+            </span>
+            <span style= "display:flex; align-items:center;">.</span>
+        </div>
+
+        <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+            <span style="margin-right:10px; display:flex; align-items:center;">Детям нравятся волшебные</span>
+            <span style="white-space:nowrap; display:flex; align-items:center;">
+                ска
+                <div style="display:inline-block; position:relative;">
+                    <button class="buttonUl" id="button2" (click)="showUl2()"></button>
+                    <ul id="ul2" class="ulClass">
+                        <li>
+                            <a class="aUl" (click)="rightAnswer2()">з</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer12()">в</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer22()">г</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer32()">д</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer42()">ж</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer52()">к</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer62()">с</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer72()">т</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer82()">ф</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer92()">ш</a>
+                        </li>
+                    </ul>
+                </div>
+            </span>
+            <span style= "display:flex; align-items:center;">ки.</span>
+        </div>
+
+        <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+            <span style="margin-right:10px; display:flex; align-items:center;">Суп едят</span>
+            <span style="white-space:nowrap; display:flex; align-items:center;">
+                ло
+                <div style="display:inline-block; position:relative;">
+                    <button class="buttonUl" id="button3" (click)="showUl3()"></button>
+                    <ul id="ul3" class="ulClass">
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer43()">з</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer13()">в</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer23()">г</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer33()">д</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="rightAnswer3()">ж</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer53()">к</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer63()">с</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer73()">т</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer83()">ф</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer93()">ш</a>
+                        </li>
+                    </ul>
+                </div>
+            </span>
+            <span style="margin-left:10px; display:flex; align-items:center;">кой.</span>
+        </div>
+
+        <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+            <span style="margin-right:10px; display:flex; align-items:center;">На кусте висят</span>
+            <span style="white-space:nowrap; display:flex; align-items:center;">
+                яго
+                <div style="display:inline-block; position:relative;">
+                    <button class="buttonUl" id="button4" (click)="showUl4()"></button>
+                    <ul id="ul4" class="ulClass">
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer34()">з</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer14()">в</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer24()">г</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="rightAnswer4()">д</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer44()">ж</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer54()">к</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer64()">с</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer74()">т</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer84()">ф</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer94()">ш</a>
+                        </li>
+                    </ul>
+                </div>
+            </span>
+            <span style= "display:flex; align-items:center;">ки.</span>
+        </div>
+
+        <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+            <span style="margin-right:10px; display:flex; align-items:center;">Я умею читать</span>
+            <span style="white-space:nowrap; display:flex; align-items:center;">
+                кни
+                <div style="display:inline-block; position:relative;">
+                    <button class="buttonUl" id="button5" (click)="showUl5()"></button>
+                    <ul id="ul5" class="ulClass">
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer45()">з</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer15()">в</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer25()">г</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer35()">д</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="rightAnswer5()">ж</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer55()">к</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer65()">с</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer75()">т</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer85()">ф</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer95()">ш</a>
+                        </li>
+                    </ul>
+                </div>
+            </span>
+            <span style= "display:flex; align-items:center;">ки.</span>
+        </div>
+
+        <div style="line-height:0.2; color:black; display:flex; flex-direction:row;">
+            <span style="margin-right:10px; display:flex; align-items:center;">На газоне растёт зелёная</span>
+            <span style="white-space:nowrap; display:flex; align-items:center;">
+                тра
+                <div style="display:inline-block; position:relative;">
+                    <button class="buttonUl" id="button6" (click)="showUl6()"></button>
+                    <ul id="ul6" class="ulClass">
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer16()">з</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="rightAnswer6()">в</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer26()">г</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer36()">д</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer46()">ж</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer56()">к</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer66()">с</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer76()">т</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer86()">ф</a>
+                        </li>
+                        <li>
+                            <a class="aUl" (click)="wrongAnswer96()">ш</a>
+                        </li>
+                    </ul>
+                </div>
+            </span>
+            <span style= "display:flex; align-items:center;">ка.</span>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="checkSelect1(); addEvent2();">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div4">
+        <div>
+            <p>Найди гласные, которые смягчают согласный звук.</p>
+        </div>
+
+        <div style="display:flex; justify-content:space-around; margin-bottom:20px;">
+            <div class="inDivConsVow">Мягкие</div>
+            <div class="inDivConsVow">Твёрдые</div>
+        </div>
+
+        <div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:20px; flex-wrap:wrap;">
+                <img src="../../../assets/img/BYOR.jpg" alt="byor" class="imgSyllable">
+                <img src="../../../assets/img/BOR.jpg" alt="bor" class="imgSyllable">
+                <img src="../../../assets/img/BUR.jpg" alt="bur" class="imgSyllable">
+                <img src="../../../assets/img/BIR.jpg" alt="bir" class="imgSyllable">
+                <img src="../../../assets/img/BEIR.jpg" alt="beir" class="imgSyllable"><!--бэр-->
+                <img src="../../../assets/img/BAR.jpg" alt="bar" class="imgSyllable">
+                <img src="../../../assets/img/BYIR.jpg" alt="byir" class="imgSyllable"><!--быр-->
+                <img src="../../../assets/img/BYAR.jpg" alt="kla" class="imgSyllable">
+                <img src="../../../assets/img/BER.jpg" alt="ber" class="imgSyllable">
+                <img src="../../../assets/img/BYUR.jpg" alt="byur" class="imgSyllable">
+            </div>
+
+            <div class="button">
+                <a class="stitched" (click)="viewDiv5(); addEvent3();">Жми!</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="div5">
+        <div>
+            <p>Рассортируй слова по количеству слогов.</p>
+        </div>
+
+        <div>
+            <div style="display:flex; justify-content:space-around; margin-bottom:20px;">
+                <div class="inDivConsVow">1 слог</div>
+                <div class="inDivConsVow">2 слога</div>
+                <div class="inDivConsVow">3 слога</div>
+                <div class="inDivConsVow">4 слога</div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; margin-bottom:20px;">
+                <img src="../../../assets/img/zontikiText.jpg" alt="umbrellas" class="imgText">
+                <img src="../../../assets/img/caterpillar.jpg" alt="caterpillar" class="imgText">
+                <img src="../../../assets/img/banter.jpg" alt="bow" class="imgText">
+                <img src="../../../assets/img/penText.jpg" alt="stump" class="imgText">
+                <img src="../../../assets/img/zontText.jpg" alt="umbrella" class="imgText">
+                <img src="../../../assets/img/kaleydoskopText.jpg" alt="kaleidoscope" class="imgText">
+                <img src="../../../assets/img/banters.jpg" alt="bows" class="imgText">
+                <img src="../../../assets/img/penyokText.jpg" alt="stumpik" class="imgText">
+                <img src="../../../assets/img/ostanovkaText.jpg" alt="stop" class="imgText">
+                <img src="../../../assets/img/penyochkiText.jpg" alt="treestump" class="imgText">
+                <img src="../../../assets/img/bant.jpg" alt="bowknot" class="imgText">
+                <img src="../../../assets/img/zontikText.jpg" alt="umbreller" class="imgText">
+            </div>
+
+            <div class="button">
+                <a class="stitched" (click)="viewDiv6(); addEvent4();">Жми!</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="div6">
+        <div>
+            <p>Рассортируй буквы на глухие и звонкие.</p>
+        </div>
+
+        <div>
+            <div style="display:flex; justify-content:space-around; margin-bottom:20px;">
+                <div class="inDivConsVow">Глухой</div>
+                <div class="inDivConsVow">Звонкий</div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; margin-bottom:20px;">
+                <img src="../../../assets/img/Mz.gif" alt="m" class="imgInDivMargin">
+                <img src="../../../assets/img/D.gif" alt="d" class="imgInDivMargin">
+                <img src="../../../assets/img/Sh.gif" alt="sh" class="imgInDivMargin">
+                <img src="../../../assets/img/Nz.gif" alt="n" class="imgInDivMargin">
+                <img src="../../../assets/img/Ts.png" alt="t" class="imgInDivMargin">
+                <img src="../../../assets/img/fZ.gif" alt="f" class="imgInDivMargin">
+                <img src="../../../assets/img/Shy.gif" alt="sha" class="imgInDivMargin">
+                <img src="../../../assets/img/ch.gif" alt="ch" class="imgInDivMargin">
+                <img src="../../../assets/img/y.gif" alt="y" class="imgInDivMargin"><!--й-->
+                <img src="../../../assets/img/Rs.gif" alt="r" class="imgInDivMargin">
+                <img src="../../../assets/img/Zs.gif" alt="z" class="imgInDivMargin">
+                <img src="../../../assets/img/Ks.gif" alt="k" class="imgInDivMargin">
+                <img src="../../../assets/img/Ss.gif" alt="s" class="imgInDivMargin">
+                <img src="../../../assets/img/Vs.gif" alt="v" class="imgInDivMargin">
+                <img src="../../../assets/img/Hs.gif" alt="h" class="imgInDivMargin">
+                <img src="../../../assets/img/Gz.gif" alt="g" class="imgInDivMargin">
+                <img src="../../../assets/img/B.gif" alt="b" class="imgInDivMargin">
+                <img src="../../../assets/img/Pz.gif" alt="p" class="imgInDivMargin">
+            </div>
+
+            <div class="button">
+                <a class="stitched" (click)="viewDiv7()">Жми!</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="div7">
+        <div>
+            <p>Прочитай и запомни скороговорку.</p>
+        </div>
+
+        <div style="line-height:0,2;">
+            <p style="font-size:90px; color:red;">Шла Саша по шоссе</p>
+            <p style="font-size:90px; color:red;">и сосала сушку.</p>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv8()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div8">
+        <div>
+            <p>Посчитай количество гласных.</p>
+        </div>
+
+        <div>
+            <p style="font-size:70px; color:red;">Аз-бу-ка</p>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/3.gif" class="riddle" alt="3" (click)="viewDiv9()">
+            <img src="../../../assets/img/6.gif" class="riddle" alt="6" (click)="clickWrong()">
+            <img src="../../../assets/img/5.gif" class="riddle" alt="5" (click)="clickWrong()">
+            <img src="../../../assets/img/4.gif" class="riddle" alt="4" (click)="clickWrong()">
+        </div>
+    </div>
+
+    <div id="div9">
+        <div>
+            <p>Выдели лишние буквы!</p>
+        </div>
+
+        <div style="cursor:pointer; margin-bottom:50px;">
+            <span class="letterSpan" (click)="clickWrongLetter()">А</span><span class="letterSpan" (click)="clickWrongLetter()">з</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">б</span><span class="letterSpan" (click)="clickWrongLetter()">у</span>
+            <span class="letterSpan" (click)="clickRightLetter()">ю</span><span class="letterSpan" (click)="clickWrongLetter()">к</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">а</span>
+        </div>
+
+        <div>
+            <a class="stitched" (click)="checkSpan1()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div10">
+        <div>
+            <p>Посчитай количество гласных.</p>
+        </div>
+
+        <div>
+            <p style="font-size:70px; color:red;">Пусть на-чи-на-ет-ся</p>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/3.gif" class="riddle" alt="3" (click)="clickWrong()">
+            <img src="../../../assets/img/6.gif" class="riddle" alt="6" (click)="viewDiv11()">
+            <img src="../../../assets/img/5.gif" class="riddle" alt="5" (click)="clickWrong()">
+            <img src="../../../assets/img/4.gif" class="riddle" alt="4" (click)="clickWrong()">
+        </div>
+    </div>
+
+    <div id="div11">
+        <div>
+            <p>Выдели лишние буквы!</p>
+        </div>
+
+        <div style="cursor:pointer; margin-bottom:50px;">
+            <span class="letterSpan" (click)="clickWrongLetter()">П</span><span class="letterSpan" (click)="clickWrongLetter()">у</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">с</span><span class="letterSpan" (click)="clickRightLetter()">ц</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">т</span><span class="letterSpan" (click)="clickWrongLetter()">ь</span>
+            <span class="letterSpan" (click)="clickWrongLetter()"> н</span><span class="letterSpan" (click)="clickWrongLetter()">а</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">ч</span><span class="letterSpan" (click)="clickRightLetter()">е</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">и</span><span class="letterSpan" (click)="clickWrongLetter()">н</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">а</span><span class="letterSpan" (click)="clickRightLetter()">э</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">е</span><span class="letterSpan" (click)="clickWrongLetter()">т</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">с</span><span class="letterSpan" (click)="clickWrongLetter()">я</span>
+            <span class="letterSpan" (click)="clickRightLetter()">а</span>
+        </div>
+
+        <div>
+            <a class="stitched" (click)="checkSpan2()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div12">
+        <div>
+            <p>Посчитай количество гласных.</p>
+        </div>
+
+        <div>
+            <p style="font-size:70px; color:red;">С А-ИС-ТА -</p>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/3.gif" class="riddle" alt="3" (click)="viewDiv13()">
+            <img src="../../../assets/img/6.gif" class="riddle" alt="6" (click)="clickWrong()">
+            <img src="../../../assets/img/5.gif" class="riddle" alt="5" (click)="clickWrong()">
+            <img src="../../../assets/img/4.gif" class="riddle" alt="4" (click)="clickWrong()">
+        </div>
+    </div>
+
+    <div id="div13">
+        <div>
+            <p>Выдели лишние буквы!</p>
+        </div>
+
+        <div style="cursor:pointer; margin-bottom:50px;">
+            <span class="letterSpan" (click)="clickWrongLetter()">С</span><span class="letterSpan" (click)="clickWrongLetter()"> А</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">И</span><span class="letterSpan" (click)="clickWrongLetter()">С</span>
+            <span class="letterSpan" (click)="clickRightLetter()">З</span><span class="letterSpan" (click)="clickWrongLetter()">Т</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">А</span><span class="letterSpan" (click)="clickWrongLetter()"> -</span>
+        </div>
+
+        <div>
+            <a class="stitched" (click)="checkSpan3()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div14">
+        <div>
+            <p>Посчитай количество гласных.</p>
+        </div>
+
+        <div>
+            <p style="font-size:70px; color:red;">Он,</p>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/6.gif" class="riddle" alt="6" (click)="clickWrong()">
+            <img src="../../../assets/img/1.gif" class="riddle" alt="1" (click)="viewDiv15()">
+            <img src="../../../assets/img/3.gif" class="riddle" alt="3" (click)="clickWrong()">
+            <img src="../../../assets/img/5.gif" class="riddle" alt="5" (click)="clickWrong()">
+        </div>
+    </div>
+
+    <div id="div15">
+        <div>
+            <p>Выдели лишние буквы!</p>
+        </div>
+
+        <div style="cursor:pointer; margin-bottom:50px;">
+            <span class="letterSpan" (click)="clickWrongLetter()">О</span><span class="letterSpan" (click)="clickWrongLetter()">н</span>
+            <span class="letterSpan" (click)="clickRightLetter()">м</span><span class="letterSpan" (click)="clickWrongLetter()">,</span>
+        </div>
+
+        <div>
+            <a class="stitched" (click)="checkSpan4()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div16">
+        <div>
+            <p>Посчитай количество гласных.</p>
+        </div>
+
+        <div>
+            <p style="font-size:70px; color:red;">Как и аз-бу-ка,</p>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/3.gif" class="riddle" alt="3" (click)="clickWrong()">
+            <img src="../../../assets/img/5.gif" class="riddle" alt="5" (click)="viewDiv17()">
+            <img src="../../../assets/img/4.gif" class="riddle" alt="4" (click)="clickWrong()">
+            <img src="../../../assets/img/2.gif" class="riddle" alt="2" (click)="clickWrong()">
+        </div>
+    </div>
+
+    <div id="div17">
+        <div>
+            <p>Выдели лишние буквы!</p>
+        </div>
+
+        <div style="cursor:pointer; margin-bottom:50px;">
+            <span class="letterSpan" (click)="clickWrongLetter()">К</span><span class="letterSpan" (click)="clickWrongLetter()">а</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">к</span><span class="letterSpan" (click)="clickRightLetter()">г</span>
+            <span class="letterSpan" (click)="clickWrongLetter()"> и</span><span class="letterSpan" (click)="clickWrongLetter()"> а</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">з</span><span class="letterSpan" (click)="clickRightLetter()">с</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">б</span><span class="letterSpan" (click)="clickWrongLetter()">у</span>
+            <span class="letterSpan" (click)="clickRightLetter()">ю</span><span class="letterSpan" (click)="clickWrongLetter()">к</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">а</span><span class="letterSpan" (click)="clickWrongLetter()">,</span>
+        </div>
+
+        <div>
+            <a class="stitched" (click)="checkSpan5()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div18">
+        <div>
+            <p>Посчитай количество гласных.</p>
+        </div>
+
+        <div>
+            <p style="font-size:70px; color:red;">C "А" на-чи-на-ет-ся!</p>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/8.gif" class="riddle" alt="8" (click)="clickWrong()">
+            <img src="../../../assets/img/6.gif" class="riddle" alt="6" (click)="viewDiv19()">
+            <img src="../../../assets/img/4.gif" class="riddle" alt="4" (click)="clickWrong()">
+            <img src="../../../assets/img/5.gif" class="riddle" alt="5" (click)="clickWrong()">
+        </div>
+    </div>
+
+    <div id="div19">
+        <div>
+            <p>Выдели лишние буквы!</p>
+        </div>
+
+        <div style="cursor:pointer; margin-bottom:50px;">
+            <span class="letterSpan" (click)="clickWrongLetter()">С</span><span class="letterSpan" (click)="clickWrongLetter()"> А</span>
+            <span class="letterSpan" (click)="clickWrongLetter()"> н</span><span class="letterSpan" (click)="clickWrongLetter()">а</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">ч</span><span class="letterSpan" (click)="clickWrongLetter()">и</span>
+            <span class="letterSpan" (click)="clickRightLetter()">е</span><span class="letterSpan" (click)="clickWrongLetter()">н</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">а</span><span class="letterSpan" (click)="clickWrongLetter()">е</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">т</span><span class="letterSpan" (click)="clickWrongLetter()">с</span>
+            <span class="letterSpan" (click)="clickRightLetter()">а</span><span class="letterSpan" (click)="clickWrongLetter()">я</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">!</span>
+        </div>
+
+        <div>
+            <a class="stitched" (click)="checkSpan6()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div20">
+        <div>
+            <p>Посчитай количество гласных.</p>
+        </div>
+
+        <div>
+            <p style="font-size:70px; color:red;">Взгля-ну</p>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/3.gif" class="riddle" alt="3" (click)="clickWrong()">
+            <img src="../../../assets/img/5.gif" class="riddle" alt="5" (click)="clickWrong()">
+            <img src="../../../assets/img/4.gif" class="riddle" alt="4" (click)="clickWrong()">
+            <img src="../../../assets/img/2.gif" class="riddle" alt="2" (click)="viewDiv21()">
+        </div>
+    </div>
+
+    <div id="div21">
+        <div>
+            <p>Выдели лишние буквы!</p>
+        </div>
+
+        <div style="cursor:pointer; margin-bottom:50px;">
+            <span class="letterSpan" (click)="clickWrongLetter()">В</span><span class="letterSpan" (click)="clickWrongLetter()">з</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">г</span><span class="letterSpan" (click)="clickWrongLetter()">л</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">я</span><span class="letterSpan" (click)="clickRightLetter()">а</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">н</span><span class="letterSpan" (click)="clickRightLetter()">ю</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">у</span>
+        </div>
+
+        <div>
+            <a class="stitched" (click)="checkSpan7()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div22">
+        <div>
+            <p>Посчитай количество гласных.</p>
+        </div>
+
+        <div>
+            <p style="font-size:70px; color:red;">На АН-ТИ-ЛО-ПУ-ГНУ</p>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/6.gif" class="riddle" alt="6" (click)="viewDiv23()">
+            <img src="../../../assets/img/5.gif" class="riddle" alt="5" (click)="clickWrong()">
+            <img src="../../../assets/img/4.gif" class="riddle" alt="4" (click)="clickWrong()">
+            <img src="../../../assets/img/7.gif" class="riddle" alt="7" (click)="clickWrong()">
+        </div>
+    </div>
+
+    <div id="div23">
+        <div>
+            <p>Выдели лишние буквы!</p>
+        </div>
+
+        <div style="cursor:pointer; margin-bottom:50px;">
+            <span class="letterSpan" (click)="clickWrongLetter()">Н</span><span class="letterSpan" (click)="clickWrongLetter()">а</span>
+            <span class="letterSpan" (click)="clickWrongLetter()"> А</span><span class="letterSpan" (click)="clickWrongLetter()">Н</span>
+            <span class="letterSpan" (click)="clickRightLetter()">Ц</span><span class="letterSpan" (click)="clickWrongLetter()">Т</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">И</span><span class="letterSpan" (click)="clickRightLetter()">Ы</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">Л</span><span class="letterSpan" (click)="clickWrongLetter()">О</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">П</span><span class="letterSpan" (click)="clickWrongLetter()">У</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">-</span><span class="letterSpan" (click)="clickWrongLetter()">Г</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">Н</span><span class="letterSpan" (click)="clickWrongLetter()">У</span>
+        </div>
+
+        <div>
+            <a class="stitched" (click)="checkSpan8()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div24">
+        <div>
+            <p>Посчитай количество гласных.</p>
+        </div>
+
+        <div>
+            <p style="font-size:70px; color:red;">И по-ти-хо-неч-ку вздох-ну:</p>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/9.gif" class="riddle" alt="9" (click)="clickWrong()">
+            <img src="../../../assets/img/5.gif" class="riddle" alt="5" (click)="clickWrong()">
+            <img src="../../../assets/img/8.gif" class="riddle" alt="8" (click)="viewDiv25()">
+            <img src="../../../assets/img/6.gif" class="riddle" alt="6" (click)="clickWrong()">
+        </div>
+    </div>
+
+    <div id="div25">
+        <div>
+            <p>Выдели лишние буквы!</p>
+        </div>
+
+        <div style="cursor:pointer; margin-bottom:50px;">
+            <span class="letterSpan" (click)="clickWrongLetter()">И </span><span class="letterSpan" (click)="clickWrongLetter()">п</span>
+            <span class="letterSpan" (click)="clickRightLetter()">а</span><span class="letterSpan" (click)="clickWrongLetter()">о</span>
+            <span class="letterSpan" (click)="clickRightLetter()">ц</span><span class="letterSpan" (click)="clickWrongLetter()">т</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">и</span><span class="letterSpan" (click)="clickWrongLetter()">х</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">о</span><span class="letterSpan" (click)="clickWrongLetter()">н</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">е</span><span class="letterSpan" (click)="clickRightLetter()">и</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">ч</span><span class="letterSpan" (click)="clickWrongLetter()">к</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">у</span><span class="letterSpan" (click)="clickWrongLetter()"> в</span>
+            <span class="letterSpan" (click)="clickRightLetter()">с</span><span class="letterSpan" (click)="clickWrongLetter()">з</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">д</span><span class="letterSpan" (click)="clickWrongLetter()">о</span>
+            <span class="letterSpan" (click)="clickRightLetter()">а</span><span class="letterSpan" (click)="clickWrongLetter()">х</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">н</span><span class="letterSpan" (click)="clickWrongLetter()">у</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">:</span>
+        </div>
+
+        <div>
+            <a class="stitched" (click)="checkSpan9()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div26">
+        <div>
+            <p>Посчитай количество гласных.</p>
+        </div>
+
+        <div>
+            <p style="font-size:70px; color:red;">- За-чем, за-чем</p>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/3.gif" class="riddle" alt="3" (click)="clickWrong()">
+            <img src="../../../assets/img/5.gif" class="riddle" alt="5" (click)="clickWrong()">
+            <img src="../../../assets/img/4.gif" class="riddle" alt="4" (click)="viewDiv27()">
+            <img src="../../../assets/img/6.gif" class="riddle" alt="6" (click)="clickWrong()">
+        </div>
+    </div>
+
+    <div id="div27">
+        <div>
+            <p>Выдели лишние буквы!</p>
+        </div>
+
+        <div style="cursor:pointer; margin-bottom:50px;">
+            <span class="letterSpan" (click)="clickWrongLetter()">- </span><span class="letterSpan" (click)="clickWrongLetter()">З</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">а</span><span class="letterSpan" (click)="clickWrongLetter()">ч</span>
+            <span class="letterSpan" (click)="clickRightLetter()">э</span><span class="letterSpan" (click)="clickWrongLetter()">е</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">м</span><span class="letterSpan" (click)="clickWrongLetter()">, </span>
+            <span class="letterSpan" (click)="clickWrongLetter()">з</span><span class="letterSpan" (click)="clickRightLetter()">о</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">а</span><span class="letterSpan" (click)="clickWrongLetter()">ч</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">е</span><span class="letterSpan" (click)="clickWrongLetter()">м</span>
+        </div>
+
+        <div>
+            <a class="stitched" (click)="checkSpan10()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div28">
+        <div>
+            <p>Посчитай количество гласных.</p>
+        </div>
+
+        <div>
+            <p style="font-size:70px; color:red;">Вез-ли в Ев-ро-пу</p>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/3.gif" class="riddle" alt="3" (click)="clickWrong()">
+            <img src="../../../assets/img/5.gif" class="riddle" alt="5" (click)="viewDiv29()">
+            <img src="../../../assets/img/4.gif" class="riddle" alt="4" (click)="clickWrong()">
+            <img src="../../../assets/img/6.gif" class="riddle" alt="6" (click)="clickWrong()">
+        </div>
+    </div>
+
+    <div id="div29">
+        <div>
+            <p>Выдели лишние буквы!</p>
+        </div>
+
+        <div style="cursor:pointer; margin-bottom:50px;">
+            <span class="letterSpan" (click)="clickWrongLetter()">В</span><span class="letterSpan" (click)="clickRightLetter()">э</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">е</span><span class="letterSpan" (click)="clickWrongLetter()">з</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">л</span><span class="letterSpan" (click)="clickWrongLetter()">и</span>
+            <span class="letterSpan" (click)="clickWrongLetter()"> в </span><span class="letterSpan" (click)="clickWrongLetter()">Е</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">в</span><span class="letterSpan" (click)="clickRightLetter()">ф</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">р</span><span class="letterSpan" (click)="clickWrongLetter()">о</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">п</span><span class="letterSpan" (click)="clickWrongLetter()">у</span>
+        </div>
+
+        <div>
+            <a class="stitched" (click)="checkSpan11()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div30">
+        <div>
+            <p>Посчитай количество гласных.</p>
+        </div>
+
+        <div>
+            <p style="font-size:70px; color:red;">Та-ку-ю</p>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/3.gif" class="riddle" alt="3" (click)="viewDiv31()">
+            <img src="../../../assets/img/5.gif" class="riddle" alt="5" (click)="clickWrong()">
+            <img src="../../../assets/img/4.gif" class="riddle" alt="4" (click)="clickWrong()">
+            <img src="../../../assets/img/6.gif" class="riddle" alt="6" (click)="clickWrong()">
+        </div>
+    </div>
+
+    <div id="div31">
+        <div>
+            <p>Выдели лишние буквы!</p>
+        </div>
+
+        <div style="cursor:pointer; margin-bottom:50px;">
+            <span class="letterSpan" (click)="clickWrongLetter()">Т</span><span class="letterSpan" (click)="clickWrongLetter()">а</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">к</span><span class="letterSpan" (click)="clickWrongLetter()">у</span>
+            <span class="letterSpan" (click)="clickRightLetter()">й</span><span class="letterSpan" (click)="clickWrongLetter()">ю</span>
+        </div>
+
+        <div>
+            <a class="stitched" (click)="checkSpan12()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div32">
+        <div>
+            <p>Посчитай количество гласных.</p>
+        </div>
+
+        <div>
+            <p style="font-size: 70px; color:red;">Ан-ти-ан-ти-ло-пу?!!</p>
+        </div>
+
+        <div>
+            <img src="../../../assets/img/3.gif" class="riddle" alt="3" (click)="clickWrong()">
+            <img src="../../../assets/img/5.gif" class="riddle" alt="5" (click)="clickWrong()">
+            <img src="../../../assets/img/4.gif" class="riddle" alt="4" (click)="clickWrong()">
+            <img src="../../../assets/img/6.gif" class="riddle" alt="6" (click)="viewDiv33()">
+        </div>
+    </div>
+
+    <div id="div33">
+        <div>
+            <p>Выдели лишние буквы!</p>
+        </div>
+
+        <div style="cursor:pointer; margin-bottom:50px;">
+            <span class="letterSpan" (click)="clickWrongLetter()">А</span><span class="letterSpan" (click)="clickWrongLetter()">н</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">т</span><span class="letterSpan" (click)="clickRightLetter()">ц</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">и</span><span class="letterSpan" (click)="clickWrongLetter()">а</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">н</span><span class="letterSpan" (click)="clickWrongLetter()">т</span>
+            <span class="letterSpan" (click)="clickRightLetter()">ц</span><span class="letterSpan" (click)="clickWrongLetter()">и</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">л</span><span class="letterSpan" (click)="clickWrongLetter()">о</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">п</span><span class="letterSpan" (click)="clickWrongLetter()">у</span>
+            <span class="letterSpan" (click)="clickWrongLetter()">?!!</span>
+        </div>
+
+        <div>
+            <a class="stitched" (click)="checkSpan13()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div34">
+        <div style="line-height:0.2;">
+            <p style="color:red;">Вспомни.</p>
+            <p>В азбуке этой -</p>
+            <p>Увидите сами! -</p>
+            <p>Буквы живые:</p>
+            <p>С хвостами,</p>
+            <p>С усами,</p>
+            <p>Бегать умеют они</p>
+            <p>И летать,</p>
+            <p>Ползать и плавать,</p>
+            <p>Кусать и хватать...</p>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv35()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div35">
+        <div style="line-height:0.2;">
+            <p style="color:red;">Вспомни.</p>
+            <p>Буквы - мохнатые,</p>
+            <p>Буквы - пернатые,</p>
+            <p>Стройные буквы</p>
+            <p>И даже горбатые,</p>
+            <p>Добрые,</p>
+            <p>Злые,</p>
+            <p>Наземные,</p>
+            <p>Водные</p>
+            <p>Кто же они?</p>
+            <p>Догадались?</p>
+            <p>- Животные!</p>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv36()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div36">
+        <div style="line-height:0.2;">
+            <p style="color:red;">Выучи наизусть.</p>
+            <p>Азбука</p>
+            <p>Пусть начинается</p>
+            <p>С АИСТА -</p>
+            <p>Он,</p>
+            <p>Как и азбука,</p>
+            <p>С "А" начинается!</p>
+            <p>Взгляну</p>
+            <p>На АНТИЛОПУ-ГНУ</p>
+            <p>И потихонечку вздохну:</p>
+            <p>- Зачем, зачем</p>
+            <p>Везли в Европу</p>
+            <p>Такую</p>
+            <p>Антиантилопу?!!</p>
+        </div>
+
+        <div class="button">
+            <a class="stitched" (click)="viewDiv37()">Жми!</a>
+        </div>
+    </div>
+
+    <div id="div37">
+        <div>
+            <p style="color:red;">Прочитай и запиши слова.</p>
+        </div>
+
+        <div style="display:flex; flex-direction:row; margin-bottom:50px;">
+            <div class="spanAndInput">
+                <span class="spanInDiv">ГЛУБИНА</span>
+                <input style="width:227px;" type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">ГЛУБОКИЙ</span>
+                <input style="width:261px;" type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">МЕЛКИЙ</span>
+                <input style="width:220px;" type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">ВЫСОТА</span>
+                <input style="width:220px;" type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">ВЫСОКИЙ</span>
+                <input style="width:252px;" type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">НИЗКИЙ</span>
+                <input style="width:220px;" type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">ШИРИНА</span>
+                <input style="width:220px;" type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">ШИРОКИЙ</span>
+                <input style="width:253px;" type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">УЗКИЙ</span>
+                <input style="width:215px;" type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">ТОЛЩИНА</span>
+                <input style="width:244px;" type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">ТОЛСТЫЙ</span>
+                <input style="width:244px;" type="text" class="inputInDiv">
+            </div>
+
+            <div class="spanAndInput">
+                <span class="spanInDiv">УЗКИЙ</span>
+                <input style="width:215px;" type="text" class="inputInDiv">
+            </div>
+        </div>
+
+        <div>
+            <a class="stitched" (click)="checkInp1()">Проверить</a>
+        </div>
+    </div>
+
+    <div id="div38">
+        <div>
+            <p>Замечательно!</p>
+        </div>
+
+        <div>
+            <img class="letter1" src="../../../assets/img/D.gif" alt="Д">
+            <img class="letter1" src="../../../assets/img/Dz.gif" alt="Д">
+            <img class="letter1" src="../../../assets/img/i.gif" alt="И">
+            <img class="letter1" src="../../../assets/img/J.gif" alt="Ж">
+            <img class="letter1" src="../../../assets/img/o.gif" alt="О">
+            <img class="letter1" src="../../../assets/img/Ls.gif" alt="л">
+            <img class="letter1" src="../../../assets/img/Lz.gif" alt="л">
+            <img class="letter1" src="../../../assets/img/u.gif" alt="У">
+            <img class="letter1" src="../../../assets/img/Ns.gif" alt="Н">
+            <img class="letter1" src="../../../assets/img/Nz.gif" alt="Н">
+            <img class="letter1" src="../../../assets/img/ya.gif" alt="Я">
+            <img class="letter1" src="../../../assets/img/Gs.gif" alt="Г">
+            <img class="letter1" src="../../../assets/img/Gz.gif" alt="Г">
+        </div>
+
+        <div>
+            <img class="letter1" src="../../../assets/img/Ms.gif" alt="М">
+            <img class="letter1" src="../../../assets/img/Mz.gif" alt="М">
+            <img class="letter1" src="../../../assets/img/Ks.gif" alt="К">
+            <img class="letter1" src="../../../assets/img/Kz.gif" alt="К">
+            <img class="letter1" src="../../../assets/img/e.gif" alt="Е">
+            <img class="letter1" src="../../../assets/img/Tz.png" alt="Т">
+            <img class="letter1" src="../../../assets/img/Ts.png" alt="Т">
+            <img class="letter1" src="../../../assets/img/YO.gif" alt="Ё">
+            <img class="letter1" src="../../../assets/img/Ps.gif" alt="П">
+            <img class="letter1" src="../../../assets/img/Pz.gif" alt="П">
+            <img class="letter1" src="../../../assets/img/yu.gif" alt="Ю">
+            <img class="letter1" src="../../../assets/img/Ss.gif" alt="С">
+            <img class="letter1" src="../../../assets/img/Sz.gif" alt="С">
+        </div>
+
+        <div>
+            <img class="letter1" src="../../../assets/img/B.gif" alt="Б">
+            <img class="letter1" src="../../../assets/img/Bz.gif" alt="Б">
+            <img class="letter1" src="../../../assets/img/a.gif" alt="А">
+            <img class="letter1" src="../../../assets/img/Zz.gif" alt="З">
+            <img class="letter1" src="../../../assets/img/Zs.gif" alt="З">
+            <img class="letter1" src="../../../assets/img/Rz.gif" alt="Р">
+            <img class="letter1" src="../../../assets/img/Rs.gif" alt="Р">
+            <img class="letter1" src="../../../assets/img/ei.gif" alt="Э">
+            <img class="letter1" src="../../../assets/img/Vs.gif" alt="В">
+            <img class="letter1" src="../../../assets/img/Vz.gif" alt="В">
+            <img class="letter1" src="../../../assets/img/Sh.gif" alt="Ш">
+            <img class="letter1" src="../../../assets/img/ch.gif" alt="Ч">
+            <img class="letter1" src="../../../assets/img/c.gif" alt="Ц">
+        </div>
+
+        <div>
+            <img class="letter1" src="../../../assets/img/fS.gif" alt="Ф">
+            <img class="letter1" src="../../../assets/img/fZ.gif" alt="Ф">
+            <img class="letter1" src="../../../assets/img/iy.gif" alt="Ь">
+            <img class="letter1" src="../../../assets/img/iye.gif" alt="Ъ">
+            <img class="letter1" src="../../../assets/img/Hz.gif" alt="Х">
+            <img class="letter1" src="../../../assets/img/Hs.gif" alt="Х">
+            <img class="letter1" src="../../../assets/img/y.gif" alt="Й">
+            <img class="letter1" src="../../../assets/img/Shy.gif" alt="Щ">
+            <img class="letter1" src="../../../assets/img/Eiy.gif" alt="Ы">
+        </div>
+
+        <div style="margin-bottom:100px;">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+            <img src="../../../assets/img/stars.gif" alt="звезды">
+        </div>
+    </div>
+</div>
