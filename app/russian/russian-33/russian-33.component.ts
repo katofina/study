@@ -387,7 +387,7 @@ export class Russian33 {
 
     checkInp3() {
         let check = 0;
-        const arr1 = ['жираф', 'щелкучник', 'щука', 'щит', 'ящерица', 'овощи', 'прищепка', 'ехидна'];
+        const arr1 = ['жираф', 'щелкунчик', 'щука', 'щит', 'ящерица', 'овощи', 'прищепка', 'ехидна'];
         const arr2 = document.getElementById('div24')!.querySelectorAll('input');
         const arr3: string[] = [];
         arr2.forEach (function(el) {

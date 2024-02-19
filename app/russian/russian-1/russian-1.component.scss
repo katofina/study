@@ -449,6 +449,11 @@ button:focus {
 }
 
 @media (max-width: 1080px) {
+    iframe {
+        width: 100%;
+        height: auto;
+    };
+
     .big {
         font-size: 25px;
     };
@@ -498,23 +503,14 @@ button:focus {
     };
     
     .stitched {
-        position: relative;
         padding: 5px;
         margin: 60px auto;
         width: 160px;
-        background: #ff0030;
-        color: #fff;
         font-size: 15px;
-        font-weight: bold;
         line-height: 13px;
         border: 1px dashed #fff;
-        border-radius: 10px;
-        box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-        text-shadow: -1px -1px #aa3030;
-        font-weight: normal;
-        text-decoration: none;
     };
-    
+
     .print {
         height: 90px !important;
         z-index: 1;
@@ -543,7 +539,7 @@ button:focus {
     };
     
     .inDiv {
-        width: 60px;
+        width: 60px !important;
         height: 110px !important;
         margin-right: 2px;
     };
@@ -650,30 +646,18 @@ button:focus {
     };
     
     .inDivABC {
-        width: 130px;
-        height: 150px;
-        background-color: white;
-        border-radius: 20px;
-        border: 3px solid red;
-        z-index: 1;
+        width: 53px;
+        height: 105px;
     };
     
     .divInDivABC {
-        width: 130px;
-        height: 115px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 53px;
+        height: 95px;
     };
     
     .imgInDivABC {
-        width: 125px;
-        height: 110px;
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 20px;
-        cursor: pointer;
-        z-index: 1;
+        width: 52px;
+        height: 92px;
     };
     
     .inDivConsVow {

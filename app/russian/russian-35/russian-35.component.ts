@@ -9,117 +9,117 @@ import { Component } from "@angular/core";
 export class Russian35 {
     viewDiv2() {
         document.getElementById("div1")!.style.display = "none";
-        document.getElementById("div2")!.style.display = "block";
+        document.getElementById("div2")!.style.display = "flex";
     };
 
     viewDiv3() {
         document.getElementById("div2")!.style.display = "none";
-        document.getElementById("div3")!.style.display = "block";
+        document.getElementById("div3")!.style.display = "flex";
     };
 
     viewDiv4() {
         document.getElementById("div3")!.style.display = "none";
-        document.getElementById("div4")!.style.display = "block";
+        document.getElementById("div4")!.style.display = "flex";
     };
 
     viewDiv5() {
         document.getElementById("div4")!.style.display = "none";
-        document.getElementById("div5")!.style.display = "block";
+        document.getElementById("div5")!.style.display = "flex";
     }
 
     viewDiv6() {
         document.getElementById("div5")!.style.display = "none";
-        document.getElementById("div6")!.style.display = "block";
+        document.getElementById("div6")!.style.display = "flex";
     };
 
     viewDiv7() {
         document.getElementById("div6")!.style.display = "none";
-        document.getElementById("div7")!.style.display = "block";
+        document.getElementById("div7")!.style.display = "flex";
     };
 
     viewDiv8() {
         document.getElementById("div7")!.style.display = "none";
-        document.getElementById("div8")!.style.display = "block";
+        document.getElementById("div8")!.style.display = "flex";
     };
 
     viewDiv9() {
         document.getElementById("div8")!.style.display = "none";
-        document.getElementById("div9")!.style.display = "block";
+        document.getElementById("div9")!.style.display = "flex";
     };
 
     viewDiv10() {
         document.getElementById("div9")!.style.display = "none";
-        document.getElementById("div10")!.style.display = "block";
+        document.getElementById("div10")!.style.display = "flex";
     };
 
     viewDiv11() {
         document.getElementById("div10")!.style.display = "none";
-        document.getElementById("div11")!.style.display = "block";
+        document.getElementById("div11")!.style.display = "flex";
     };
 
     viewDiv12() {
         document.getElementById("div11")!.style.display = "none";
-        document.getElementById("div12")!.style.display = "block";
+        document.getElementById("div12")!.style.display = "flex";
     };
 
     viewDiv13() {
         document.getElementById("div12")!.style.display = "none";
-        document.getElementById("div13")!.style.display = "block";
+        document.getElementById("div13")!.style.display = "flex";
     };
 
     viewDiv14() {
         document.getElementById("div13")!.style.display = "none";
-        document.getElementById("div14")!.style.display = "block";
+        document.getElementById("div14")!.style.display = "flex";
     };
 
     viewDiv15() {
         document.getElementById("div14")!.style.display = "none";
-        document.getElementById("div15")!.style.display = "block";
+        document.getElementById("div15")!.style.display = "flex";
     };
 
     viewDiv16() {
         document.getElementById("div15")!.style.display = "none";
-        document.getElementById("div16")!.style.display = "block";
+        document.getElementById("div16")!.style.display = "flex";
     };
 
     viewDiv17() {
         document.getElementById("div16")!.style.display = "none";
-        document.getElementById("div17")!.style.display = "block";
+        document.getElementById("div17")!.style.display = "flex";
     };
 
     viewDiv18() {
         document.getElementById("div17")!.style.display = "none";
-        document.getElementById("div18")!.style.display = "block";
+        document.getElementById("div18")!.style.display = "flex";
     };
 
     viewDiv19() {
         document.getElementById("div18")!.style.display = "none";
-        document.getElementById("div19")!.style.display = "block";
+        document.getElementById("div19")!.style.display = "flex";
     };
 
     viewDiv20() {
         document.getElementById("div19")!.style.display = "none";
-        document.getElementById("div20")!.style.display = "block";
+        document.getElementById("div20")!.style.display = "flex";
     };
 
     viewDiv21() {
         document.getElementById("div20")!.style.display = "none";
-        document.getElementById("div21")!.style.display = "block";
+        document.getElementById("div21")!.style.display = "flex";
     };
 
     viewDiv22() {
         document.getElementById("div21")!.style.display = "none";
-        document.getElementById("div22")!.style.display = "block";
+        document.getElementById("div22")!.style.display = "flex";
     };
 
     viewDiv23() {
         document.getElementById("div22")!.style.display = "none";
-        document.getElementById("div23")!.style.display = "block";
+        document.getElementById("div23")!.style.display = "flex";
     };
 
     viewDiv24() {
         document.getElementById("div23")!.style.display = "none";
-        document.getElementById("div24")!.style.display = "block";
+        document.getElementById("div24")!.style.display = "flex";
     };
 
     checkInp1() {
@@ -157,10 +157,7 @@ export class Russian35 {
                 let target2 = event.target as HTMLElement;
                 let alt = target2.getAttribute('alt');
                 let index = arrAlts1.indexOf(alt!);
-                if (((index == 0) && (index2 == 0)) || ((index == 0) && (index2 == 1)) || ((index == 0) 
-                && (index2 == 2)) || ((index == 0) && (index2 == 3)) || ((index == 0) && (index2 == 4)) ||
-                ((index == 0) && (index2 == 5)) || ((index == 0) && (index2 == 6)) || ((index == 0) && (index2 == 7))||
-                ((index == 1) && (index2 == 8)) || ((index == 1) && (index2 == 9)) || ((index == 1) && (index2 == 10))) {
+                if ((index === 0 && index2 < 8) || (index === 1 && index2 > 7)) {
                     target2.style.border = '3px solid green';
                     setTimeout(() => target2.style.border = '1px solid black', 200)
                     target.remove();
@@ -188,9 +185,7 @@ export class Russian35 {
                 let target2 = event.target as HTMLElement;
                 let alt = target2.getAttribute('alt');
                 let index = arrAlts1.indexOf(alt!);
-                if (((index == 0) && (index2 == 0)) || ((index == 0) && (index2 == 1)) || ((index == 0) 
-                && (index2 == 2)) || ((index == 0) && (index2 == 3)) || ((index == 1) && (index2 == 4)) ||
-                ((index == 1) && (index2 == 5)) || ((index == 1) && (index2 == 6)) || ((index == 1) && (index2 == 7))) {
+                if ((index === 0 && index2 < 4) || (index === 1 && index2 > 3)) {
                     target2.style.border = '3px solid green';
                     setTimeout(() => target2.style.border = '1px solid black', 200)
                     target.remove();
@@ -206,24 +201,21 @@ export class Russian35 {
     };
 
     addEvent3() {
-        const imgs1 = document.getElementById('divIm3')!.querySelectorAll('img')!;
-        const imgs2 = document.getElementById('divIm4')!.querySelectorAll('img')!;
+        const imgs1 = document.getElementById('divIm5')!.querySelectorAll('img')!;
+        const imgs2 = document.getElementById('divIm6')!.querySelectorAll('img')!;
         let index2: any;
         let target: HTMLElement;
         const arrAlts1 = ['gs','gz','m','j'];
-        const arrAlts = ['mountain' ,'jackdaw', 'pigeon','dwarf','hyena','dahlias','kettlebell','guitar','jellyfish','bear','mill','mimosa', 'giraffe', 'toad', 'beatle','crane'];
+        const arrAlts = ['mountain' ,'jackdaw', 'pigeon','dwarf','hyena','dahlias','kettlebell','guitar',
+        'jellyfish','bear','mill','mimosa', 'giraffe', 'toad', 'beatle','crane'];
 
         imgs1.forEach(function(img) {
             img.addEventListener('click', (event) => {
                 let target2 = event.target as HTMLElement;
                 let alt = target2.getAttribute('alt');
                 let index = arrAlts1.indexOf(alt!);
-                if (((index == 0) && (index2 == 0)) || ((index == 0) && (index2 == 1)) || ((index == 0) 
-                && (index2 == 2)) || ((index == 0) && (index2 == 3)) || ((index == 1) && (index2 == 4)) ||
-                ((index == 1) && (index2 == 5)) || ((index == 1) && (index2 == 6)) || ((index == 1) && (index2 == 7))
-                || ((index == 2) && (index2 == 8))|| ((index == 2) && (index2 == 9))|| ((index == 2) && (index2 == 10))
-                || ((index == 2) && (index2 == 11))|| ((index == 3) && (index2 == 12))|| ((index == 3) && (index2 == 13))
-                || ((index == 3) && (index2 == 14))|| ((index == 3) && (index2 == 15))) {
+                if ((index === 0 && index2 < 4) || (index === 1 && index2 > 3 && index2 < 8) || 
+                (index === 2 && index2 > 7 && index2 < 12) || (index === 3 && index2 > 11)) {
                     target2.style.border = '3px solid green';
                     setTimeout(() => target2.style.border = '1px solid black', 200)
                     target.remove();
@@ -391,7 +383,7 @@ export class Russian35 {
         };
         
         setTimeout(() => {if (check == 12) {
-            this.viewDiv22();
+            this.viewDiv23();
         } else alert('Исправьте ошибки!')})
     };
 

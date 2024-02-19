@@ -9,122 +9,122 @@ import { Component } from "@angular/core";
 export class Russian37 {
     viewDiv2() {
         document.getElementById("div1")!.style.display = "none";
-        document.getElementById("div2")!.style.display = "block";
+        document.getElementById("div2")!.style.display = "flex";
     };
 
     viewDiv3() {
         document.getElementById("div2")!.style.display = "none";
-        document.getElementById("div3")!.style.display = "block";
+        document.getElementById("div3")!.style.display = "flex";
     };
 
     viewDiv4() {
         document.getElementById("div3")!.style.display = "none";
-        document.getElementById("div4")!.style.display = "block";
+        document.getElementById("div4")!.style.display = "flex";
     };
 
     viewDiv5() {
         document.getElementById("div4")!.style.display = "none";
-        document.getElementById("div5")!.style.display = "block";
+        document.getElementById("div5")!.style.display = "flex";
     }
 
     viewDiv6() {
         document.getElementById("div5")!.style.display = "none";
-        document.getElementById("div6")!.style.display = "block";
+        document.getElementById("div6")!.style.display = "flex";
     };
 
     viewDiv7() {
         document.getElementById("div6")!.style.display = "none";
-        document.getElementById("div7")!.style.display = "block";
+        document.getElementById("div7")!.style.display = "flex";
     };
 
     viewDiv8() {
         document.getElementById("div7")!.style.display = "none";
-        document.getElementById("div8")!.style.display = "block";
+        document.getElementById("div8")!.style.display = "flex";
     };
 
     viewDiv9() {
         document.getElementById("div8")!.style.display = "none";
-        document.getElementById("div9")!.style.display = "block";
+        document.getElementById("div9")!.style.display = "flex";
     };
 
     viewDiv10() {
         document.getElementById("div9")!.style.display = "none";
-        document.getElementById("div10")!.style.display = "block";
+        document.getElementById("div10")!.style.display = "flex";
     };
 
     viewDiv11() {
         document.getElementById("div10")!.style.display = "none";
-        document.getElementById("div11")!.style.display = "block";
+        document.getElementById("div11")!.style.display = "flex";
     };
 
     viewDiv12() {
         document.getElementById("div11")!.style.display = "none";
-        document.getElementById("div12")!.style.display = "block";
+        document.getElementById("div12")!.style.display = "flex";
     };
 
     viewDiv13() {
         document.getElementById("div12")!.style.display = "none";
-        document.getElementById("div13")!.style.display = "block";
+        document.getElementById("div13")!.style.display = "flex";
     };
 
     viewDiv14() {
         document.getElementById("div13")!.style.display = "none";
-        document.getElementById("div14")!.style.display = "block";
+        document.getElementById("div14")!.style.display = "flex";
     };
 
     viewDiv15() {
         document.getElementById("div14")!.style.display = "none";
-        document.getElementById("div15")!.style.display = "block";
+        document.getElementById("div15")!.style.display = "flex";
     };
 
     viewDiv16() {
         document.getElementById("div15")!.style.display = "none";
-        document.getElementById("div16")!.style.display = "block";
+        document.getElementById("div16")!.style.display = "flex";
     };
 
     viewDiv17() {
         document.getElementById("div16")!.style.display = "none";
-        document.getElementById("div17")!.style.display = "block";
+        document.getElementById("div17")!.style.display = "flex";
     };
 
     viewDiv18() {
         document.getElementById("div17")!.style.display = "none";
-        document.getElementById("div18")!.style.display = "block";
+        document.getElementById("div18")!.style.display = "flex";
     };
 
     viewDiv19() {
         document.getElementById("div18")!.style.display = "none";
-        document.getElementById("div19")!.style.display = "block";
+        document.getElementById("div19")!.style.display = "flex";
     };
 
     viewDiv20() {
         document.getElementById("div19")!.style.display = "none";
-        document.getElementById("div20")!.style.display = "block";
+        document.getElementById("div20")!.style.display = "flex";
     };
 
     viewDiv21() {
         document.getElementById("div20")!.style.display = "none";
-        document.getElementById("div21")!.style.display = "block";
+        document.getElementById("div21")!.style.display = "flex";
     };
 
     viewDiv22() {
         document.getElementById("div21")!.style.display = "none";
-        document.getElementById("div22")!.style.display = "block";
+        document.getElementById("div22")!.style.display = "flex";
     };
 
     viewDiv23() {
         document.getElementById("div22")!.style.display = "none";
-        document.getElementById("div23")!.style.display = "block";
+        document.getElementById("div23")!.style.display = "flex";
     };
 
     viewDiv24() {
         document.getElementById("div23")!.style.display = "none";
-        document.getElementById("div24")!.style.display = "block";
+        document.getElementById("div24")!.style.display = "flex";
     };
 
     viewDiv25() {
         document.getElementById("div24")!.style.display = "none";
-        document.getElementById("div25")!.style.display = "block";
+        document.getElementById("div25")!.style.display = "flex";
     };
 
     checkInp1() {
@@ -266,7 +266,7 @@ export class Russian37 {
         const imgs = document.getElementById('div13')!.querySelectorAll('img')!;
         let index2: any;
         let target: HTMLElement;
-        const arrAlts = ['m', 'e', 'ds', 'v', 'e2', 'y'];
+        const arrAlts = ['m', 'e', 'ds', 'v', 'e2', 'dz', 'y'];
 
         for (let i = 0; i < divs.length; i++) {
             divs[i].addEventListener('click', (event) => {
@@ -293,7 +293,7 @@ export class Russian37 {
         const imgs = document.getElementById('div16')!.querySelectorAll('img')!;
         let index2: any;
         let target: HTMLElement;
-        const arrAlts = ['s', 'yi', 'e', 'd', 'o', 'b', 'n', 'i', 'y'];
+        const arrAlts = ['s', 'iye', 'e', 'd', 'o', 'b', 'n', 'eiy', 'y'];
 
         for (let i = 0; i < divs.length; i++) {
             divs[i].addEventListener('click', (event) => {
@@ -320,7 +320,7 @@ export class Russian37 {
         const imgs = document.getElementById('div19')!.querySelectorAll('img')!;
         let index2: any;
         let target: HTMLElement;
-        const arrAlts = ['n', 'e', 's', 'yi', 'e2', 'd', 'o', 'b', 'n2', 'i', 'y'];
+        const arrAlts = ['n', 'e', 's', 'iye', 'e2', 'd', 'o', 'b', 'n2', 'eiy', 'y'];
 
         for (let i = 0; i < divs.length; i++) {
             divs[i].addEventListener('click', (event) => {
@@ -348,7 +348,7 @@ export class Russian37 {
         const imgs = document.getElementById('div22')!.querySelectorAll('img')!;
         let index2: any;
         let target: HTMLElement;
-        const arrAlts = ['o', 'b', 'yi', 'e', 'd', 'a', 'yu', 't'];
+        const arrAlts = ['o', 'b', 'iye', 'e', 'd', 'a', 'yu', 't'];
 
         for (let i = 0; i < divs.length; i++) {
             divs[i].addEventListener('click', (event) => {
@@ -395,7 +395,7 @@ export class Russian37 {
     checkInp3() {
         let check = 0;
         const arr1 = ['матрёшка', 'муравей', 'объедают', 'съедобный', 'несъедобный', 'фламинго', 'земляника', 'ласточка'];
-        const arr2 = document.getElementById('div24')!.querySelectorAll('input');
+        const arr2 = document.getElementById('div25')!.querySelectorAll('input');
         const arr3: string[] = [];
         arr2.forEach (function(el) {
             arr3.push(el.value.toLowerCase());

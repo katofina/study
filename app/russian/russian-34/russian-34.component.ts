@@ -149,7 +149,7 @@ export class Russian34 {
         const imgs2 = document.getElementById('divIm2')!.querySelectorAll('img')!;
         let index2: any;
         let target: HTMLElement;
-        const arrAlts1 = ['sh','sh1'];
+        const arrAlts1 = ['sh','sh2'];
         const arrAlts = ['shild' ,'brush', 'nutcracker','pike','clothespin','vegetables','box','lizard'];
 
         imgs1.forEach(function(img) {
@@ -213,7 +213,7 @@ export class Russian34 {
                 let target2 = event.target as HTMLElement;
                 let alt = target2.getAttribute('alt');
                 let index = arrAlts1.indexOf(alt!);
-                if (((index == 0) && (index2 < 9)) || ((index == 1) && (index2 > 8))) {
+                if (((index == 0) && (index2 < 8)) || ((index == 1) && (index2 > 7))) {
                     target2.style.border = '3px solid green';
                     setTimeout(() => target2.style.border = '1px solid black', 200)
                     target.remove();
