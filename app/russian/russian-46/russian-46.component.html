@@ -17,7 +17,7 @@
         </div>
 
         <div class="button">
-            <a class="stitched" (click)="viewDiv2(); addEvent1();">Вперед!</a>
+            <a class="stitched" (click)="viewDiv2(); addEvent1(); viewDiv();">Вперед!</a>
         </div>
     </div>
 
@@ -27,7 +27,7 @@
         </div>
 
         <div>
-            <div style="display:flex; justify-content:space-between; margin-bottom:20px;" id="divIm1">
+            <div style="display:flex; justify-content:space-between; margin-bottom:20px; flex-wrap:wrap;" id="divIm1">
                 <img style="border:3px solid red;" src="../../../assets/img/YO.gif" alt="yo" class="imgInDivMargin">
                 <img style="border:3px solid red;" src="../../../assets/img/ya.gif" alt="ya" class="imgInDivMargin">
                 <img style="border:3px solid red;" src="../../../assets/img/e.gif" alt="e" class="imgInDivMargin">
@@ -35,7 +35,7 @@
                 <img style="border:3px solid red;" src="../../../assets/img/yu.gif" alt="yu" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;" id="divIm2">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;" id="divIm2">
                 <img src="../../../assets/img/u.gif" alt="u" class="imgInDivMargin">
                 <img src="../../../assets/img/Eiy.gif" alt="eiy" class="imgInDivMargin"><!--ы-->
                 <img src="../../../assets/img/a.gif" alt="a" class="imgInDivMargin">
@@ -44,7 +44,7 @@
             </div>
 
             <div class="button">
-                <a class="stitched" (click)="viewDiv3()">Жми!</a>
+                <a class="stitched" title="2">Жми!</a>
             </div>
         </div>
     </div>
@@ -55,7 +55,7 @@
         <iframe width="1000" height="600" src="https://www.youtube.com/embed/I8zt56yetho" frameborder="0" allowfullscreen></iframe>
 
         <div class="button">
-            <a class="stitched" (click)="viewDiv4()">Жми!</a>
+            <a class="stitched" (click)="viewDivSV()" title="3">Жми!</a>
         </div>
     </div>
 
@@ -69,10 +69,10 @@
                 <img src="../../../assets/img/B.gif" alt="Б" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
                 <img src="../../../assets/img/a.gif" alt="А" class="imgInDivMargin">
                 <img src="../../../assets/img/D.gif" alt="Д" class="imgInDivMargin">
-                <img src="../../../assets/img/Vs.gif" alt="В" class="imgInDivMargin" (click)="viewDivSV2()">
+                <img src="../../../assets/img/Vs.gif" alt="В" class="imgInDivMargin">
                 <img src="../../../assets/img/Gs.gif" alt="Г" class="imgInDivMargin">
             </div>
         </div>
@@ -82,9 +82,9 @@
                 <img src="../../../assets/img/e.gif" alt="Е" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
                 <img src="../../../assets/img/Zs.gif" alt="З" class="imgInDivMargin">
-                <img src="../../../assets/img/YO.gif" alt="Ё" class="imgInDivMargin" (click)="viewDivSV3()">
+                <img src="../../../assets/img/YO.gif" alt="Ё" class="imgInDivMargin">
                 <img src="../../../assets/img/J.gif" alt="Ж" class="imgInDivMargin">
                 <img src="../../../assets/img/Gs.gif" alt="Г" class="imgInDivMargin">
             </div>
@@ -95,8 +95,8 @@
                 <img src="../../../assets/img/y.gif" alt="Й" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
-                <img src="../../../assets/img/Ks.gif" alt="К" class="imgInDivMargin" (click)="viewDivSV4()">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
+                <img src="../../../assets/img/Ks.gif" alt="К" class="imgInDivMargin">
                 <img src="../../../assets/img/Zs.gif" alt="З" class="imgInDivMargin">
                 <img src="../../../assets/img/Ls.gif" alt="Л" class="imgInDivMargin">
                 <img src="../../../assets/img/i.gif" alt="И" class="imgInDivMargin">
@@ -108,11 +108,11 @@
                 <img src="../../../assets/img/J.gif" alt="Ж" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
                 <img src="../../../assets/img/Gs.gif" alt="Г" class="imgInDivMargin">
                 <img src="../../../assets/img/YO.gif" alt="Ё" class="imgInDivMargin">
                 <img src="../../../assets/img/i.gif" alt="И" class="imgInDivMargin">
-                <img src="../../../assets/img/Zs.gif" alt="З" class="imgInDivMargin" (click)="viewDivSV5()">
+                <img src="../../../assets/img/Zs.gif" alt="З" class="imgInDivMargin">
             </div>
         </div>
 
@@ -121,11 +121,11 @@
                 <img src="../../../assets/img/Ms.gif" alt="М" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
                 <img src="../../../assets/img/Ps.gif" alt="П" class="imgInDivMargin">
                 <img src="../../../assets/img/o.gif" alt="О" class="imgInDivMargin">
                 <img src="../../../assets/img/Lz.gif" alt="Л" class="imgInDivMargin">
-                <img src="../../../assets/img/Ns.gif" alt="Н" class="imgInDivMargin" (click)="viewDivSV6()">
+                <img src="../../../assets/img/Ns.gif" alt="Н" class="imgInDivMargin">
             </div>
         </div>
 
@@ -134,8 +134,8 @@
                 <img src="../../../assets/img/Ps.gif" alt="П" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
-                <img src="../../../assets/img/Rs.gif" alt="Р" class="imgInDivMargin" (click)="viewDivSV7()">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
+                <img src="../../../assets/img/Rs.gif" alt="Р" class="imgInDivMargin">
                 <img src="../../../assets/img/Ms.gif" alt="М" class="imgInDivMargin">
                 <img src="../../../assets/img/o.gif" alt="О" class="imgInDivMargin">
                 <img src="../../../assets/img/Ss.gif" alt="С" class="imgInDivMargin">
@@ -147,9 +147,9 @@
                 <img src="../../../assets/img/u.gif" alt="У" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
                 <img src="../../../assets/img/Ts.png" alt="Т" class="imgInDivMargin">
-                <img src="../../../assets/img/fS.gif" alt="Ф" class="imgInDivMargin" (click)="viewDivSV8()">
+                <img src="../../../assets/img/fS.gif" alt="Ф" class="imgInDivMargin">
                 <img src="../../../assets/img/Hs.gif" alt="Х" class="imgInDivMargin">
                 <img src="../../../assets/img/Ps.gif" alt="П" class="imgInDivMargin">
             </div>
@@ -160,9 +160,9 @@
                 <img src="../../../assets/img/Hs.gif" alt="Х" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
                 <img src="../../../assets/img/Sh.gif" alt="Ш" class="imgInDivMargin">
-                <img src="../../../assets/img/c.gif" alt="Ц" class="imgInDivMargin" (click)="viewDivSV9()">
+                <img src="../../../assets/img/c.gif" alt="Ц" class="imgInDivMargin">
                 <img src="../../../assets/img/fS.gif" alt="Ф" class="imgInDivMargin">
                 <img src="../../../assets/img/ch.gif" alt="Ч" class="imgInDivMargin">
             </div>
@@ -173,9 +173,9 @@
                 <img src="../../../assets/img/c.gif" alt="Ц" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
                 <img src="../../../assets/img/Hs.gif" alt="Х" class="imgInDivMargin">
-                <img src="../../../assets/img/ch.gif" alt="Ч" class="imgInDivMargin" (click)="viewDivSV10()">
+                <img src="../../../assets/img/ch.gif" alt="Ч" class="imgInDivMargin">
                 <img src="../../../assets/img/iye.gif" alt="Ъ" class="imgInDivMargin">
                 <img src="../../../assets/img/Shy.gif" alt="Щ" class="imgInDivMargin">
             </div>
@@ -186,8 +186,8 @@
                 <img src="../../../assets/img/ch.gif" alt="Ч" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
-                <img src="../../../assets/img/Sh.gif" alt="Ш" class="imgInDivMargin" (click)="viewDivSV11()">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
+                <img src="../../../assets/img/Sh.gif" alt="Ш" class="imgInDivMargin">
                 <img src="../../../assets/img/c.gif" alt="Ц" class="imgInDivMargin">
                 <img src="../../../assets/img/Shy.gif" alt="Щ" class="imgInDivMargin">
                 <img src="../../../assets/img/iye.gif" alt="Ъ" class="imgInDivMargin">
@@ -199,8 +199,8 @@
                 <img src="../../../assets/img/Shy.gif" alt="Щ" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
-                <img src="../../../assets/img/iye.gif" alt="Ъ" class="imgInDivMargin" (click)="viewDivSV12()">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
+                <img src="../../../assets/img/iye.gif" alt="Ъ" class="imgInDivMargin">
                 <img src="../../../assets/img/ei.gif" alt="Э" class="imgInDivMargin">
                 <img src="../../../assets/img/Eiy.gif" alt="Ы" class="imgInDivMargin">
                 <img src="../../../assets/img/iy.gif" alt="Ь" class="imgInDivMargin">
@@ -212,10 +212,10 @@
                 <img src="../../../assets/img/Eiy.gif" alt="Ы" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
                 <img src="../../../assets/img/yu.gif" alt="Ю" class="imgInDivMargin">
                 <img src="../../../assets/img/ei.gif" alt="Э" class="imgInDivMargin">
-                <img src="../../../assets/img/iy.gif" alt="Ь" class="imgInDivMargin" (click)="viewDivSV13()">
+                <img src="../../../assets/img/iy.gif" alt="Ь" class="imgInDivMargin">
                 <img src="../../../assets/img/iye.gif" alt="Ъ" class="imgInDivMargin">
             </div>
         </div>
@@ -225,11 +225,11 @@
                 <img src="../../../assets/img/ei.gif" alt="Э" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
                 <img src="../../../assets/img/fS.gif" alt="Ф" class="imgInDivMargin">
                 <img src="../../../assets/img/ya.gif" alt="Я" class="imgInDivMargin">
                 <img src="../../../assets/img/Eiy.gif" alt="Ы" class="imgInDivMargin">
-                <img src="../../../assets/img/yu.gif" alt="Ю" class="imgInDivMargin" (click)="viewDiv5()">
+                <img src="../../../assets/img/yu.gif" alt="Ю" class="imgInDivMargin">
             </div>
         </div>
     </div>
@@ -240,7 +240,7 @@
         <iframe width="1000" height="600" src="https://www.youtube.com/embed/DmMwQt6Pr6E" frameborder="0" allowfullscreen></iframe>
 
         <div class="button">
-            <a class="stitched" (click)="viewDiv6()">Жми!</a>
+            <a class="stitched" title="5">Жми!</a>
         </div>
     </div>
 
@@ -254,10 +254,10 @@
                 <img src="../../../assets/img/B.gif" alt="Б" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
                 <img src="../../../assets/img/Gs.gif" alt="Г" class="imgInDivMargin">
                 <img src="../../../assets/img/D.gif" alt="Д" class="imgInDivMargin">
-                <img src="../../../assets/img/a.gif" alt="А" class="imgInDivMargin"  (click)="viewDivPW2()">
+                <img src="../../../assets/img/a.gif" alt="А" class="imgInDivMargin">
                 <img src="../../../assets/img/i.gif" alt="И" class="imgInDivMargin">
             </div>
         </div>
@@ -267,9 +267,9 @@
                 <img src="../../../assets/img/e.gif" alt="Е" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
                 <img src="../../../assets/img/Gs.gif" alt="Г" class="imgInDivMargin">
-                <img src="../../../assets/img/D.gif" alt="Д" class="imgInDivMargin" (click)="viewDivPW3()">
+                <img src="../../../assets/img/D.gif" alt="Д" class="imgInDivMargin">
                 <img src="../../../assets/img/J.gif" alt="Ж" class="imgInDivMargin">
                 <img src="../../../assets/img/Zs.gif" alt="З" class="imgInDivMargin">
             </div>
@@ -280,9 +280,9 @@
                 <img src="../../../assets/img/y.gif" alt="Й" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
                 <img src="../../../assets/img/Ls.gif" alt="Л" class="imgInDivMargin">
-                <img src="../../../assets/img/i.gif" alt="И" class="imgInDivMargin" (click)="viewDivPW4()">
+                <img src="../../../assets/img/i.gif" alt="И" class="imgInDivMargin">
                 <img src="../../../assets/img/J.gif" alt="Ж" class="imgInDivMargin">
                 <img src="../../../assets/img/Zs.gif" alt="З" class="imgInDivMargin">
             </div>
@@ -293,11 +293,11 @@
                 <img src="../../../assets/img/J.gif" alt="Ж" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
                 <img src="../../../assets/img/i.gif" alt="И" class="imgInDivMargin">
                 <img src="../../../assets/img/e.gif" alt="Е" class="imgInDivMargin">
                 <img src="../../../assets/img/Gs.gif" alt="Г" class="imgInDivMargin">
-                <img src="../../../assets/img/YO.gif" alt="Ё" class="imgInDivMargin" (click)="viewDivPW5()">
+                <img src="../../../assets/img/YO.gif" alt="Ё" class="imgInDivMargin">
             </div>
         </div>
 
@@ -306,10 +306,10 @@
                 <img src="../../../assets/img/Ms.gif" alt="М" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
                 <img src="../../../assets/img/Ps.gif" alt="П" class="imgInDivMargin">
                 <img src="../../../assets/img/o.gif" alt="О" class="imgInDivMargin">
-                <img src="../../../assets/img/Lz.gif" alt="Л" class="imgInDivMargin" (click)="viewDivPW6()">
+                <img src="../../../assets/img/Lz.gif" alt="Л" class="imgInDivMargin">
                 <img src="../../../assets/img/Ks.gif" alt="К" class="imgInDivMargin">
             </div>
         </div>
@@ -319,8 +319,8 @@
                 <img src="../../../assets/img/Ps.gif" alt="П" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
-                <img src="../../../assets/img/o.gif" alt="О" class="imgInDivMargin" (click)="viewDivPW7()">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
+                <img src="../../../assets/img/o.gif" alt="О" class="imgInDivMargin">
                 <img src="../../../assets/img/Ss.gif" alt="С" class="imgInDivMargin">
                 <img src="../../../assets/img/Ms.gif" alt="М" class="imgInDivMargin">
                 <img src="../../../assets/img/Ns.gif" alt="Н" class="imgInDivMargin">
@@ -332,9 +332,9 @@
                 <img src="../../../assets/img/u.gif" alt="У" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
                 <img src="../../../assets/img/Ss.gif" alt="С" class="imgInDivMargin">
-                <img src="../../../assets/img/Ts.png" alt="Т" class="imgInDivMargin" (click)="viewDivPW8()">
+                <img src="../../../assets/img/Ts.png" alt="Т" class="imgInDivMargin">
                 <img src="../../../assets/img/Hs.gif" alt="Х" class="imgInDivMargin">
                 <img src="../../../assets/img/Ps.gif" alt="П" class="imgInDivMargin">
             </div>
@@ -345,8 +345,8 @@
                 <img src="../../../assets/img/Hs.gif" alt="Х" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
-                <img src="../../../assets/img/fS.gif" alt="Ф" class="imgInDivMargin" (click)="viewDivPW9()">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
+                <img src="../../../assets/img/fS.gif" alt="Ф" class="imgInDivMargin">
                 <img src="../../../assets/img/ch.gif" alt="Ч" class="imgInDivMargin">
                 <img src="../../../assets/img/Sh.gif" alt="Ш" class="imgInDivMargin">
                 <img src="../../../assets/img/u.gif" alt="У" class="imgInDivMargin">
@@ -358,8 +358,8 @@
                 <img src="../../../assets/img/c.gif" alt="Ц" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
-                <img src="../../../assets/img/Hs.gif" alt="Х" class="imgInDivMargin" (click)="viewDivPW10()">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
+                <img src="../../../assets/img/Hs.gif" alt="Х" class="imgInDivMargin">
                 <img src="../../../assets/img/Shy.gif" alt="Щ" class="imgInDivMargin">
                 <img src="../../../assets/img/iye.gif" alt="Ъ" class="imgInDivMargin">
                 <img src="../../../assets/img/fS.gif" alt="Ф" class="imgInDivMargin">
@@ -371,10 +371,10 @@
                 <img src="../../../assets/img/ch.gif" alt="Ч" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
                 <img src="../../../assets/img/Hs.gif" alt="Х" class="imgInDivMargin">
                 <img src="../../../assets/img/Shy.gif" alt="Щ" class="imgInDivMargin">
-                <img src="../../../assets/img/c.gif" alt="Ц" class="imgInDivMargin" (click)="viewDivPW11()">
+                <img src="../../../assets/img/c.gif" alt="Ц" class="imgInDivMargin">
                 <img src="../../../assets/img/iye.gif" alt="Ъ" class="imgInDivMargin">
             </div>
         </div>
@@ -384,9 +384,9 @@
                 <img src="../../../assets/img/Shy.gif" alt="Щ" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
                 <img src="../../../assets/img/iy.gif" alt="Ь" class="imgInDivMargin">
-                <img src="../../../assets/img/Sh.gif" alt="Ш" class="imgInDivMargin" (click)="viewDivPW12()">
+                <img src="../../../assets/img/Sh.gif" alt="Ш" class="imgInDivMargin">
                 <img src="../../../assets/img/Eiy.gif" alt="Ы" class="imgInDivMargin">
                 <img src="../../../assets/img/ei.gif" alt="Э" class="imgInDivMargin">
             </div>
@@ -397,8 +397,8 @@
                 <img src="../../../assets/img/Eiy.gif" alt="Ы" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
-                <img src="../../../assets/img/iye.gif" alt="Ъ" class="imgInDivMargin" (click)="viewDivPW13()">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
+                <img src="../../../assets/img/iye.gif" alt="Ъ" class="imgInDivMargin">
                 <img src="../../../assets/img/yu.gif" alt="Ю" class="imgInDivMargin">
                 <img src="../../../assets/img/ei.gif" alt="Э" class="imgInDivMargin">
                 <img src="../../../assets/img/ch.gif" alt="Ч" class="imgInDivMargin">
@@ -410,9 +410,9 @@
                 <img src="../../../assets/img/ei.gif" alt="Э" class="imgInDivMargin">
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
                 <img src="../../../assets/img/Eiy.gif" alt="Ы" class="imgInDivMargin">
-                <img src="../../../assets/img/iy.gif" alt="Ь" class="imgInDivMargin" (click)="viewDiv7()">
+                <img src="../../../assets/img/iy.gif" alt="Ь" class="imgInDivMargin">
                 <img src="../../../assets/img/ya.gif" alt="Я" class="imgInDivMargin">
                 <img src="../../../assets/img/fS.gif" alt="Ф" class="imgInDivMargin">
             </div>
@@ -425,7 +425,7 @@
         <iframe width="1000" height="600" src="https://www.youtube.com/embed/6wrSI8YW4dw" frameborder="0" allowfullscreen></iframe>
 
         <div class="button">
-            <a class="stitched" (click)="viewDiv8(); addEvent2();">Жми!</a>
+            <a class="stitched" (click)="addEvent2()" title="7">Жми!</a>
         </div>
     </div>
 
@@ -435,7 +435,7 @@
         </div>
 
         <div>
-            <div style="display:flex; flex-direction:row; margin-bottom:50px;">
+            <div style="display:flex; flex-wrap:wrap; margin-bottom:50px;">
                 <div class="inDiv">
                     <div class="textInDiv">1</div>
                     <div class="divInDiv"></div>
@@ -482,7 +482,7 @@
                 </div>
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
                 <img src="../../../assets/img/crow.png" alt="crow" class="imgInDiv">
                 <img src="../../../assets/img/iguana.png" alt="iguana" class="imgInDiv">
                 <img src="../../../assets/img/tiger.png" alt="tiger" class="imgInDiv">
@@ -495,7 +495,7 @@
             </div>
 
             <div class="button">
-                <a class="stitched" (click)="viewDiv9(); addEvent3();">Жми!</a>
+                <a class="stitched" (click)="addEvent3()" title="8">Жми!</a>
             </div>
         </div>
     </div>
@@ -511,7 +511,7 @@
                 <img src="../../../assets/img/2.gif" class="riddle" alt="2">
             </div>
 
-            <div style="display:flex; justify-content:space-between; margin-bottom:20px; flex-wrap:wrap;">
+            <div style="display:flex; justify-content:center; margin-bottom:20px; flex-wrap:wrap;">
                 <span class="inDivConsVow" id="nose">НОС</span>
                 <span class="inDivConsVow" id="lodge">ДОМИК</span>
                 <span class="inDivConsVow" id="table">СТОЛИК</span>
@@ -529,7 +529,7 @@
             </div>
 
             <div class="button">
-                <a class="stitched" (click)="viewDiv10(); addEvent4();">Жми!</a>
+                <a class="stitched" (click)="addEvent4()" title="9">Жми!</a>
             </div>
         </div>
     </div>
@@ -540,12 +540,12 @@
         </div>
 
         <div>
-            <div style="display:flex; justify-content:space-around; margin-bottom:20px;">
+            <div style="display:flex; justify-content:center; margin-bottom:20px;">
                 <div class="inDivConsVow">Согласный</div>
                 <div class="inDivConsVow">Гласный</div>
             </div>
 
-            <div style="display:flex; justify-content:space-between; margin-bottom:20px; flex-wrap:wrap;">
+            <div style="display:flex; justify-content:center; margin-bottom:20px; flex-wrap:wrap;">
                 <img src="../../../assets/img/D.gif" alt="d" class="imgInDivMargin">
                 <img src="../../../assets/img/e.gif" alt="e" class="imgInDivMargin">
                 <img src="../../../assets/img/yu.gif" alt="yu" class="imgInDivMargin">
@@ -568,7 +568,7 @@
             </div>
 
             <div class="button">
-                <a class="stitched" (click)="viewDiv11(); addEvent5();">Жми!</a>
+                <a class="stitched" (click)="addEvent5()" title="10">Жми!</a>
             </div>
         </div>
     </div>
@@ -579,7 +579,7 @@
         </div>
 
         <div>
-            <div style="display:flex; flex-direction:row; margin-bottom:50px;">
+            <div style="display:flex; flex-wrap:wrap; margin-bottom:50px;">
                 <div class="inDiv">
                     <div class="textInDiv">1</div>
                     <div class="divInDiv"></div>
@@ -616,7 +616,7 @@
                 </div>
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:center; flex-wrap:wrap;">
                 <img src="../../../assets/img/wolf.png" alt="wolf" class="imgInDiv">
                 <img src="../../../assets/img/penguin.png" alt="penguin" class="imgInDiv">
                 <img src="../../../assets/img/giraffe.png" alt="giraffe" class="imgInDiv">
@@ -627,7 +627,7 @@
             </div>
 
             <div class="button">
-                <a class="stitched" (click)="viewDiv12()">Жми!</a>
+                <a class="stitched" title="11">Жми!</a>
             </div>
         </div>
     </div>
@@ -637,7 +637,7 @@
             <p>Прочитай и запиши слова.</p>
         </div>
 
-        <div style="display:flex; flex-wrap:wrap; margin-bottom:50px;">
+        <div style="display:flex; flex-wrap:wrap; margin-bottom:50px; margin-left:5px;">
             <div class="spanAndInput">
                 <span class="spanInDiv">ВОЛК</span>
                 <input type="text" class="inputInDiv">
@@ -728,37 +728,44 @@
         </div>
 
         <div>
-            <div style="display:flex; flex-direction:row; margin-bottom:50px;">
-                <div class="inDivSmall">
+            <div style="display:flex; flex-wrap:wrap; margin-bottom:50px;">
+                <div class="inDiv">
+                    <div class="textInDiv">1</div>
                     <div class="divInDiv"></div>
                 </div>
 
-                <div class="inDivSmall">
+                <div class="inDiv">
+                    <div class="textInDiv">2</div>
                     <div class="divInDiv"></div>
                 </div>
 
-                <div class="inDivSmall">
+                <div class="inDiv">
+                    <div class="textInDiv">3</div>
                     <div class="divInDiv"></div>
                 </div>
 
-                <div class="inDivSmall">
+                <div class="inDiv">
+                    <div class="textInDiv">4</div>
                     <div class="divInDiv"></div>
                 </div>
 
-                <div class="inDivSmall">
+                <div class="inDiv">
+                    <div class="textInDiv">5</div>
                     <div class="divInDiv"></div>
                 </div>
 
-                <div class="inDivSmall">
+                <div class="inDiv">
+                    <div  class="textInDiv">6</div>
                     <div class="divInDiv"></div>
                 </div>
 
-                <div class="inDivSmall">
+                <div class="inDiv">
+                    <div class="textInDiv">7</div>
                     <div class="divInDiv"></div>
                 </div>
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:center; flex-wrap:wrap;">
                 <img src="../../../assets/img/Sh.gif" alt="sh" class="imgInDiv">
                 <img src="../../../assets/img/u.gif" alt="u" class="imgInDiv">
                 <img src="../../../assets/img/Gs.gif" alt="g" class="imgInDiv">
@@ -769,7 +776,7 @@
             </div>
 
             <div class="button">
-                <a class="stitched" (click)="viewDiv15()">Жми!</a>
+                <a class="stitched" title="14">Жми!</a>
             </div>
         </div>
     </div>
@@ -798,45 +805,54 @@
         </div>
 
         <div>
-            <div style="display:flex; flex-direction:row; margin-bottom:50px;">
-                <div class="inDivSmall">
+            <div style="display:flex; flex-wrap:wrap; margin-bottom:50px;">
+                <div class="inDiv">
+                    <div class="textInDiv">1</div>
                     <div class="divInDiv"></div>
                 </div>
 
-                <div class="inDivSmall">
+                <div class="inDiv">
+                    <div class="textInDiv">2</div>
                     <div class="divInDiv"></div>
                 </div>
 
-                <div class="inDivSmall">
+                <div class="inDiv">
+                    <div class="textInDiv">3</div>
                     <div class="divInDiv"></div>
                 </div>
 
-                <div class="inDivSmall">
+                <div class="inDiv">
+                    <div class="textInDiv">4</div>
                     <div class="divInDiv"></div>
                 </div>
 
-                <div class="inDivSmall">
+                <div class="inDiv">
+                    <div class="textInDiv">5</div>
                     <div class="divInDiv"></div>
                 </div>
 
-                <div class="inDivSmall">
+                <div class="inDiv">
+                    <div  class="textInDiv">6</div>
                     <div class="divInDiv"></div>
                 </div>
 
-                <div class="inDivSmall">
+                <div class="inDiv">
+                    <div class="textInDiv">7</div>
                     <div class="divInDiv"></div>
                 </div>
 
-                <div class="inDivSmall">
+                <div class="inDiv">
+                    <div class="textInDiv">8</div>
                     <div class="divInDiv"></div>
                 </div>
 
-                <div class="inDivSmall">
+                <div class="inDiv">
+                    <div class="textInDiv">9</div>
                     <div class="divInDiv"></div>
                 </div>
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:center; flex-wrap:wrap;">
                 <img src="../../../assets/img/Sz.gif" alt="s" class="imgInDiv">
                 <img src="../../../assets/img/Tz.png" alt="t" class="imgInDiv">
                 <img src="../../../assets/img/o.gif" alt="o" class="imgInDiv">
@@ -849,7 +865,7 @@
             </div>
 
             <div class="button">
-                <a class="stitched" (click)="viewDiv17()">Жми!</a>
+                <a class="stitched" title="16">Жми!</a>
             </div>
         </div>
     </div>
@@ -909,7 +925,7 @@
             </div>
 
             <div class="button">
-                <a class="stitched" (click)="viewDiv19()">Жми!</a>
+                <a class="stitched" title="18">Жми!</a>
             </div>
         </div>
     </div>
@@ -938,33 +954,39 @@
         </div>
 
         <div>
-            <div style="display:flex; flex-direction:row; margin-bottom:50px;">
-                <div class="inDivSmall">
+            <div style="display:flex; flex-wrap:wrap; margin-bottom:50px;">
+                <div class="inDiv">
+                    <div class="textInDiv">1</div>
                     <div class="divInDiv"></div>
                 </div>
 
-                <div class="inDivSmall">
+                <div class="inDiv">
+                    <div class="textInDiv">2</div>
                     <div class="divInDiv"></div>
                 </div>
 
-                <div class="inDivSmall">
+                <div class="inDiv">
+                    <div class="textInDiv">3</div>
                     <div class="divInDiv"></div>
                 </div>
 
-                <div class="inDivSmall">
+                <div class="inDiv">
+                    <div class="textInDiv">4</div>
                     <div class="divInDiv"></div>
                 </div>
 
-                <div class="inDivSmall">
+                <div class="inDiv">
+                    <div class="textInDiv">5</div>
                     <div class="divInDiv"></div>
                 </div>
 
-                <div class="inDivSmall">
+                <div class="inDiv">
+                    <div  class="textInDiv">6</div>
                     <div class="divInDiv"></div>
                 </div>
             </div>
 
-            <div style="display:flex; justify-content:space-between;">
+            <div style="display:flex; justify-content:center; flex-wrap:wrap;">
                 <img src="../../../assets/img/Ss.gif" alt="s" class="imgInDiv">
                 <img src="../../../assets/img/e.gif" alt="e" class="imgInDiv">
                 <img src="../../../assets/img/Mz.gif" alt="m" class="imgInDiv">
@@ -974,7 +996,7 @@
             </div>
 
             <div class="button">
-                <a class="stitched" (click)="viewDiv21()">Жми!</a>
+                <a class="stitched" title="20">Жми!</a>
             </div>
         </div>
     </div>
@@ -1021,15 +1043,15 @@
                 </div>
             </div>
 
-            <div style="display: flex; justify-content: space-between;">
+            <div style="display:flex; justify-content:space-between;">
                 <img src="../../../assets/img/y.gif" alt="y" class="imgInDiv">
                 <img src="../../../assets/img/o.gif" alt="o" class="imgInDiv">
                 <img src="../../../assets/img/Ts.png" alt="t" class="imgInDiv">
-                <img src="../../../assets/img/Eiy.gif" alt="e" class="imgInDiv">
+                <img src="../../../assets/img/ei.gif" alt="e" class="imgInDiv"><!--э-->
             </div>
 
             <div class="button">
-                <a class="stitched" (click)="viewDiv23()">Жми!</a>
+                <a class="stitched" title="22">Жми!</a>
             </div>
         </div>
     </div>
@@ -1089,7 +1111,7 @@
             </div>
 
             <div class="button">
-                <a class="stitched" (click)="viewDiv25()">Жми!</a>
+                <a class="stitched" title="24">Жми!</a>
             </div>
         </div>
     </div>
@@ -1099,7 +1121,7 @@
             <p style="color:red;">Прочитай и запиши слова.</p>
         </div>
 
-        <div style="display:flex; flex-wrap:wrap; margin-bottom:50px;">
+        <div style="display:flex; flex-wrap:wrap; margin-bottom:50px; margin-left:5px;">
             <div class="spanAndInput">
                 <span class="spanInDiv">ТУЧА</span>
                 <input type="text" class="inputInDiv">
@@ -1171,7 +1193,7 @@
             <p>Замечательно!</p>
         </div>
 
-        <div>
+        <div style="display:flex; flex-wrap:wrap; margin-left:10px; margin-right:10px;">
             <img class="letter1" src="../../../assets/img/D.gif" alt="Д">
             <img class="letter1" src="../../../assets/img/Dz.gif" alt="Д">
             <img class="letter1" src="../../../assets/img/i.gif" alt="И">
@@ -1185,9 +1207,6 @@
             <img class="letter1" src="../../../assets/img/ya.gif" alt="Я">
             <img class="letter1" src="../../../assets/img/Gs.gif" alt="Г">
             <img class="letter1" src="../../../assets/img/Gz.gif" alt="Г">
-        </div>
-
-        <div>
             <img class="letter1" src="../../../assets/img/Ms.gif" alt="М">
             <img class="letter1" src="../../../assets/img/Mz.gif" alt="М">
             <img class="letter1" src="../../../assets/img/Ks.gif" alt="К">
@@ -1201,9 +1220,6 @@
             <img class="letter1" src="../../../assets/img/yu.gif" alt="Ю">
             <img class="letter1" src="../../../assets/img/Ss.gif" alt="С">
             <img class="letter1" src="../../../assets/img/Sz.gif" alt="С">
-        </div>
-
-        <div>
             <img class="letter1" src="../../../assets/img/B.gif" alt="Б">
             <img class="letter1" src="../../../assets/img/Bz.gif" alt="Б">
             <img class="letter1" src="../../../assets/img/a.gif" alt="А">
@@ -1217,9 +1233,6 @@
             <img class="letter1" src="../../../assets/img/Sh.gif" alt="Ш">
             <img class="letter1" src="../../../assets/img/ch.gif" alt="Ч">
             <img class="letter1" src="../../../assets/img/c.gif" alt="Ц">
-        </div>
-
-        <div>
             <img class="letter1" src="../../../assets/img/fS.gif" alt="Ф">
             <img class="letter1" src="../../../assets/img/fZ.gif" alt="Ф">
             <img class="letter1" src="../../../assets/img/iy.gif" alt="Ь">
@@ -1238,7 +1251,7 @@
         </div>
 
         <div>
-            <a class="stitched" (click)="viewDiv27(); addEvent12();">Домашнее задание</a>
+            <a class="stitched" (click)="addEvent12()" title="27">Домашнее задание</a>
         </div>
     </div>
 

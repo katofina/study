@@ -9,132 +9,53 @@ import { Component } from "@angular/core";
 export class Russian47 {
     viewDiv2() {
         document.getElementById("div1")!.style.display = "none";
-        document.getElementById("div2")!.style.display = "block";
-    };
-
-    viewDiv3() {
-        document.getElementById("div2")!.style.display = "none";
-        document.getElementById("div3")!.style.display = "block";
-    };
-
-    viewDiv4() {
-        document.getElementById("div3")!.style.display = "none";
-        document.getElementById("div4")!.style.display = "block";
-    };
-
-    viewDiv5() {
-        document.getElementById("div4")!.style.display = "none";
-        document.getElementById("div5")!.style.display = "block";
-    }
-
-    viewDiv6() {
-        document.getElementById("div5")!.style.display = "none";
-        document.getElementById("div6")!.style.display = "block";
-    };
-
-    viewDiv7() {
-        document.getElementById("div6")!.style.display = "none";
-        document.getElementById("div7")!.style.display = "block";
-    };
-
-    viewDiv8() {
-        document.getElementById("div7")!.style.display = "none";
-        document.getElementById("div8")!.style.display = "block";
-    };
-
-    viewDiv9() {
-        document.getElementById("div8")!.style.display = "none";
-        document.getElementById("div9")!.style.display = "block";
-    };
-
-    viewDiv10() {
-        document.getElementById("div9")!.style.display = "none";
-        document.getElementById("div10")!.style.display = "block";
-    };
-
-    viewDiv11() {
-        document.getElementById("div10")!.style.display = "none";
-        document.getElementById("div11")!.style.display = "block";
-    };
-
-    viewDiv12() {
-        document.getElementById("div11")!.style.display = "none";
-        document.getElementById("div12")!.style.display = "block";
-    };
-
-    viewDiv13() {
-        document.getElementById("div12")!.style.display = "none";
-        document.getElementById("div13")!.style.display = "block";
+        document.getElementById("div2")!.style.display = "flex";
     };
 
     viewDiv14() {
         document.getElementById("div13")!.style.display = "none";
-        document.getElementById("div14")!.style.display = "block";
-    };
-
-    viewDiv15() {
-        document.getElementById("div14")!.style.display = "none";
-        document.getElementById("div15")!.style.display = "block";
+        document.getElementById("div14")!.style.display = "flex";
     };
 
     viewDiv16() {
         document.getElementById("div15")!.style.display = "none";
-        document.getElementById("div16")!.style.display = "block";
-    };
-
-    viewDiv17() {
-        document.getElementById("div16")!.style.display = "none";
-        document.getElementById("div17")!.style.display = "block";
+        document.getElementById("div16")!.style.display = "flex";
     };
 
     viewDiv18() {
         document.getElementById("div17")!.style.display = "none";
-        document.getElementById("div18")!.style.display = "block";
-    };
-
-    viewDiv19() {
-        document.getElementById("div18")!.style.display = "none";
-        document.getElementById("div19")!.style.display = "block";
+        document.getElementById("div18")!.style.display = "flex";
     };
 
     viewDiv20() {
         document.getElementById("div19")!.style.display = "none";
-        document.getElementById("div20")!.style.display = "block";
-    };
-
-    viewDiv21() {
-        document.getElementById("div20")!.style.display = "none";
-        document.getElementById("div21")!.style.display = "block";
+        document.getElementById("div20")!.style.display = "flex";
     };
 
     viewDiv22() {
         document.getElementById("div21")!.style.display = "none";
-        document.getElementById("div22")!.style.display = "block";
-    };
-
-    viewDiv23() {
-        document.getElementById("div22")!.style.display = "none";
-        document.getElementById("div23")!.style.display = "block";
+        document.getElementById("div22")!.style.display = "flex";
     };
 
     viewDiv24() {
         document.getElementById("div23")!.style.display = "none";
-        document.getElementById("div24")!.style.display = "block";
+        document.getElementById("div24")!.style.display = "flex";
     };
 
-    viewDiv25() {
-        document.getElementById("div24")!.style.display = "none";
-        document.getElementById("div25")!.style.display = "block";
-    };
-
-    viewDiv26() {
-        document.getElementById("div25")!.style.display = "none";
-        document.getElementById("div26")!.style.display = "block";
-    };
-
-    viewDiv27() {
-        document.getElementById("div26")!.style.display = "none";
-        document.getElementById("div27")!.style.display = "block";
+    viewDiv() {
+        const as = document.getElementsByClassName('total')[0].querySelectorAll('a');
+        as.forEach(function(a) {
+            a.addEventListener('click', (event) => {
+                let current = event.target as HTMLElement;
+                let attrT: string | null = current.getAttribute('title')!;
+                if (attrT !== null){
+                let str = 'div' + attrT;
+                let div = document.getElementById(str)!;
+                let nextDiv = div.nextSibling as HTMLElement;
+                div!.style.display = 'none';
+                nextDiv!.style.display = 'flex'; }
+            });
+        });
     };
 
     addEvent1() {
@@ -150,7 +71,7 @@ export class Russian47 {
                 let target2 = event.target as HTMLElement;
                 let alt = target2.getAttribute('alt');
                 let index = arrAlts1.indexOf(alt!);
-                if (index == index2) {
+                if (index === index2) {
                     target2.style.border = '3px solid green';
                     setTimeout(() => target2.style.border = '1px solid black', 200)
                     target.remove();
@@ -164,129 +85,61 @@ export class Russian47 {
                 index2 = arrAlts.indexOf(alt!);
         })});
     };
+    
+    viewDivSV() {
+        const imgs = document.getElementById('div4')!.querySelectorAll('img');
+        const divs = ['divSV1', 'divSV2', 'divSV3', 'divSV4', 'divSV5', 'divSV6', 'divSV7', 'divSV8', 
+        'divSV9', 'divSV10', 'divSV11', 'divSV12', 'divSV13']
+        const arrAttr = ["В", "Ё", "К", "З", "Н", "Р", "Ф", "Ц", "Ч", "Ш", "Ъ", "Ь", "Ю"];
 
-    viewDivSV2() {
-        document.getElementById("divSV1")!.style.display = "none";
-        document.getElementById("divSV2")!.style.display = "block";
+        imgs.forEach(function(img) {
+            img.addEventListener('click', (event) => {
+                let current = event.target as HTMLElement;
+                let parent = current.parentNode!.parentNode as HTMLElement;
+                let attrA = current.getAttribute('alt')!;
+                let attrB = parent.getAttribute('id')!;
+                let index = arrAttr.indexOf(attrA);
+                let index2 = divs.indexOf(attrB);
+                if (index === index2 && index === 12) {
+                    document.getElementById("div4")!.style.display = "none";
+                    document.getElementById("div5")!.style.display = "flex";
+                } else if (index === index2 && index >= 0) {
+                    parent.style.display = "none";
+                    let next = parent.nextSibling as HTMLElement;
+                    next.style.display = "flex";
+                };
+            });
+        });
     };
 
-    viewDivSV3() {
-        document.getElementById("divSV2")!.style.display = "none";
-        document.getElementById("divSV3")!.style.display = "block";
-    };
+    viewDivPW() {
+        const imgs = document.getElementById('div6')!.querySelectorAll('img');
+        const divs = ['divPW1', 'divPW2', 'divPW3', 'divPW4', 'divPW5', 'divPW6', 'divPW7', 'divPW8', 
+        'divPW9', 'divPW10', 'divPW11', 'divPW12', 'divPW13']
+        const arrAttr = ["А", "Д", "И", "Ё", "Л", "О", "Т", "Ф", "Х", "Ц", "Ш", "Ъ", "Ь"];
 
-    viewDivSV4() {
-        document.getElementById("divSV3")!.style.display = "none";
-        document.getElementById("divSV4")!.style.display = "block";
-    };
-
-    viewDivSV5() {
-        document.getElementById("divSV4")!.style.display = "none";
-        document.getElementById("divSV5")!.style.display = "block";
-    }
-
-    viewDivSV6() {
-        document.getElementById("divSV5")!.style.display = "none";
-        document.getElementById("divSV6")!.style.display = "block";
-    };
-
-    viewDivSV7() {
-        document.getElementById("divSV6")!.style.display = "none";
-        document.getElementById("divSV7")!.style.display = "block";
-    };
-
-    viewDivSV8() {
-        document.getElementById("divSV7")!.style.display = "none";
-        document.getElementById("divSV8")!.style.display = "block";
-    };
-
-    viewDivSV9() {
-        document.getElementById("divSV8")!.style.display = "none";
-        document.getElementById("divSV9")!.style.display = "block";
-    };
-
-    viewDivSV10() {
-        document.getElementById("divSV9")!.style.display = "none";
-        document.getElementById("divSV10")!.style.display = "block";
-    };
-
-    viewDivSV11() {
-        document.getElementById("divSV10")!.style.display = "none";
-        document.getElementById("divSV11")!.style.display = "block";
-    };
-
-    viewDivSV12() {
-        document.getElementById("divSV11")!.style.display = "none";
-        document.getElementById("divSV12")!.style.display = "block";
-    };
-
-    viewDivSV13() {
-        document.getElementById("divSV12")!.style.display = "none";
-        document.getElementById("divSV13")!.style.display = "block";
-    };
-
-    viewDivPW2() {
-        document.getElementById("divPW1")!.style.display = "none";
-        document.getElementById("divPW2")!.style.display = "block";
-    };
-
-    viewDivPW3() {
-        document.getElementById("divPW2")!.style.display = "none";
-        document.getElementById("divPW3")!.style.display = "block";
-    };
-
-    viewDivPW4() {
-        document.getElementById("divPW3")!.style.display = "none";
-        document.getElementById("divPW4")!.style.display = "block";
-    };
-
-    viewDivPW5() {
-        document.getElementById("divPW4")!.style.display = "none";
-        document.getElementById("divPW5")!.style.display = "block";
-    }
-
-    viewDivPW6() {
-        document.getElementById("divPW5")!.style.display = "none";
-        document.getElementById("divPW6")!.style.display = "block";
-    };
-
-    viewDivPW7() {
-        document.getElementById("divPW6")!.style.display = "none";
-        document.getElementById("divPW7")!.style.display = "block";
-    };
-
-    viewDivPW8() {
-        document.getElementById("divPW7")!.style.display = "none";
-        document.getElementById("divPW8")!.style.display = "block";
-    };
-
-    viewDivPW9() {
-        document.getElementById("divPW8")!.style.display = "none";
-        document.getElementById("divPW9")!.style.display = "block";
-    };
-
-    viewDivPW10() {
-        document.getElementById("divPW9")!.style.display = "none";
-        document.getElementById("divPW10")!.style.display = "block";
-    };
-
-    viewDivPW11() {
-        document.getElementById("divPW10")!.style.display = "none";
-        document.getElementById("divPW11")!.style.display = "block";
-    };
-
-    viewDivPW12() {
-        document.getElementById("divPW11")!.style.display = "none";
-        document.getElementById("divPW12")!.style.display = "block";
-    };
-
-    viewDivPW13() {
-        document.getElementById("divPW12")!.style.display = "none";
-        document.getElementById("divPW13")!.style.display = "block";
+        imgs.forEach(function(img) {
+            img.addEventListener('click', (event) => {
+                let current = event.target as HTMLElement;
+                let parent = current.parentNode!.parentNode as HTMLElement;
+                let attrA = current.getAttribute('alt')!;
+                let attrB = parent.getAttribute('id')!;
+                let index = arrAttr.indexOf(attrA);
+                let index2 = divs.indexOf(attrB);
+                if (index === index2 && index === 12) {
+                    document.getElementById("div6")!.style.display = "none";
+                    document.getElementById("div7")!.style.display = "flex";
+                } else if (index === index2 && index >= 0) {
+                    parent.style.display = "none";
+                    let next = parent.nextSibling as HTMLElement;
+                    next.style.display = "flex";
+                };
+            });
+        });
     };
 
     addEvent2() {
-        const divs = document.getElementById('div8')!.getElementsByClassName('inDivConsVow');
+        const divs = document.getElementById('div8')!.getElementsByClassName('divInDiv');
         const imgs = document.getElementById('div8')!.querySelectorAll('img')!;
         let index2: any;
         let target: HTMLElement;
@@ -296,7 +149,7 @@ export class Russian47 {
             divs[i].addEventListener('click', (event) => {
                 let target1 = event.target as HTMLElement;
                 let index1 = i;
-                if (index1 == index2) {
+                if (index1 === index2) {
                     target.style.border = 'none';
                     target1.parentElement!.style.border = '3px solid green';
                     target1.append(target);
@@ -313,29 +166,32 @@ export class Russian47 {
     };
 
     addEvent3() {
-        const divs = document.getElementById('div9')!.getElementsByClassName('inDivConsVow');
+        const spans = document.getElementById('div9')!.getElementsByClassName('inDivConsVow');
         const imgs = document.getElementById('div9')!.querySelectorAll('img')!;
-        let index2: any;
-        let target: HTMLElement;
-        const arrAlts = ['nose', 'dwarf', 'mouth', 'stack', 'desk', 'blade', 'house', 'lodge', 'table', 'knife', 'spout', 'stozhok', 'rotik', 'gnome'];
+        let target1: HTMLElement;
+        let index1: any;
+        const arrAlts: string[] = ['1', '2'];
+        const spans1: Array<string> = ['nose', 'dwarf','mouth', 'stack', 'desk', 'blade', 'house','gnome',
+        'rotik', 'stozhok', 'spout', 'knife', 'table', 'lodge'];
 
-        for (let i = 0; i < divs.length; i++) {
-            divs[i].addEventListener('click', (event) => {
-                let target1 = event.target as HTMLElement;
-                let index1 = i;
-                if (((index1 == 0) && (index2 <= 6)) || ((index1 == 1) && (index2 >= 7))) {
-                    target.style.border = 'none';
-                    target1.parentElement!.style.border = '3px solid green';
-                    target1.append(target);
-                };
+        for (let i = 0; i < spans.length; i++) {
+            spans[i].addEventListener('click', (event) => {
+                target1 = event.target as HTMLElement;
+                let span2 = target1.getAttribute('id');
+                index1 = spans1.indexOf(span2!);
         })
         };
 
         imgs.forEach(function(img) {
             img.addEventListener('click', (event) => {
-                target = event.target as HTMLElement;
+                let target = event.target as HTMLElement;
                 let alt = target.getAttribute('alt');
-                index2 = arrAlts.indexOf(alt!);
+                let index2 = arrAlts.indexOf(alt!);
+                if ((index2 === 1 && index1 >= 7) || (index2 === 0 && index1 <= 6)) {
+                    target.style.border = '3px solid green';
+                    setTimeout(() => target.style.border = '3px solid black', 300)
+                    target1.remove();;
+                };
         })});
     };
 
@@ -344,17 +200,21 @@ export class Russian47 {
         const imgs = document.getElementById('div10')!.querySelectorAll('img')!;
         let index2: any;
         let target: HTMLElement;
-        const arrAlts = ['d', 'j', 'v', 'k', 'g', 'y', 'l', 'b', 'z', 'm', 'ei', 'ya', 'eiy', 'i', 'o', 'yo', 'a', 'yu', 'e'];
+        const arrAlts: string[] = ['d', 'j', 'v', 'k', 'g', 'y', 'l', 'b', 'z', 'm', 'ei', 'ya', 'eiy',
+        'i', 'o', 'yo', 'a', 'yu', 'e'];
 
-        for (let i = 0; i < divs.length; i++) {
+        for (let i: number = 0; i < divs.length; i++) {
             divs[i].addEventListener('click', (event) => {
                 let target1 = event.target as HTMLElement;
                 let index1 = i;
-                if (((index1 == 0) && (index2 <= 9)) || ((index1 == 1) && (index2 >= 10))) {
-                    target.style.border = 'none';
-                    target1.parentElement!.style.border = '3px solid green';
-                    target1.append(target);
-                };
+                if (((index1 === 0) && (index2 <= 9)) || ((index1 === 1) && (index2 >= 10))) {
+                    target1.style.border = '3px solid green';
+                    setTimeout(() => target1.style.border = "3px solid black", 300);
+                    target.remove();
+                } else {
+                    target1.style.border = '3px solid red';
+                    setTimeout(() => target1.style.border = '3px solid black', 300);
+                }
         })
         };
 
@@ -367,7 +227,7 @@ export class Russian47 {
     };
 
     addEvent5() {
-        const divs = document.getElementById('div11')!.getElementsByClassName('inDivConsVow');
+        const divs = document.getElementById('div11')!.getElementsByClassName('divInDiv');
         const imgs = document.getElementById('div11')!.querySelectorAll('img')!;
         let index2: any;
         let target: HTMLElement;
@@ -377,7 +237,7 @@ export class Russian47 {
             divs[i].addEventListener('click', (event) => {
                 let target1 = event.target as HTMLElement;
                 let index1 = i;
-                if (index1 == index2) {
+                if (index1 === index2) {
                     target.style.border = 'none';
                     target1.parentElement!.style.border = '3px solid green';
                     target1.append(target);
@@ -402,7 +262,7 @@ export class Russian47 {
             arr3.push(el.value.toLowerCase());
         })
         for (let i = 0; i < arr2.length; i++) {
-            if (arr1[i] == arr3[i]) {
+            if (arr1[i] === arr3[i]) {
                 arr2[i].parentElement!.style.border = '3px solid green';
                 check++;
             } else {
@@ -410,8 +270,9 @@ export class Russian47 {
             };
         };
         
-        setTimeout(() => {if (check == 12) {
-            this.viewDiv13();
+        setTimeout(() => {if (check === 12) {
+            document.getElementById("div12")!.style.display = "none";
+            document.getElementById("div13")!.style.display = "flex";
         } else alert('Исправьте ошибки!')})
     };
 
@@ -426,7 +287,7 @@ export class Russian47 {
             divs[i].addEventListener('click', (event) => {
                 let target1 = event.target as HTMLElement;
                 let index1 = i;
-                if (index1 == index2) {
+                if (index1 === index2) {
                     target.style.border = 'none';
                     target1.parentElement!.style.border = '3px solid green';
                     target1.append(target);
@@ -457,7 +318,7 @@ export class Russian47 {
             divs[i].addEventListener('click', (event) => {
                 let target1 = event.target as HTMLElement;
                 let index1 = i;
-                if ((index1 == index2) || ((index1 == 3) && (index2 == 7)) || ((index1 == 7) && (index2 == 3))) {
+                if ((index1 === index2) || ((index1 === 3) && (index2 === 7)) || ((index1 === 7) && (index2 === 3))) {
                     target.style.border = 'none';
                     target1.parentElement!.style.border = '3px solid green';
                     target1.append(target);
@@ -484,7 +345,7 @@ export class Russian47 {
             divs[i].addEventListener('click', (event) => {
                 let target1 = event.target as HTMLElement;
                 let index1 = i;
-                if (index1 == index2) {
+                if (index1 === index2) {
                     target.style.border = 'none';
                     target1.parentElement!.style.border = '3px solid green';
                     target1.append(target);
@@ -511,7 +372,7 @@ export class Russian47 {
             divs[i].addEventListener('click', (event) => {
                 let target1 = event.target as HTMLElement;
                 let index1 = i;
-                if (index1 == index2) {
+                if (index1 === index2) {
                     target.style.border = 'none';
                     target1.parentElement!.style.border = '3px solid green';
                     target1.append(target);
@@ -538,7 +399,7 @@ export class Russian47 {
             divs[i].addEventListener('click', (event) => {
                 let target1 = event.target as HTMLElement;
                 let index1 = i;
-                if (index1 == index2) {
+                if (index1 === index2) {
                     target.style.border = 'none';
                     target1.parentElement!.style.border = '3px solid green';
                     target1.append(target);
@@ -565,7 +426,7 @@ export class Russian47 {
             divs[i].addEventListener('click', (event) => {
                 let target1 = event.target as HTMLElement;
                 let index1 = i;
-                if (index1 == index2) {
+                if (index1 === index2) {
                     target.style.border = 'none';
                     target1.parentElement!.style.border = '3px solid green';
                     target1.append(target);
@@ -590,7 +451,7 @@ export class Russian47 {
             arr3.push(el.value.toLowerCase());
         })
         for (let i = 0; i < arr2.length; i++) {
-            if (arr1[i] == arr3[i]) {
+            if (arr1[i] === arr3[i]) {
                 arr2[i].parentElement!.style.border = '3px solid green';
                 check++;
             } else {
@@ -598,23 +459,25 @@ export class Russian47 {
             };
         };
         
-        setTimeout(() => {if (check == 12) {
-            this.viewDiv26();
+        setTimeout(() => {if (check === 12) {
+            document.getElementById("div25")!.style.display = "none";
+            document.getElementById("div26")!.style.display = "flex";
         } else alert('Исправьте ошибки!')})
     };
 
     addEvent12() {
-        const divs = document.getElementById('div27')!.getElementsByClassName('inDivConsVow');
+        const divs = document.getElementById('div27')!.getElementsByClassName('divInDiv');
         const imgs = document.getElementById('div27')!.querySelectorAll('img')!;
         let index2: any;
         let target: HTMLElement;
-        const arrAlts = ['bus', 'crow', 'crane', 'iguana', 'crocodile', 'lion', 'ant', 'donkey', 'tiger'];
+        const arrAlts: string[] = ['bus', 'crow', 'crane', 'iguana', 'crocodile', 'lion', 'ant', 'donkey',
+        'tiger'];
 
-        for (let i = 0; i < divs.length; i++) {
+        for (let i: number = 0; i < divs.length; i++) {
             divs[i].addEventListener('click', (event) => {
                 let target1 = event.target as HTMLElement;
                 let index1 = i;
-                if (index1 == index2) {
+                if (index1 === index2) {
                     target.style.border = 'none';
                     target1.parentElement!.style.border = '3px solid green';
                     target1.append(target);
